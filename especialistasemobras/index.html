@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Especialistas em Obras · Reabilitação de imóveis antigos em Lisboa e no Algarve</title>
+<meta name="description" content="Reabilitação, remodelação, obras estruturais e construção em LSF. Escritórios em Mem Martins (Lisboa) e Olhão (Algarve).">
+<meta name="theme-color" content="#1f1d1a">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-casa-amor-sala-m.jpg" media="(max-width: 760px)">
+<link rel="preload" as="image" href="img/hero-casa-amor-sala.jpg" media="(min-width: 761px)">
+<style>
+:root{
+  --cal:#f6f1e7; --cal-2:#ece4d5; --paper:#fffdf8;
+  --ink:#1f1d1a; --ink-2:#2b2925; --stone:#5f5a52; --stone-light:#bdb5a7;
+  --amber:#f4ad12; --amber-ink:#8a5800;
+  --line:#ddd3c2;
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:min(1200px, 100% - 32px);
+  --r:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--ink);background:var(--cal);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.04;margin:0;letter-spacing:-.015em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* marca */
+.wm{display:inline-flex;flex-direction:column;line-height:.9;text-decoration:none;font-family:var(--sans)}
+.wm b{font-weight:800;font-size:15px;letter-spacing:.06em;color:#d9d4cb}
+.wm span{display:flex;align-items:baseline;gap:4px}
+.wm i{font-family:var(--serif);font-style:italic;font-size:15px;color:#d9d4cb}
+.wm strong{font-weight:800;font-size:25px;letter-spacing:.02em;color:var(--amber)}
+.wm.dark b,.wm.dark i{color:var(--stone)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;font-family:var(--sans);font-weight:800;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background-color .25s ease,color .25s ease,transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:var(--ink)}
+.btn-amber:hover{background:#ffc23d}
+.btn-line{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#000}
+.btn svg{width:19px;height:19px;flex:none}
+
+/* cabeçalho */
+.top{position:fixed;inset:0 0 auto;z-index:40;transition:background-color .3s ease, box-shadow .3s ease}
+.top.solid{background:rgba(31,29,26,.95);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.nav{display:none;gap:30px;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.nav a{color:#fff;text-decoration:none;opacity:.86}
+.nav a:hover{opacity:1;color:var(--amber)}
+.top .btn{min-height:42px;padding:0 18px;font-size:13px}
+.top-tel{display:none;color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+@media (min-width:1000px){.nav{display:flex}.top-tel{display:inline}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--ink);isolation:isolate;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero picture img{object-position:62% 50%;animation:breathe 20s ease-out both}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(31,29,26,.6) 0%,rgba(31,29,26,.2) 28%,rgba(31,29,26,.82) 60%,rgba(31,29,26,.97) 100%)}
+.hero .wrap{padding:100px 0 calc(100px + env(safe-area-inset-bottom))}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);display:flex;gap:10px;align-items:center}
+.eyebrow::before{content:"";width:34px;height:1.5px;background:currentColor}
+.hero h1{font-size:clamp(44px, 11.5vw, 108px);margin:16px 0 18px;max-width:12ch}
+.hero h1 em{font-style:italic;color:var(--amber)}
+.hero .lead{max-width:540px;font-size:clamp(16px,2vw,19px);color:#ebe6dc}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero .credit{position:absolute;right:16px;bottom:16px;font-size:12px;letter-spacing:.08em;color:#e7e1d6;display:none}
+@media (max-width:420px){.hero .ctas .btn{flex:1 1 140px;padding:0 12px}}
+@media (min-width:761px){
+  .hero{align-items:center}
+  .hero .wrap{padding:130px 0 90px}
+  .hero::after{background:linear-gradient(90deg,rgba(31,29,26,.94) 0%,rgba(31,29,26,.72) 40%,rgba(31,29,26,.1) 78%)}
+  .hero .credit{display:block;bottom:24px;right:24px}
+}
+@keyframes breathe{from{transform:scale(1.07)}to{transform:scale(1)}}
+
+/* secções */
+section{scroll-margin-top:70px}
+.sec{padding:clamp(72px,10vw,136px) 0}
+.sec-ink{background:var(--ink);color:#fff}
+.sec-paper{background:var(--paper)}
+.kicker{font-size:13px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--amber-ink)}
+.sec-ink .kicker{color:var(--amber)}
+.sec h2{font-size:clamp(36px,6.6vw,68px);margin-top:14px;max-width:16ch}
+.sec h2 em{font-style:italic;color:var(--amber-ink)}
+.sec-ink h2 em{color:var(--amber)}
+.intro{max-width:600px;color:var(--stone);font-size:18px;margin-top:18px}
+.sec-ink .intro{color:var(--stone-light)}
+.head-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:48px}
+
+/* quem somos */
+.who{display:grid;gap:44px}
+@media (min-width:940px){.who{grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}}
+.who .big{font-family:var(--serif);font-size:clamp(26px,3.6vw,38px);line-height:1.22;margin-top:18px}
+.who .big em{font-style:italic;color:var(--amber-ink)}
+.values{display:grid;gap:0;border-top:1px solid var(--line)}
+.values div{padding:22px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:44px 1fr;gap:16px}
+.values span{font-family:var(--serif);font-size:22px;color:var(--amber-ink)}
+.values h3{font-family:var(--sans);font-weight:800;font-size:17px;letter-spacing:.02em}
+.values p{color:var(--stone);font-size:16px;margin-top:2px}
+
+/* casa amor */
+.story{display:grid;gap:14px}
+@media (min-width:860px){.story{grid-template-columns:1fr 1fr 1.35fr;align-items:end}}
+.story figure{margin:0;position:relative}
+.story img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.story figure:last-child img{aspect-ratio:4/3}
+@media (min-width:860px){.story figure:last-child img{aspect-ratio:5/4}}
+.story figcaption{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--stone-light)}
+.story figcaption b{font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;letter-spacing:0;text-transform:none;color:var(--amber)}
+.story-meta{display:grid;gap:28px;margin-top:48px}
+@media (min-width:860px){.story-meta{grid-template-columns:1.2fr 1fr;gap:64px}}
+.story-meta blockquote{margin:0;font-family:var(--serif);font-size:clamp(24px,3.2vw,34px);line-height:1.25}
+.story-meta blockquote em{color:var(--amber)}
+.credits{font-size:15px;color:var(--stone-light);display:grid;gap:6px;border-left:2px solid var(--amber);padding-left:20px;align-self:start}
+.credits b{color:#fff;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border:1px solid rgba(255,255,255,.3);border-radius:99px}
+.strip{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px}
+.strip img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r)}
+
+/* antes e depois */
+.ba-grid{display:grid;gap:28px}
+@media (min-width:900px){.ba-grid{grid-template-columns:repeat(3,1fr);gap:22px}}
+.ba{position:relative;aspect-ratio:370/221;border-radius:var(--r);overflow:hidden;background:#cfc6b6;--p:50%;user-select:none;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--p);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--p);width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:var(--amber);color:var(--ink);display:grid;place-items:center;pointer-events:none;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+.ba .knob svg{width:22px;height:22px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .lbl{position:absolute;top:10px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;background:rgba(31,29,26,.82);color:#fff;padding:5px 10px;border-radius:2px;pointer-events:none}
+.ba .lbl.l{left:10px}.ba .lbl.r{right:10px;background:var(--amber);color:var(--ink)}
+.ba-cap{margin-top:12px;font-family:var(--serif);font-size:21px}
+.ba-cap small{display:block;font-family:var(--sans);font-size:13px;color:var(--stone);letter-spacing:.06em}
+
+/* serviços */
+.svc-grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (min-width:760px){.svc-grid{grid-template-columns:1fr 1fr}}
+.svc{background:var(--paper);padding:clamp(28px,4vw,48px);display:grid;gap:12px;align-content:start;transition:background-color .3s ease}
+.svc:hover{background:#fff}
+.svc .n{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--amber-ink)}
+.svc h3{font-size:clamp(28px,3.4vw,38px)}
+.svc p{color:var(--stone)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.chips span{padding:10px 16px;border:1px solid var(--ink);border-radius:99px;font-size:14px;font-weight:700}
+.chips span.hl{background:var(--ink);color:#fff}
+.lic{margin-top:28px;display:flex;gap:14px;align-items:flex-start;background:var(--cal-2);padding:20px 22px;border-radius:var(--r);max-width:760px}
+.lic svg{width:26px;height:26px;color:var(--amber-ink);flex:none;margin-top:2px}
+
+/* projetos */
+.proj{display:grid;gap:22px}
+@media (min-width:700px){.proj{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.proj{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--paper);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{position:relative;aspect-ratio:1/1;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.card:hover .ph img{transform:scale(1.05)}
+.card .ph .place{position:absolute;left:12px;bottom:12px;background:rgba(31,29,26,.85);color:#fff;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:2px}
+.card .tx{padding:22px 22px 26px;display:grid;gap:8px}
+.card h3{font-size:27px}
+.card .t{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-ink)}
+.card p{color:var(--stone);font-size:16px}
+.card.feature{grid-column:1/-1}
+@media (min-width:700px){.card.feature{flex-direction:row}.card.feature .ph{flex:1.3;aspect-ratio:auto;min-height:340px}.card.feature .tx{flex:1;align-content:center;padding:40px}}
+.duo{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.duo img{height:100%;min-height:200px}
+
+/* processo */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+@media (min-width:960px){.steps{grid-template-columns:repeat(5,1fr)}}
+.steps li{counter-increment:s;padding:28px 0;border-top:1px solid rgba(255,255,255,.16);display:grid;grid-template-columns:64px 1fr;gap:10px}
+@media (min-width:960px){.steps li{display:block;padding:32px 28px 0 0}}
+.steps li::before{content:counter(s, upper-roman) ".";font-family:var(--serif);font-style:italic;font-size:30px;line-height:1;color:var(--amber)}
+@media (min-width:960px){.steps li::before{display:block;margin-bottom:22px}}
+.steps h3{font-size:26px}
+.steps p{color:var(--stone-light);font-size:16px;margin-top:6px}
+
+/* zona */
+.zones{display:grid;gap:18px}
+@media (min-width:860px){.zones{grid-template-columns:1fr 1fr}}
+.office{background:var(--paper);border-radius:var(--r);padding:clamp(28px,4vw,44px);display:grid;gap:14px;border-top:4px solid var(--amber)}
+.office h3{font-size:clamp(40px,6vw,58px)}
+.office address{font-style:normal;color:var(--stone)}
+.office .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.office .btn{min-height:46px;font-size:13px;padding:0 18px}
+.btn-out{border-color:var(--ink);color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.places{margin-top:36px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline}
+.places p{font-size:13px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--stone)}
+.places span{font-family:var(--serif);font-size:24px}
+.places span:not(:last-child)::after{content:"·";margin-left:24px;color:var(--amber-ink)}
+
+/* faq */
+.faq{border-top:1px solid var(--ink);margin-top:8px}
+.faq details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:clamp(20px,2.4vw,25px)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);color:var(--amber-ink);font-size:28px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;color:var(--stone);max-width:760px}
+
+/* contacto */
+.contact{display:grid;gap:44px}
+@media (min-width:980px){.contact{grid-template-columns:1fr 1.1fr;gap:72px}}
+.channels{display:grid;gap:10px;margin-top:30px}
+.ch{display:flex;align-items:center;gap:16px;padding:16px 18px;border:1px solid rgba(255,255,255,.14);border-radius:var(--r);text-decoration:none;color:#fff;transition:border-color .2s ease, transform .2s ease}
+.ch:hover{border-color:var(--amber);transform:translateX(4px)}
+.ch svg{width:26px;height:26px;color:var(--amber);flex:none}
+.ch small{display:block;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-light)}
+.ch b{font-weight:600;word-break:break-word}
+.social{display:flex;gap:16px;margin-top:20px;font-size:14px;font-weight:700}
+.social a{color:var(--stone-light)}
+.social a:hover{color:var(--amber)}
+form.f{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:clamp(24px,4vw,44px);display:grid;gap:16px}
+.f h3{font-size:34px}
+.f label{display:grid;gap:6px;font-size:14px;font-weight:700}
+.f input,.f select,.f textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #cfc5b3;border-radius:4px;background:#fff;color:var(--ink);width:100%}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(244,173,18,.35)}
+.f .row{display:grid;gap:16px}
+@media (min-width:560px){.f .row{grid-template-columns:1fr 1fr}}
+.f .small{font-size:14px;color:var(--stone)}
+
+/* rodapé */
+footer{background:#161513;color:#c9c2b6;padding:52px 0 120px;font-size:15px}
+@media (min-width:761px){footer{padding-bottom:40px}}
+.foot{display:grid;gap:28px}
+@media (min-width:860px){.foot{grid-template-columns:1.2fr 1fr 1fr}}
+.foot h4{margin:0 0 8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+.foot a{color:#fff}
+.demo{margin-top:36px;padding-top:18px;border-top:1px solid #2c2a26;font-size:13px;color:#a39c90}
+
+/* barra do telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(31,29,26,.97);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:2px;text-decoration:none;color:#fff;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.3)}
+.mbar a.go{background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.mbar svg{width:18px;height:18px}
+@media (min-width:761px){.mbar{display:none}}
+
+/* animações */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .d1{transition-delay:.08s}.js .d2{transition-delay:.16s}.js .d3{transition-delay:.24s}.js .d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="wm" href="#" aria-label="Especialistas em Obras, início"><b>ESPECIALISTAS</b><span><i>em</i><strong>OBRAS</strong></span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#zona">Onde estamos</a>
+      <a href="#contacto">Contactos</a>
+    </nav>
+    <a class="top-tel" href="tel:+351935046271">+351 935 046 271</a>
+    <a class="btn btn-amber" href="#contacto">Orçamento</a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" aria-label="Apresentação">
+  <picture>
+    <source media="(max-width: 760px)" srcset="img/hero-casa-amor-sala-m.jpg">
+    <img src="img/hero-casa-amor-sala.jpg" alt="Sala da Casa Amor, em Olhão, depois da reabilitação" width="1600" height="954" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <p class="eyebrow">Lisboa · Algarve</p>
+    <h1>Preservamos a história, <em>construímos o futuro.</em></h1>
+    <p class="lead">Especialistas em reabilitação de imóveis antigos, remodelação e obras estruturais, para casas, prédios e espaços comerciais.</p>
+    <div class="ctas">
+      <a class="btn btn-amber" href="#contacto">Pedir orçamento</a>
+      <a class="btn btn-line" href="tel:+351935046271">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Ligar
+      </a>
+    </div>
+  </div>
+  <p class="credit">Casa Amor, Olhão</p>
+</section>
+
+<section class="sec" id="quem-somos">
+  <div class="wrap who">
+    <div>
+      <p class="kicker reveal">Quem somos</p>
+      <h2 class="reveal d1">A transformar espaços, <em>a construir confiança</em></h2>
+      <p class="big reveal d2">Dedicamo-nos à reabilitação, remodelação e obras estruturais. Cada projeto é singular: por isso as nossas soluções são <em>personalizadas e feitas para durar.</em></p>
+      <p class="intro reveal d3">A nossa equipa transforma espaços, valoriza o património existente e cria ambientes funcionais e bonitos. Mais do que realizar obras, construímos relações de confiança com cada cliente.</p>
+    </div>
+    <div class="values reveal d2">
+      <div><span>i.</span><div><h3>Inovação na construção</h3><p>Soluções inovadoras, com uma equipa qualificada e experiente.</p></div></div>
+      <div><span>ii.</span><div><h3>Foco nos detalhes</h3><p>Uma equipa atenta a cada detalhe, do início ao fim do projeto.</p></div></div>
+      <div><span>iii.</span><div><h3>Construção ecológica</h3><p>Construção sustentável com materiais ecológicos.</p></div></div>
+      <div><span>iv.</span><div><h3>Prioridade ao cliente</h3><p>A satisfação do cliente é a nossa prioridade.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-ink" id="casa-amor">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Projeto em destaque · Olhão</p>
+        <h2 class="reveal d1">Da Pensão Helena à <em>Casa Amor</em></h2>
+      </div>
+      <p class="intro reveal d2">No coração de Olhão, a histórica Pensão Helena, esquecida desde 1991, foi transformada na Casa Amor. Uma reabilitação meticulosa que devolveu ao edifício o seu esplendor original.</p>
+    </div>
+    <div class="story">
+      <figure class="reveal"><img src="img/casa-amor-antes.jpg" alt="Interior da antiga Pensão Helena degradado, no início da obra" loading="lazy" width="1200" height="716"><figcaption><b>Ponto de partida</b></figcaption></figure>
+      <figure class="reveal d1"><img src="img/casa-amor-patio-obra.jpg" alt="Pátio interior com arcadas durante a obra" loading="lazy" width="1200" height="716"><figcaption><b>Durante a obra</b></figcaption></figure>
+      <figure class="reveal d2"><img src="img/casa-amor-patio-depois.jpg" alt="Pátio interior com arcadas e varandas depois da reabilitação" loading="lazy" width="1200" height="716"><figcaption><b>Depois</b></figcaption></figure>
+    </div>
+    <div class="strip">
+      <img class="reveal" src="img/casa-amor-fachada.jpg" alt="Arcadas e colunas reabilitadas da Casa Amor" loading="lazy" width="1200" height="716">
+      <img class="reveal d1" src="img/casa-amor-arcos.jpg" alt="Galeria interior com portas em arco na Casa Amor" loading="lazy" width="1200" height="716">
+    </div>
+    <div class="story-meta">
+      <div class="reveal">
+        <blockquote>Reabilitar é <em>preservar a história</em> e construir o futuro.</blockquote>
+        <div class="tags"><span>Arquitetura</span><span>LSF</span><span>Reabilitação</span></div>
+      </div>
+      <div class="credits reveal d1">
+        <p><b>Empreiteiro:</b> Especialistas em Obras</p>
+        <p><b>Arquitetura e projetos:</b> Sena Architects</p>
+        <p><b>Engenharia:</b> Guida Gomes Engenharia, Simergia, Zona Térmica</p>
+        <p><b>Topografia:</b> Sónia Gomes Topografia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="antes-depois">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Antes e depois</p>
+        <h2 class="reveal d1">Arraste e veja <em>a diferença</em></h2>
+      </div>
+      <p class="intro reveal d2">Remodelação na Penha de França: os mesmos espaços, antes e depois da nossa intervenção.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="reveal">
+        <div class="ba">
+          <img src="img/penha-quarto-depois.jpg" alt="Quarto depois da remodelação, com paredes lisas e pavimento em madeira" loading="lazy" width="370" height="221">
+          <img class="before" src="img/penha-quarto-antes.jpg" alt="Quarto antes da remodelação, com papel de parede degradado" loading="lazy" width="370" height="221">
+          <span class="bar"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          <span class="lbl l">Antes</span><span class="lbl r">Depois</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar quarto antes e depois">
+        </div>
+        <p class="ba-cap">Quarto<small>Penha de França · Remodelação</small></p>
+      </div>
+      <div class="reveal d1">
+        <div class="ba">
+          <img src="img/penha-wc-depois.jpg" alt="Casa de banho depois da remodelação, com revestimento marmoreado" loading="lazy" width="370" height="221">
+          <img class="before" src="img/penha-wc-antes.jpg" alt="Casa de banho antes da remodelação" loading="lazy" width="370" height="221">
+          <span class="bar"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          <span class="lbl l">Antes</span><span class="lbl r">Depois</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar casa de banho antes e depois">
+        </div>
+        <p class="ba-cap">Casa de banho<small>Penha de França · Remodelação</small></p>
+      </div>
+      <div class="reveal d2">
+        <div class="ba">
+          <img src="img/penha-cozinha-depois.jpg" alt="Cozinha depois da remodelação, com bancada em granito" loading="lazy" width="370" height="221">
+          <img class="before" src="img/penha-cozinha-antes.jpg" alt="Cozinha antes da remodelação" loading="lazy" width="370" height="221">
+          <span class="bar"></span><span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+          <span class="lbl l">Antes</span><span class="lbl r">Depois</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar cozinha antes e depois">
+        </div>
+        <p class="ba-cap">Cozinha<small>Penha de França · Remodelação</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="servicos">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Serviços</p>
+        <h2 class="reveal d1">Da remodelação à <em>construção de raiz</em></h2>
+      </div>
+      <p class="intro reveal d2">Para habitação e para empresas: comércio, saúde, educação e outros setores.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal"><span class="n">01</span><h3>Remodelação de interiores</h3><p>Renovamos e modernizamos espaços residenciais e comerciais, de cozinhas e casas de banho a escritórios e lojas, para ambientes mais funcionais, confortáveis e à sua medida.</p></article>
+      <article class="svc reveal d1"><span class="n">02</span><h3>Reabilitação de edifícios</h3><p>Damos nova vida a edifícios antigos, preservando a estrutura e a história, e melhorando a eficiência energética, a segurança e o conforto. Para prédios habitacionais, comerciais ou património histórico.</p></article>
+      <article class="svc reveal"><span class="n">03</span><h3>Construção e ampliação</h3><p>Criamos novos espaços ou ampliamos estruturas existentes, para habitação, comércio ou indústria, com soluções adaptadas a cada caso.</p></article>
+      <article class="svc reveal d1"><span class="n">04</span><h3>Obras estruturais</h3><p>Reforço e recuperação estrutural, incluindo reparação de fundações, pisos, vigas e pilares, para garantir estabilidade e segurança.</p></article>
+    </div>
+    <div class="chips reveal">
+      <span class="hl">Remodelações</span><span>LSF</span><span>Reabilitações</span><span>Obras estruturais</span><span>Inspeções periódicas</span><span>Projetos especiais</span><span>Construção de raiz</span>
+    </div>
+    <div class="lic reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+      <p>Também elaboramos projetos de construção nova ou de reabilitação, <strong>incluindo os pedidos de licenciamento.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="projetos">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Projetos</p>
+        <h2 class="reveal d1">Obras feitas, <em>de Lisboa ao Algarve</em></h2>
+      </div>
+      <p class="intro reveal d2">Uma seleção de projetos de reabilitação, remodelação e construção.</p>
+    </div>
+    <div class="proj">
+      <article class="card feature reveal">
+        <div class="ph"><div class="duo"><img src="img/casinha-bloom-antes.jpg" alt="Casinha Bloom em obra, com paredes em ruína" loading="lazy" width="530" height="530"><img src="img/casinha-bloom-sala.jpg" alt="Casinha Bloom depois da reabilitação" loading="lazy" width="530" height="530"></div><span class="place">Olhão</span></div>
+        <div class="tx">
+          <p class="t">Arquitetura · Reabilitação</p>
+          <h3>Casinha Bloom</h3>
+          <p>Da decadência à beleza: uma casa desgastada passou por uma reabilitação profunda, no coração da cidade de Olhão.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/alvalade-cozinha.jpg" alt="Cozinha remodelada na Av. 5 de Outubro" loading="lazy" width="530" height="530"><span class="place">Alvalade</span></div>
+        <div class="tx"><p class="t">Remodelação</p><h3>Av. 5 de Outubro</h3><p>Remodelação total de um andar: instalações elétricas e hidráulicas, novos revestimentos, iluminação e ar condicionado.</p></div>
+      </article>
+      <article class="card reveal d1">
+        <div class="ph"><img src="img/messines-moradia.jpg" alt="Moradia térrea com piscina em Messines" loading="lazy" width="570" height="340"><span class="place">Messines</span></div>
+        <div class="tx"><p class="t">Arquitetura · Construção</p><h3>Moradia térrea com piscina</h3><p>Construção de raiz de uma moradia com mais de 220 m² e piscina.</p></div>
+      </article>
+      <article class="card reveal d2">
+        <div class="ph"><img src="img/caselas-cozinha.jpg" alt="Cozinha da remodelação em Caselas" loading="lazy" width="530" height="530"><span class="place">Caselas</span></div>
+        <div class="tx"><p class="t">Construção · LSF</p><h3>Caselas</h3><p>Remodelação total de habitação com ampliação em LSF: eletricidade, canalização, esgoto, pintura, pladur, móveis por medida e iluminação.</p></div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/grandola-lsf.jpg" alt="Estrutura em LSF de uma construção em Grândola" loading="lazy" width="530" height="530"><span class="place">Grândola</span></div>
+        <div class="tx"><p class="t">Construção · LSF</p><h3>Grândola</h3><p>Construção em LSF.</p></div>
+      </article>
+      <article class="card reveal d1">
+        <div class="ph"><img src="img/restaurante-bacalhau.jpg" alt="Restaurante D'Bacalhau remodelado" loading="lazy" width="530" height="530"><span class="place">Restaurante</span></div>
+        <div class="tx"><p class="t">Remodelação</p><h3>Restaurante D'Bacalhau</h3><p>Remodelação de espaço comercial.</p></div>
+      </article>
+      <article class="card reveal d2">
+        <div class="ph"><img src="img/alvalade-pavimento.jpg" alt="Pavimento em xadrez preto e branco na Av. 5 de Outubro" loading="lazy" width="530" height="530"><span class="place">Alvalade</span></div>
+        <div class="tx"><p class="t">Remodelação</p><h3>Detalhe que conta</h3><p>Novos pavimentos e azulejos fazem parte da remodelação da Av. 5 de Outubro.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-ink" id="processo">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Como trabalhamos</p>
+        <h2 class="reveal d1">Acompanhamos a obra <em>do início ao fim</em></h2>
+      </div>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><div><h3>Contacto</h3><p>Fale connosco por telefone, WhatsApp, e-mail ou pelo formulário.</p></div></li>
+      <li class="reveal d1"><div><h3>Visita</h3><p>Conhecemos o imóvel e o que pretende fazer.</p></div></li>
+      <li class="reveal d2"><div><h3>Projeto e licença</h3><p>Quando é preciso, elaboramos o projeto e tratamos do pedido de licenciamento.</p></div></li>
+      <li class="reveal d3"><div><h3>Orçamento</h3><p>Uma proposta personalizada para o seu projeto.</p></div></li>
+      <li class="reveal d4"><div><h3>Obra e entrega</h3><p>Uma equipa atenta a cada detalhe até à entrega.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="zona">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="kicker reveal">Onde estamos</p>
+        <h2 class="reveal d1">Em Lisboa <em>e no Algarve</em></h2>
+      </div>
+    </div>
+    <div class="zones">
+      <div class="office reveal">
+        <p class="kicker">Lisboa</p>
+        <h3>Mem Martins</h3>
+        <address>Rua Coudel, 9B<br>2725-276 Mem Martins</address>
+        <div class="row">
+          <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Coudel+9B+2725-276+Mem+Martins" target="_blank" rel="noopener">Ver no mapa</a>
+          <a class="btn btn-out" href="tel:+351935046271">935 046 271</a>
+        </div>
+      </div>
+      <div class="office reveal d1">
+        <p class="kicker">Algarve</p>
+        <h3>Olhão</h3>
+        <address>Rua Doutor de Pádua, 1<br>8700-521 Olhão</address>
+        <div class="row">
+          <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Doutor+de+P%C3%A1dua+1+8700-521+Olh%C3%A3o" target="_blank" rel="noopener">Ver no mapa</a>
+          <a class="btn btn-out" href="tel:+351289703240">289 703 240</a>
+        </div>
+      </div>
+    </div>
+    <div class="places reveal">
+      <p>Obras no portfólio</p>
+      <span>Olhão</span><span>Messines</span><span>Grândola</span><span>Alvalade</span><span>Caselas</span><span>Penha de França</span>
+    </div>
+
+    <div class="faq reveal" style="margin-top:72px">
+      <details open>
+        <summary>Trabalham apenas em construções residenciais?</summary>
+        <p>Não. Além da habitação, trabalhamos também em construção comercial, com experiência em vários setores, incluindo comércio, saúde e educação.</p>
+      </details>
+      <details>
+        <summary>Fazem projetos e pedidos de licenciamento?</summary>
+        <p>Sim. Elaboramos projetos de construção nova ou de reabilitação, incluindo os pedidos de licenciamento. Contacte-nos para saber mais.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo demora uma obra?</summary>
+        <p>Depende da complexidade e da escala. Projetos menores podem durar uma semana; os maiores podem levar meses.</p>
+      </details>
+      <details>
+        <summary>Fazem obras pequenas?</summary>
+        <p>Sim. A nossa equipa está preparada para projetos pequenos e para grandes empreendimentos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-ink" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker reveal">Contactos</p>
+      <h2 class="reveal d1">Peça o seu <em>orçamento</em></h2>
+      <p class="intro reveal d2">Estamos preparados para realizar o seu projeto. Fale connosco.</p>
+      <div class="channels">
+        <a class="ch reveal" href="tel:+351935046271"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span><small>Telemóvel</small><b>+351 935 046 271</b></span></a>
+        <a class="ch reveal d1" href="tel:+351289703240"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telefone · Algarve</small><b>+351 289 703 240</b></span></a>
+        <a class="ch reveal d2" href="https://wa.me/message/RUNBVLVRFCILO1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span><small>WhatsApp</small><b>Enviar mensagem</b></span></a>
+        <a class="ch reveal d3" href="mailto:geral@especialistasemobras.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg><span><small>E-mail</small><b>geral@especialistasemobras.pt</b></span></a>
+      </div>
+      <div class="social reveal">
+        <a href="https://www.instagram.com/especialistasemobras/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/especialistasemobras" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.pinterest.com/especialistasemobras/" target="_blank" rel="noopener">Pinterest</a>
+      </div>
+    </div>
+
+    <form class="f reveal d1" id="form" action="mailto:geral@especialistasemobras.pt" method="post" enctype="text/plain">
+      <h3>Pedido de orçamento</h3>
+      <div class="row">
+        <label>Nome<input name="nome" required autocomplete="name"></label>
+        <label>Telefone<input name="telefone" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      <div class="row">
+        <label>Tipo de obra
+          <select name="tipo">
+            <option>Reabilitação</option>
+            <option>Remodelação de interiores</option>
+            <option>Construção e ampliação</option>
+            <option>Construção em LSF</option>
+            <option>Obras estruturais</option>
+            <option>Inspeção periódica</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label>Zona
+          <select name="zona">
+            <option>Lisboa</option>
+            <option>Algarve</option>
+            <option>Outra</option>
+          </select>
+        </label>
+      </div>
+      <label>Mensagem<textarea name="mensagem" rows="4" placeholder="Conte-nos sobre o imóvel e o que pretende fazer."></textarea></label>
+      <button class="btn btn-amber" type="submit">Enviar pedido</button>
+      <p class="small">O pedido abre no seu programa de e-mail, pronto a enviar.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="wm" href="#"><b>ESPECIALISTAS</b><span><i>em</i><strong>OBRAS</strong></span></a>
+        <p style="margin-top:14px">Remodelações, LSF, reabilitações, obras estruturais, inspeções periódicas, projetos especiais e construção de raiz.</p>
+      </div>
+      <div><h4>Lisboa</h4><p>Rua Coudel, 9B<br>2725-276 Mem Martins</p><p style="margin-top:8px"><a href="tel:+351935046271">+351 935 046 271</a></p></div>
+      <div><h4>Algarve</h4><p>Rua Doutor de Pádua, 1<br>8700-521 Olhão</p><p style="margin-top:8px"><a href="tel:+351289703240">+351 289 703 240</a> · <a href="mailto:geral@especialistasemobras.pt">geral@especialistasemobras.pt</a></p></div>
+    </div>
+    <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de Especialistas em Obras. Fotos e textos do site atual.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351935046271"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/message/RUNBVLVRFCILO1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+  <a class="go" href="#contacto">Orçamento</a>
+</nav>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    d.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }
+  var top=d.getElementById('top');
+  function onScroll(){top.classList.toggle('solid', window.scrollY>40);}
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  d.querySelectorAll('.ba').forEach(function(b){
+    var r=b.querySelector('input');
+    r.addEventListener('input', function(){ b.style.setProperty('--p', r.value+'%'); });
+  });
+
+  d.getElementById('form').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var f=ev.target, v=function(n){return (f.elements[n].value||'').trim();};
+    var body='Nome: '+v('nome')+'\nTelefone: '+v('telefone')+'\nE-mail: '+v('email')+'\nTipo de obra: '+v('tipo')+'\nZona: '+v('zona')+'\n\n'+v('mensagem');
+    location.href='mailto:geral@especialistasemobras.pt?subject='+encodeURIComponent('Pedido de orçamento — '+v('tipo'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

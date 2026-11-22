@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Clínica Dr. Miguel Ângelo Gouveia — Medicina Dentária em Joane e Vila das Aves</title>
+<meta name="description" content="Medicina dentária em Joane e Vila das Aves desde 2002: implantologia, cirurgia oral, ortodontia, odontopediatria, endodontia e mais. Marque a sua consulta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#faf7f1; --cream:#f2ece0; --paper:#fff; --line:#e6dfd0;
+  --navy:#16205a; --navy-2:#0f1742; --blue:#2a3a8f;
+  --gold:#b09a4e; --gold-l:#d8c486;
+  --text:#232a40; --muted:#5a6276;
+  --r:20px; --wrap:1180px;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--ivory);line-height:1.7;font-size:16px;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;color:var(--navy);margin:0 0 .45em}
+h2{font-size:clamp(2.1rem,5vw,3.3rem)}
+h3{font-size:1.5rem}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.over{display:inline-flex;align-items:center;gap:.7em;font:500 .76rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-bottom:14px}
+.over::before{content:"";width:28px;height:1px;background:var(--gold)}
+.dark .over{color:var(--gold-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 1.5em;border-radius:999px;font:600 1rem/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background-color .25s ease,color .25s ease,border-color .25s ease,transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-n{background:var(--navy);color:#fff}
+.btn-n:hover{background:var(--blue)}
+.btn-l{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-l:hover{background:var(--navy);color:#fff}
+.btn-g{background:var(--gold-l);color:var(--navy-2)}
+.btn-g:hover{background:#e6d6a2}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* Cabeçalho */
+.top{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand img{width:40px;height:40px;border-radius:6px;flex:none}
+.brand span{font-family:var(--serif);font-weight:600;color:var(--navy);font-size:1.08rem;line-height:1.05}
+.brand small{display:block;font:500 .64rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:none;gap:28px;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--text)}
+.nav a:hover{color:var(--blue)}
+.top .btn{min-height:42px;padding:0 1.1em;font-size:.9rem;flex:none}
+
+/* Hero */
+.hero{padding:30px 0 64px;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:34px;align-items:center}
+.hero h1{font-size:clamp(2.55rem,8.6vw,4.9rem);font-weight:500;margin:.1em 0 .32em}
+.hero h1 i{color:var(--blue)}
+.hero .lead{font-size:1.06rem;color:var(--muted);max-width:33em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.agree{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font-size:.88rem;color:var(--muted);margin:0}
+.agree b{color:var(--text);font-weight:600}
+.agree svg{width:18px;height:18px;color:var(--gold);flex:none}
+.arch{position:relative;max-width:520px;margin:0 auto;width:100%}
+.arch .frame{border-radius:260px 260px 26px 26px;overflow:hidden;aspect-ratio:4/4.6;background:var(--cream);box-shadow:0 30px 70px rgba(22,32,90,.16)}
+.arch .frame img{width:100%;height:100%;object-fit:cover;object-position:28% 40%}
+.arch .badge{position:absolute;left:-6px;bottom:28px;background:var(--paper);border-radius:16px;padding:14px 18px;box-shadow:0 16px 40px rgba(22,32,90,.14);border:1px solid var(--line)}
+.arch .badge strong{display:block;font:600 2rem/1 var(--serif);color:var(--navy)}
+.arch .badge span{font-size:.82rem;color:var(--muted)}
+.arch .ring{position:absolute;right:-14px;top:30px;width:92px;height:92px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;background:rgba(250,247,241,.9)}
+.arch .ring img{width:52px;height:52px;border-radius:4px}
+
+/* Confiança */
+.trust{background:var(--navy);color:#fff}
+.trust ul{list-style:none;margin:0;padding:24px 0;display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.trust li{display:flex;gap:12px;align-items:flex-start;font-size:.92rem;line-height:1.4;color:#d9ddef}
+.trust li b{display:block;color:#fff;font-weight:600;font-size:.95rem}
+.trust svg{width:24px;height:24px;color:var(--gold-l);flex:none}
+
+section{padding:80px 0}
+.head{max-width:700px;margin-bottom:40px}
+.head p{color:var(--muted);font-size:1.05rem}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.center .over::after{content:"";width:28px;height:1px;background:var(--gold)}
+
+/* Especialidades */
+.spec{display:grid;gap:14px}
+.sp{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;position:relative;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
+.sp:hover{border-color:var(--gold);box-shadow:0 18px 40px rgba(22,32,90,.08);transform:translateY(-3px)}
+.sp .ic{width:46px;height:46px;border-radius:50%;background:var(--ivory);border:1px solid var(--line);display:grid;place-items:center;color:var(--blue);margin-bottom:16px}
+.sp .ic svg{width:22px;height:22px}
+.sp h3{font-size:1.45rem;margin-bottom:.25em}
+.sp p{margin:0;color:var(--muted);font-size:.94rem}
+.spec-note{margin-top:22px;text-align:center;color:var(--muted);font-size:.95rem}
+
+/* Sobre */
+.about{background:var(--cream)}
+.about-grid{display:grid;gap:36px;align-items:center}
+.about-img{border-radius:var(--r);overflow:hidden;box-shadow:0 24px 60px rgba(22,32,90,.14)}
+.about-img img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.timeline{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:0}
+.timeline li{display:grid;grid-template-columns:86px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.timeline b{font:600 1.6rem/1 var(--serif);color:var(--blue)}
+.timeline p{margin:0;color:var(--muted);font-size:.95rem}
+.motto{font:italic 500 1.5rem/1.3 var(--serif);color:var(--navy);margin:24px 0 0;padding-left:18px;border-left:2px solid var(--gold)}
+
+/* Casos */
+.cases{display:grid;gap:22px}
+.case figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:12px}
+.case figcaption b{font:600 1.35rem/1.1 var(--serif);color:var(--navy)}
+.case figcaption span{font-size:.82rem;color:var(--muted)}
+.case{margin:0}
+.ba{position:relative;aspect-ratio:2/1;border-radius:16px;overflow:hidden;background:var(--cream);--p:50%;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ba .line{position:absolute;top:0;bottom:0;left:var(--p);width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--p);width:42px;height:42px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 4px 14px rgba(0,0,0,.25);display:grid;place-items:center;color:var(--navy);pointer-events:none}
+.ba .knob svg{width:22px;height:22px}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba input:focus-visible ~ .knob{outline:3px solid var(--gold);outline-offset:2px}
+.ba .lab{position:absolute;top:10px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(15,23,66,.72);color:#fff;padding:.35em .7em;border-radius:6px;pointer-events:none}
+.ba .lab.l{left:10px}.ba .lab.r{right:10px}
+.cases-note{color:var(--muted);font-size:.88rem;margin-top:18px}
+
+/* Galeria */
+.gallery{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.gallery figure{margin:0;border-radius:16px;overflow:hidden}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;filter:grayscale(1) contrast(1.02);transition:filter .6s ease,transform .6s ease}
+.gallery figure:hover img{filter:none;transform:scale(1.03)}
+.gallery .big{grid-column:span 2}
+.gallery .big img{aspect-ratio:16/9}
+
+/* Equipa */
+.team{background:var(--paper)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px}
+.person{margin:0;text-align:center}
+.person .ph{border-radius:140px 140px 16px 16px;overflow:hidden;background:var(--cream);aspect-ratio:4/5;margin-bottom:12px}
+.person img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.person b{display:block;font:600 1.18rem/1.15 var(--serif);color:var(--navy)}
+.person span{display:block;font-size:.82rem;color:var(--muted);line-height:1.4;margin-top:4px}
+.assist{margin-top:34px;padding:20px 22px;border-radius:16px;background:var(--ivory);border:1px solid var(--line);font-size:.95rem;color:var(--muted);text-align:center}
+.assist b{color:var(--text)}
+
+/* Opiniões */
+.reviews{background:var(--navy-2);color:#fff}
+.reviews h2{color:#fff}
+.rv{display:grid;gap:16px}
+.rv blockquote{margin:0;padding:26px 24px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.rv p{font:italic 500 1.3rem/1.4 var(--serif);color:#f1ecdf;margin:0 0 14px}
+.rv cite{font-style:normal;font-size:.88rem;color:var(--gold-l);letter-spacing:.06em}
+.rv-note{margin-top:18px;font-size:.85rem;color:#b9bfd8}
+
+/* Acordos */
+.agreements{padding:56px 0}
+.ag{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:22px 40px}
+.ag img{height:auto}
+.ag .a1{width:200px}
+.ag .a2{width:300px;border-radius:12px}
+
+/* Clínicas */
+.clinics{background:var(--cream)}
+.cl-grid{display:grid;gap:16px}
+.cl{background:var(--paper);border-radius:var(--r);padding:26px 24px;border:1px solid var(--line);display:flex;flex-direction:column}
+.cl .tag{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.cl h3{font-size:2rem;margin:.15em 0 .3em}
+.cl address{font-style:normal;margin-bottom:12px}
+.cl .how{font-size:.9rem;color:var(--muted);padding:12px 14px;border-radius:12px;background:var(--ivory);margin-bottom:16px}
+.cl .btn{margin-top:auto;align-self:flex-start}
+.info{display:grid;gap:16px;margin-top:16px}
+.info > div{background:var(--paper);border-radius:var(--r);padding:22px 24px;border:1px solid var(--line)}
+.info h3{font-size:1.35rem}
+.info table{border-collapse:collapse;width:100%;font-size:.95rem}
+.info td{padding:6px 0;border-bottom:1px dashed var(--line);vertical-align:top}
+.info td:last-child{text-align:right;padding-left:12px}
+.info a{text-decoration:none;font-weight:600;color:var(--navy);overflow-wrap:anywhere}
+.info a:hover{text-decoration:underline}
+.info ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+
+/* Marcação */
+.book{background:var(--navy);color:#fff}
+.book h2{color:#fff}
+.book-grid{display:grid;gap:34px}
+.book .lead{color:#d0d5ea}
+.direct{display:grid;gap:10px;margin-top:22px}
+.direct a{display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);text-decoration:none;overflow-wrap:anywhere}
+.direct a:hover{border-color:var(--gold-l)}
+.direct svg{width:22px;height:22px;color:var(--gold-l);flex:none}
+.direct small{display:block;color:#b9bfd8;font-size:.8rem}
+form{background:var(--ivory);color:var(--text);border-radius:24px;padding:26px 24px;display:grid;gap:14px}
+form h3{font-size:1.8rem;margin:0}
+.two{display:grid;gap:14px}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:12px;border:1.5px solid #d3cbb9;background:#fff;color:var(--text)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(42,58,143,.16)}
+textarea{min-height:100px;resize:vertical}
+form .btn{width:100%}
+.note{font-size:.82rem;color:var(--muted);margin:0}
+
+footer{background:var(--navy-2);color:#b9bfd8;padding:44px 0 0;font-size:.92rem;border-top:1px solid rgba(255,255,255,.08)}
+.f-grid{display:grid;gap:24px;padding-bottom:28px}
+.f-grid .brand span{color:#fff}
+.f-grid .brand small{color:#b9bfd8}
+.f-grid a{color:#e9ecf7;text-decoration:none}
+.f-grid a:hover{text-decoration:underline}
+.f-grid ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.f-grid strong{color:#fff}
+.demo{border-top:1px solid rgba(255,255,255,.08);padding:16px 0 92px;text-align:center;font-size:.8rem;color:#9aa1c0}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1.5fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(250,247,241,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:.45em;font:600 .95rem/1 var(--sans);text-decoration:none;color:var(--navy);border:1.5px solid var(--navy)}
+.mbar a.go{background:var(--navy);color:#fff}
+.mbar svg{width:18px;height:18px}
+
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .9s ease,transform .9s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.sp,.gallery img{transition:none}
+}
+
+@media (max-width:540px){
+  .top .btn{display:none}
+}
+@media (min-width:640px){
+  .spec{grid-template-columns:1fr 1fr}
+  .people{grid-template-columns:repeat(3,1fr)}
+  .rv{grid-template-columns:1fr 1fr}
+  .cl-grid{grid-template-columns:1fr 1fr}
+  .info{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr 1fr}
+  .trust ul{grid-template-columns:repeat(4,1fr)}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .gallery .big{grid-column:span 2;grid-row:span 2}
+  .gallery .big img{aspect-ratio:auto;height:100%}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .top .wrap{height:78px}
+  .brand img{width:46px;height:46px}
+  .brand span{font-size:1.22rem}
+  .hero{padding:70px 0 100px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:64px}
+  .spec{grid-template-columns:repeat(4,1fr)}
+  .about-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .cases{grid-template-columns:repeat(3,1fr)}
+  .people{grid-template-columns:repeat(4,1fr);gap:28px 22px}
+  .rv{grid-template-columns:repeat(4,1fr)}
+  .book-grid{grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+  .f-grid{grid-template-columns:1.5fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:110px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Clínica Dr. Miguel Ângelo Gouveia — início">
+      <img src="img/logo-simbolo.png" width="240" height="240" alt="">
+      <span>Dr. Miguel Ângelo Gouveia<small>Medicina Dentária</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#casos">Casos clínicos</a>
+      <a href="#equipa">Equipa</a>
+      <a href="#clinicas">Clínicas</a>
+    </nav>
+    <a class="btn btn-n" href="#marcacao">Marcar consulta</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="over">Joane · Vila das Aves · desde 2002</span>
+      <h1 id="h1">A nossa felicidade é o seu <i>sorriso.</i></h1>
+      <p class="lead">Medicina dentária com uma equipa de profissionais altamente diferenciados em implantologia, ortodontia, odontopediatria e outras especialidades, em duas clínicas que trabalham de forma coordenada.</p>
+      <div class="cta">
+        <a class="btn btn-n" href="#marcacao">Marcar consulta
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+        <a class="btn btn-l" href="tel:+351252993296">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          252 993 296</a>
+      </div>
+      <p class="agree"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Clínica aderente ao <b>Cheque-Dentista</b> · acordo <b>AdvanceCare</b></span></p>
+    </div>
+    <div class="arch reveal">
+      <div class="frame"><img src="img/hero.jpg" width="1500" height="975" alt="Médico dentista da clínica durante um tratamento" fetchpriority="high"></div>
+      <div class="ring" aria-hidden="true"><img src="img/logo-simbolo.png" width="240" height="240" alt=""></div>
+      <div class="badge"><strong>2002</strong><span>fundada em Joane</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust dark" aria-label="Porque nos escolhem">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-6h4v6"/></svg><span><b>Duas clínicas</b>Joane e Vila das Aves</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Desde 2002</b>pacientes de toda a região Norte</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Tecnologia atual</b>diagnóstico e tratamento na clínica</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span><b>Acordos</b>Cheque-Dentista e AdvanceCare</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="especialidades" aria-labelledby="h-esp">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="over">As nossas especialidades</span>
+      <h2 id="h-esp">Cuidado completo, da primeira consulta ao sorriso final.</h2>
+      <p>Nas duas clínicas, com uma equipa de profissionais altamente diferenciados.</p>
+    </div>
+    <div class="spec">
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3c-2.5 0-4 2-4 4.5 0 3 1.5 4 2 7 .4 2.5 1 6.5 2.5 6.5S10 17 12 17s2 4 3.5 4 2.1-4 2.5-6.5c.5-3 2-4 2-7C20 5 18.5 3 16 3c-1.8 0-2.6 1-4 1S9.8 3 8 3z"/></svg></div><h3>Implantologia</h3><p>Implantes dentários que suportam próteses fixas, coroas e pontes em cerâmica, ou dão estabilidade e conforto a próteses removíveis.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Cirurgia oral</h3><p>Área do Prof. Dr. Miguel Ângelo Gouveia, em conjunto com a implantologia.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18"/><rect x="4" y="9" width="4" height="6" rx="1"/><rect x="10" y="9" width="4" height="6" rx="1"/><rect x="16" y="9" width="4" height="6" rx="1"/></svg></div><h3>Ortodontia</h3><p>Aparelhos fixos ou removíveis para alinhar dentes e corrigir más formações ósseas e dentárias, também com fins estéticos.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg></div><h3>Odontopediatria</h3><p>Saúde oral de bebés, crianças e adolescentes, até aos 16 anos.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4"/></svg></div><h3>Endodontia</h3><p>Tratamento da polpa (o chamado “nervo”) para preservar o dente.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c4-4 12-4 16 0M4 15c4 4 12 4 16 0"/></svg></div><h3>Oclusão e ATM</h3><p>Acompanhada pela Prof.ª Dr.ª Patrícia Fonseca, também em reabilitação oral.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 10h14v4a7 7 0 0 1-14 0z"/><path d="M8 10V7M12 10V6M16 10V7"/></svg></div><h3>Próteses dentárias</h3><p>Próteses fixas, coroas e pontes em cerâmica, e próteses removíveis.</p></article>
+      <article class="sp reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.2 5.6L20 9l-4.5 3.8L17 19l-5-3.2L7 19l1.5-6.2L4 9l5.8-.4z"/></svg></div><h3>Estética dentária</h3><p>Soluções como as facetas dentárias, que pode ver nos casos clínicos abaixo.</p></article>
+    </div>
+    <p class="spec-note reveal">Também realizamos consultas de medicina dentária generalista.</p>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="h-about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal"><img src="img/dr-miguel.jpg" width="1000" height="667" alt="Prof. Dr. Miguel Ângelo Gouveia, fundador da clínica" loading="lazy"></div>
+    <div class="reveal">
+      <span class="over">Quem somos</span>
+      <h2 id="h-about">Uma clínica que cresceu com os seus pacientes.</h2>
+      <p style="color:var(--muted)">Estamos equipados com as tecnologias mais atuais da medicina dentária, o que nos torna completamente autónomos no diagnóstico e na realização dos tratamentos.</p>
+      <ol class="timeline">
+        <li><b>2002</b><p>Fundação em Joane, Vila Nova de Famalicão, num espaço de aproximadamente 50 m².</p></li>
+        <li><b>2006</b><p>Abertura da clínica de Vila das Aves, mais perto de Santo Tirso, Trofa, Paços de Ferreira e Vizela.</p></li>
+        <li><b>Hoje</b><p>Mais de 250 m² e pacientes de toda a região Norte de Portugal.</p></li>
+      </ol>
+      <p class="motto">“A nossa felicidade é o seu sorriso!”</p>
+    </div>
+  </div>
+</section>
+
+<section id="casos" aria-labelledby="h-casos">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="over">Casos clínicos</span>
+      <h2 id="h-casos">Antes e depois. Arraste para comparar.</h2>
+      <p>Resultados de tratamentos realizados na clínica.</p>
+    </div>
+    <div class="cases">
+      <figure class="case reveal">
+        <div class="ba">
+          <img src="img/caso-implantes-depois.jpg" width="900" height="438" alt="Sorriso depois do tratamento com implante dentário" loading="lazy">
+          <img class="before" src="img/caso-implantes-antes.jpg" width="900" height="449" alt="Sorriso antes do tratamento, com um dente em falta" loading="lazy">
+          <span class="lab l">Antes</span><span class="lab r">Depois</span>
+          <span class="line"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois — implantes dentários">
+          <span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        </div>
+        <figcaption><b>Implantes dentários</b><span>Caso 1</span></figcaption>
+      </figure>
+      <figure class="case reveal">
+        <div class="ba">
+          <img src="img/caso-facetas-depois.jpg" width="900" height="478" alt="Sorriso depois da colocação de facetas dentárias" loading="lazy">
+          <img class="before" src="img/caso-facetas-antes.jpg" width="900" height="480" alt="Sorriso antes da colocação de facetas dentárias" loading="lazy">
+          <span class="lab l">Antes</span><span class="lab r">Depois</span>
+          <span class="line"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois — facetas dentárias">
+          <span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        </div>
+        <figcaption><b>Facetas dentárias</b><span>Caso 3</span></figcaption>
+      </figure>
+      <figure class="case reveal">
+        <div class="ba">
+          <img src="img/caso-protese-depois.jpg" width="900" height="465" alt="Sorriso depois da prótese fixa cerâmica" loading="lazy">
+          <img class="before" src="img/caso-protese-antes.jpg" width="900" height="445" alt="Sorriso antes da prótese fixa cerâmica" loading="lazy">
+          <span class="lab l">Antes</span><span class="lab r">Depois</span>
+          <span class="line"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois — prótese fixa cerâmica">
+          <span class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        </div>
+        <figcaption><b>Prótese fixa cerâmica</b><span>Caso 2</span></figcaption>
+      </figure>
+    </div>
+    <p class="cases-note">Fotografias dos casos clínicos publicados no site da clínica.</p>
+  </div>
+</section>
+
+<section style="padding-top:0" aria-label="Na clínica">
+  <div class="wrap">
+    <div class="gallery">
+      <figure class="big reveal"><img src="img/clinica-cirurgia.jpg" width="1200" height="816" alt="Equipa da clínica durante uma cirurgia" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/clinica-medico.jpg" width="1100" height="602" alt="Médico dentista com lupas de magnificação" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/clinica-medica.jpg" width="1100" height="630" alt="Médica dentista com lupas de magnificação" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/clinica-instrumentos.jpg" width="1100" height="605" alt="Instrumentos de medicina dentária" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/hero.jpg" width="1500" height="975" alt="Médico dentista durante uma consulta" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="equipa" class="team" aria-labelledby="h-eq">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="over">A nossa equipa</span>
+      <h2 id="h-eq">Rostos que vai conhecer.</h2>
+      <p>Uma equipa coordenada entre as duas clínicas.</p>
+    </div>
+    <div class="people">
+      <figure class="person reveal"><div class="ph"><img src="img/eq-miguel.jpg" width="413" height="460" alt="Prof. Dr. Miguel Ângelo Gouveia" loading="lazy"></div><b>Prof. Dr. Miguel Ângelo Gouveia</b><span>Cirurgia Oral, Implantologia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-abilio.jpg" width="403" height="460" alt="Prof. Dr. Abílio Melo" loading="lazy"></div><b>Prof. Dr. Abílio Melo</b><span>Ortodontia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-patricia.jpg" width="420" height="432" alt="Prof.ª Dr.ª Patrícia Fonseca" loading="lazy"></div><b>Prof.ª Dr.ª Patrícia Fonseca</b><span>Oclusão, Reabilitação Oral e Generalista</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-nelma.jpg" width="420" height="420" alt="Dr.ª Nelma Gomes" loading="lazy"></div><b>Dr.ª Nelma Gomes</b><span>Odontopediatria, Ortodontia e Generalista</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-salome.jpg" width="406" height="460" alt="Dr.ª Salomé Ferreira" loading="lazy"></div><b>Dr.ª Salomé Ferreira</b><span>Endodontia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-mariana.jpg" width="420" height="420" alt="Dr.ª Mariana Soares" loading="lazy"></div><b>Dr.ª Mariana Soares</b></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-magda.jpg" width="420" height="420" alt="Dr.ª Magda Ribeiro" loading="lazy"></div><b>Dr.ª Magda Ribeiro</b><span>Generalista</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-vania.jpg" width="420" height="449" alt="Dr.ª Vânia Lobo" loading="lazy"></div><b>Dr.ª Vânia Lobo</b></figure>
+    </div>
+    <p class="assist reveal"><b>Assistentes dentárias:</b> Susana Pereira (coordenadora), Joana Lima, Bernardete Ferreira, Mariana Monteiro e Cristiana Machado.</p>
+  </div>
+</section>
+
+<section class="reviews dark" aria-labelledby="h-op">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="over">Opinião dos nossos pacientes</span>
+      <h2 id="h-op">Nas palavras de quem já nos visitou.</h2>
+    </div>
+    <div class="rv">
+      <blockquote class="reveal"><p>“Sinto-me feliz, radiante com um novo sorriso (…) Muito, muito obrigado. Concretizei mais um sonho.”</p><cite>Sandra Pacheco</cite></blockquote>
+      <blockquote class="reveal"><p>“Uma clínica com muita qualidade, eficiência e simpatia.”</p><cite>Leonardo Gomes</cite></blockquote>
+      <blockquote class="reveal"><p>“Sempre com muito profissionalismo e com excelente atendimento (…)”</p><cite>Elsa Mesquita</cite></blockquote>
+      <blockquote class="reveal"><p>“A minha clínica de eleição.”</p><cite>Susana Braga</cite></blockquote>
+    </div>
+    <p class="rv-note">Opiniões publicadas no site atual da clínica.</p>
+  </div>
+</section>
+
+<section class="agreements" aria-labelledby="h-ac">
+  <div class="wrap">
+    <div class="head center reveal" style="margin-bottom:24px">
+      <span class="over">Acordos</span>
+      <h2 id="h-ac" style="font-size:clamp(1.8rem,4vw,2.4rem)">Trabalhamos com</h2>
+    </div>
+    <div class="ag reveal">
+      <img class="a1" src="img/acordo-advancecare.png" width="300" height="90" alt="AdvanceCare Saúde" loading="lazy">
+      <img class="a2" src="img/acordo-cheque-dentista.jpg" width="600" height="269" alt="Cheque-Dentista — clínica aderente" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="clinicas" class="clinics" aria-labelledby="h-cl">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="over">Onde estamos para si</span>
+      <h2 id="h-cl">Duas clínicas, a mesma equipa.</h2>
+    </div>
+    <div class="cl-grid">
+      <article class="cl reveal">
+        <span class="tag">Clínica</span>
+        <h3>Joane</h3>
+        <address>Av. Dr. Mário Soares nº 2870, 1º andar<br>4770-260 Joane</address>
+        <p class="how"><b>Como chegar:</b> A7, saída Seide, Estrada Nacional 206 (Famalicão–Guimarães), em frente à Riopele, logo depois dos correios de Pousada de Saramagos, sentido Famalicão/Guimarães.</p>
+        <a class="btn btn-l" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Dr.%20M%C3%A1rio%20Soares%202870%2C%204770-260%20Joane" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ver no mapa</a>
+      </article>
+      <article class="cl reveal">
+        <span class="tag">Clínica</span>
+        <h3>Vila das Aves</h3>
+        <address>Rua de Santo Honorato, Edifício Torre, 2º andar, sala D<br>4795-114 Vila das Aves</address>
+        <p class="how"><b>Como chegar:</b> junto ao Centro de Saúde de Vila das Aves, por cima da Farmácia das Fontainhas.</p>
+        <a class="btn btn-l" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20de%20Santo%20Honorato%2C%20Edif%C3%ADcio%20Torre%2C%204795-114%20Vila%20das%20Aves" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ver no mapa</a>
+      </article>
+    </div>
+    <div class="info">
+      <div class="reveal">
+        <h3>Horário</h3>
+        <table>
+          <tr><td>Segunda a sexta</td><td>9h30–12h30 · 14h30–19h00</td></tr>
+          <tr><td>Sábado</td><td>9h30–12h30</td></tr>
+        </table>
+      </div>
+      <div class="reveal">
+        <h3>Contactos</h3>
+        <ul>
+          <li>Telefones: <a href="tel:+351252993296">252 993 296</a> / <a href="tel:+351252881351">252 881 351</a></li>
+          <li>Telemóvel: <a href="tel:+351934465717">934 465 717</a></li>
+          <li>E-mail: <a href="mailto:clinicamiguelangelogouveia@gmail.com">clinicamiguelangelogouveia@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="marcacao" class="book dark" aria-labelledby="h-mc">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <span class="over">Marcações</span>
+      <h2 id="h-mc">Marque a sua consulta.</h2>
+      <p class="lead">Solicite a sua marcação por e-mail ou ligue-nos. Indique a clínica e o horário que lhe dá mais jeito.</p>
+      <div class="direct">
+        <a href="tel:+351252993296"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>252 993 296 / 252 881 351<small>Telefones da clínica</small></span></a>
+        <a href="tel:+351934465717"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>934 465 717<small>Telemóvel</small></span></a>
+        <a href="mailto:clinicamiguelangelogouveia@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>clinicamiguelangelogouveia@gmail.com<small>Marcações por e-mail</small></span></a>
+      </div>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <h3>Pedido de marcação</h3>
+      <div class="two">
+        <div><label for="f-n">Nome *</label><input id="f-n" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-t">Telefone *</label><input id="f-t" name="Telefone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="two">
+        <div><label for="f-c">Clínica</label><select id="f-c" name="Clínica"><option>Joane</option><option>Vila das Aves</option></select></div>
+        <div><label for="f-h">Preferência de horário</label><select id="f-h" name="Preferência"><option>Manhã</option><option>Tarde</option><option>Sábado de manhã</option></select></div>
+      </div>
+      <div><label for="f-e">Motivo da consulta</label>
+        <select id="f-e" name="Motivo"><option>Consulta de medicina dentária</option><option>Implantologia / cirurgia oral</option><option>Ortodontia</option><option>Odontopediatria (crianças)</option><option>Endodontia</option><option>Oclusão e ATM</option><option>Próteses dentárias</option><option>Estética dentária</option><option>Cheque-Dentista</option></select></div>
+      <div><label for="f-m">Mensagem</label><textarea id="f-m" name="Mensagem" placeholder="Conte-nos brevemente o que precisa"></textarea></div>
+      <button class="btn btn-n" type="submit">Pedir marcação</button>
+      <p class="note">Ao enviar, abre-se o seu programa de e-mail com o pedido pronto para a clínica.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <a class="brand" href="#inicio"><img src="img/logo-simbolo.png" width="240" height="240" alt="" loading="lazy"><span>Dr. Miguel Ângelo Gouveia<small>Clínica de Medicina Dentária</small></span></a>
+      <p style="margin:14px 0 0;max-width:30em">Joane e Vila das Aves. “A nossa felicidade é o seu sorriso!”</p>
+    </div>
+    <div><strong>Contactos</strong><ul><li><a href="tel:+351252993296">252 993 296</a></li><li><a href="tel:+351934465717">934 465 717</a></li><li><a href="mailto:clinicamiguelangelogouveia@gmail.com">E-mail</a></li></ul></div>
+    <div><strong>Redes sociais</strong><ul><li><a href="https://www.facebook.com/medicinadentariamiguelangelo/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/clinicamiguelangelogouveia/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+  </div>
+  <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial da Clínica Dr. Miguel Ângelo Gouveia. Fotos e textos do site atual.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351252993296"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a class="go" href="#marcacao">Marcar consulta</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3500);
+  }
+  document.querySelectorAll('.ba').forEach(function(b){
+    var r=b.querySelector('input');
+    r.addEventListener('input',function(){b.style.setProperty('--p',r.value+'%');});
+  });
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true;
+    f.querySelectorAll('[required]').forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#b91c1c';}else{i.style.borderColor='';}});
+    if(!ok){f.querySelector('[required]').focus();return;}
+    var lines=[];new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    location.href='mailto:clinicamiguelangelogouveia@gmail.com?subject='+encodeURIComponent('Pedido de marcação — '+f.querySelector('#f-c').value)+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>
