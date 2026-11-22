@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hospital Veterinário das Cortes — Leiria | Aberto 24 horas</title>
+<meta name="description" content="Hospital Veterinário das Cortes, em Cortes, Leiria. Aberto 24 horas, todos os dias. Ligue 919 110 070 ou fale connosco por WhatsApp.">
+<meta name="theme-color" content="#0a1c26">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0a1c26; --night-2:#10293a; --night-3:#173649;
+  --teal:#3fd0c0; --teal-d:#0f766e; --coral:#ff8a65; --coral-d:#c2410c;
+  --cream:#fbf6ee; --sand:#f3eadb; --line:#e7dccb;
+  --text:#14232c; --muted:#5a6870; --muted-d:#9fb3bf;
+  --r:20px; --wrap:1160px;
+  --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.6;font-size:16px;overflow-x:clip}
+a{color:inherit}
+svg{display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.1;letter-spacing:-.015em;margin:0 0 .5em}
+h2{font-size:clamp(1.8rem,4.6vw,2.8rem)}
+h3{font-size:1.2rem;font-family:var(--sans);letter-spacing:0}
+p{margin:0 0 1em}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:.55em;font:700 .76rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--teal-d)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:currentColor;display:block}
+.dark .eyebrow{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 1.35em;border-radius:14px;font:700 1rem/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:#25d366;color:#062b16}
+.btn-wa:hover{background:#3fe07c}
+.btn-coral{background:var(--coral);color:#2a0d02}
+.btn-coral:hover{background:#ffa384}
+.btn-ghost{border-color:rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--night);color:#fff}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+
+/* Cabeçalho */
+.top{position:sticky;top:0;z-index:50;background:rgba(10,28,38,.9);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.brand svg{width:38px;height:38px;flex:none}
+.brand span{min-width:0}
+.brand b{font:700 .95rem/1.15 var(--serif);display:block}
+.brand small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.nav{display:none;gap:26px;font-size:.95rem}
+.nav a{color:#cfdbe2;text-decoration:none}
+.nav a:hover{color:#fff}
+.top-call{display:inline-flex;align-items:center;gap:.5em;min-height:42px;padding:0 .95em;border-radius:12px;background:var(--coral);color:#2a0d02;text-decoration:none;font-weight:700;font-size:.92rem;flex:none}
+.top-call svg{width:18px;height:18px}
+.top-call span{display:none}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:40px 0 70px;background:
+  radial-gradient(900px 420px at 90% 0%,rgba(63,208,192,.16),transparent 60%),
+  radial-gradient(700px 380px at 0% 100%,rgba(255,138,101,.12),transparent 60%),
+  linear-gradient(180deg,var(--night) 0%,#0c2230 100%)}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.7}
+.hero-grid{position:relative;display:grid;gap:40px;align-items:center}
+.live{display:inline-flex;align-items:center;gap:.6em;padding:.45em .9em;border-radius:999px;background:rgba(63,208,192,.12);border:1px solid rgba(63,208,192,.35);color:#c9f5ef;font-size:.85rem;font-weight:500}
+.live .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(63,208,192,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,208,192,.55)}70%{box-shadow:0 0 0 10px rgba(63,208,192,0)}100%{box-shadow:0 0 0 0 rgba(63,208,192,0)}}
+.hero h1{font-size:clamp(2.1rem,7vw,4rem);margin:.5em 0 .35em}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero .lead{color:#c3d2db;font-size:1.08rem;max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted-d);font-size:.9rem;margin:0;padding:0;list-style:none}
+.hero-meta li{display:flex;align-items:center;gap:.45em}
+.hero-meta svg{width:16px;height:16px;color:var(--teal);flex:none}
+.clock{position:relative;max-width:440px;width:100%;margin:0 auto}
+.clock svg{width:100%;height:auto}
+.clock .tag{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);background:var(--cream);color:var(--night);border-radius:14px;padding:10px 16px;font-size:.82rem;font-weight:500;box-shadow:0 18px 40px rgba(0,0,0,.35);width:max-content;max-width:92%;text-align:center}
+.clock .tag b{color:var(--coral-d)}
+
+/* Faixa de confiança */
+.trust{background:var(--night-2);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:0}
+.stat{background:var(--night-2);padding:22px 18px}
+.stat strong{display:flex;align-items:center;gap:.3em;font:700 clamp(1.6rem,5vw,2.3rem)/1 var(--serif);color:#fff}
+.stat strong svg{width:22px;height:22px;color:#fbbf24}
+.stat span{display:block;color:var(--muted-d);font-size:.88rem;margin-top:6px}
+
+section{padding:78px 0}
+.sec-head{max-width:700px;margin-bottom:36px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* Manifesto */
+.manifesto{background:var(--sand)}
+.quote{display:grid;gap:26px;align-items:center}
+.quote blockquote{margin:0;font:600 clamp(1.5rem,4.4vw,2.4rem)/1.2 var(--serif);letter-spacing:-.01em}
+.quote blockquote span{color:var(--teal-d);font-style:italic}
+.quote cite{display:block;margin-top:14px;font:500 .9rem/1.4 var(--sans);font-style:normal;color:var(--muted)}
+.pets{max-width:360px;width:100%;margin:0 auto}
+
+/* Serviços */
+.services{display:grid;gap:16px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;gap:16px;align-items:flex-start;transition:transform .25s ease,box-shadow .25s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(10,28,38,.08)}
+.svc .ic{flex:none;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:#e3f6f3;color:var(--teal-d)}
+.svc .ic.c{background:#ffeae2;color:var(--coral-d)}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{margin:.1em 0 .3em}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.note{margin-top:20px;font-size:.88rem;color:var(--muted)}
+
+/* Urgência */
+.urgent{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.urgent-box{display:grid;gap:26px;align-items:center}
+.urgent h2{color:#fff}
+.urgent p{color:#c3d2db}
+.signs{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.signs li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;background:var(--night-2);border:1px solid rgba(255,255,255,.07);font-size:.95rem;color:#dbe6ec}
+.signs svg{width:20px;height:20px;color:var(--coral);flex:none;margin-top:2px}
+.urgent .fine{font-size:.82rem;color:var(--muted-d);margin-top:14px}
+
+/* Onde estamos */
+.where-grid{display:grid;gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-family:var(--serif);font-size:1.35rem}
+.card address{font-style:normal;color:var(--muted)}
+.card a{text-decoration:none;font-weight:700;overflow-wrap:anywhere}
+.card a:hover{text-decoration:underline}
+.lines{display:grid;gap:8px;margin:14px 0 0}
+.lines a{display:flex;align-items:center;gap:.6em}
+.lines svg{width:18px;height:18px;color:var(--teal-d);flex:none}
+.hours-big{display:flex;align-items:baseline;gap:.25em;font:700 3.2rem/1 var(--serif);color:var(--night);margin:6px 0 8px}
+.hours-big small{font:500 1rem/1 var(--sans);color:var(--muted)}
+.map{border-radius:var(--r);overflow:hidden;background:var(--night);min-height:220px;position:relative}
+.map svg{width:100%;height:100%;min-height:220px}
+.map a{position:absolute;left:16px;bottom:16px}
+
+/* Contacto */
+.contact{background:linear-gradient(180deg,var(--night) 0%,#0c2230 100%);color:#fff}
+.contact-grid{display:grid;gap:32px}
+.contact .lead{color:#c3d2db}
+.direct{display:grid;gap:10px;margin-top:22px}
+.direct a{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;background:var(--night-2);border:1px solid rgba(255,255,255,.08);text-decoration:none;overflow-wrap:anywhere}
+.direct a:hover{border-color:var(--teal)}
+.direct svg{width:22px;height:22px;color:var(--teal);flex:none}
+.direct small{display:block;color:var(--muted-d);font-size:.8rem}
+form{background:var(--cream);color:var(--text);border-radius:22px;padding:24px;display:grid;gap:14px}
+form h3{margin:0;font-family:var(--serif);font-size:1.4rem}
+.row{display:grid;gap:14px}
+label{display:block;font-size:.85rem;font-weight:700;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:12px;border:1.5px solid #d8ccb9;background:#fff;color:var(--text)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal-d);box-shadow:0 0 0 3px rgba(15,118,110,.18)}
+textarea{min-height:100px;resize:vertical}
+form .btn{width:100%}
+.form-note{font-size:.82rem;color:var(--muted);margin:0}
+
+/* Rodapé */
+footer{background:#06131a;color:#9fb3bf;padding:44px 0 0;font-size:.92rem}
+.foot{display:grid;gap:24px;padding-bottom:30px}
+.foot a{color:#dbe6ec;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.social{display:flex;gap:10px;margin-top:14px}
+.social a{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--night-2)}
+.social svg{width:18px;height:18px}
+.demo{border-top:1px solid #15262f;padding:16px 0 96px;font-size:.8rem;color:#7d919c;text-align:center}
+
+/* Barra fixa no telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(10,28,38,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{min-height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:.5em;font:700 .95rem/1 var(--sans);text-decoration:none}
+.mbar .call{background:var(--coral);color:#2a0d02}
+.mbar .wa{background:#25d366;color:#062b16}
+.mbar svg{width:19px;height:19px}
+
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .live .dot{animation:none}
+  .btn,.svc{transition:none}
+  .hand{animation:none!important}
+}
+
+@media (min-width:640px){
+  .top-call span{display:inline}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .row.two{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .where-grid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .hero{padding:72px 0 100px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:60px}
+  .quote{grid-template-columns:1.3fr .7fr;gap:60px}
+  .services{grid-template-columns:repeat(3,1fr)}
+  .urgent-box{grid-template-columns:1fr 1fr;gap:60px}
+  .where-grid{grid-template-columns:1fr 1fr 1.2fr}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .foot{grid-template-columns:1.5fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:104px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Hospital Veterinário das Cortes — início">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#3fd0c0"/><path d="M20 30.5c-5.8-3.9-9.5-7.3-9.5-11.4a4.9 4.9 0 0 1 9.5-1.7 4.9 4.9 0 0 1 9.5 1.7c0 4.1-3.7 7.5-9.5 11.4z" fill="#0a1c26"/><path d="M20 15.2v7.6M16.2 19h7.6" stroke="#3fd0c0" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span><b>Hospital Veterinário das Cortes</b><small>Leiria</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#urgencias">Urgências</a>
+      <a href="#onde">Onde estamos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="top-call" href="tel:+351919110070" aria-label="Ligar para 919 110 070">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>919 110 070</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero dark" aria-labelledby="h1">
+  <svg class="stars" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="#ffffff">
+      <circle cx="80" cy="60" r="1.4"/><circle cx="210" cy="140" r="1"/><circle cx="330" cy="40" r="1.6"/><circle cx="460" cy="110" r="1"/><circle cx="590" cy="30" r="1.2"/><circle cx="700" cy="160" r="1"/><circle cx="820" cy="70" r="1.5"/><circle cx="960" cy="40" r="1"/><circle cx="1080" cy="120" r="1.3"/><circle cx="1150" cy="30" r="1"/><circle cx="140" cy="300" r="1"/><circle cx="520" cy="260" r="1.2"/><circle cx="1010" cy="280" r="1"/><circle cx="380" cy="420" r="1"/><circle cx="880" cy="460" r="1.2"/><circle cx="40" cy="520" r="1"/><circle cx="1180" cy="520" r="1.4"/>
+    </g>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="live"><span class="dot" aria-hidden="true"></span>Aberto 24 horas · todos os dias</span>
+      <h1 id="h1">Quando o seu animal precisa, <em>estamos cá</em> — de dia e de noite.</h1>
+      <p class="lead">Hospital veterinário nas Cortes, em Leiria. Ligue ou envie uma mensagem por WhatsApp e diga-nos o que se passa com o seu cão, gato ou outro animal de companhia.</p>
+      <div class="hero-cta">
+        <a class="btn btn-coral" href="tel:+351919110070">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Ligar 919 110 070</a>
+        <a class="btn btn-ghost" href="https://wa.me/351919110070" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          WhatsApp</a>
+      </div>
+      <ul class="hero-meta">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cortes, Leiria</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Registo DGAV PT20013HS</li>
+      </ul>
+    </div>
+    <div class="clock reveal" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <defs>
+          <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3fd0c0"/><stop offset="1" stop-color="#ff8a65"/></linearGradient>
+          <radialGradient id="face" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#173649"/><stop offset="1" stop-color="#0d2533"/></radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="182" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="22"/>
+        <circle cx="200" cy="200" r="182" fill="none" stroke="url(#ring)" stroke-width="22" stroke-linecap="round" stroke-dasharray="1143" stroke-dashoffset="0" transform="rotate(-90 200 200)"/>
+        <circle cx="200" cy="200" r="160" fill="url(#face)"/>
+        <g stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-linecap="round">
+          <line x1="200" y1="52" x2="200" y2="66"/><line x1="348" y1="200" x2="334" y2="200"/><line x1="200" y1="348" x2="200" y2="334"/><line x1="52" y1="200" x2="66" y2="200"/>
+        </g>
+        <g fill="#9fb3bf" font-family="DM Sans,system-ui,sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+          <text x="200" y="90">00</text><text x="312" y="205">06</text><text x="200" y="322">12</text><text x="88" y="205">18</text>
+        </g>
+        <!-- lua e sol -->
+        <path d="M158 140a26 26 0 1 0 30 32 21 21 0 1 1-30-32z" fill="#f3eadb"/>
+        <circle cx="246" cy="262" r="15" fill="#ff8a65"/>
+        <g stroke="#ff8a65" stroke-width="3" stroke-linecap="round"><line x1="246" y1="236" x2="246" y2="230"/><line x1="246" y1="288" x2="246" y2="294"/><line x1="220" y1="262" x2="214" y2="262"/><line x1="272" y1="262" x2="278" y2="262"/><line x1="228" y1="244" x2="224" y2="240"/><line x1="264" y1="280" x2="268" y2="284"/><line x1="264" y1="244" x2="268" y2="240"/><line x1="228" y1="280" x2="224" y2="284"/></g>
+        <!-- pata ao centro -->
+        <g fill="#3fd0c0" transform="translate(200 200)">
+          <ellipse cx="0" cy="10" rx="20" ry="16"/>
+          <ellipse cx="-22" cy="-12" rx="7.5" ry="9.5" transform="rotate(-20 -22 -12)"/>
+          <ellipse cx="-8" cy="-24" rx="7.5" ry="9.5"/>
+          <ellipse cx="8" cy="-24" rx="7.5" ry="9.5"/>
+          <ellipse cx="22" cy="-12" rx="7.5" ry="9.5" transform="rotate(20 22 -12)"/>
+        </g>
+        <g class="hand" style="transform-origin:200px 200px;animation:spin 24s linear infinite">
+          <line x1="200" y1="200" x2="200" y2="76" stroke="#fbf6ee" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="200" cy="76" r="6" fill="#fbf6ee"/>
+        </g>
+        <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+      </svg>
+      <div class="tag"><b>24 h</b> · todos os dias, segundo a ficha do Google</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust dark" aria-label="O hospital em números">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><strong>4,7<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></svg></strong><span>nota no Google</span></div>
+      <div class="stat"><strong>406</strong><span>avaliações no Google</span></div>
+      <div class="stat"><strong>24 h</strong><span>aberto todos os dias</span></div>
+      <div class="stat"><strong>DGAV</strong><span>hospital registado · PT20013HS</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="manifesto" aria-labelledby="h-man">
+  <div class="wrap quote">
+    <div class="reveal">
+      <span class="eyebrow"><i></i>O nosso compromisso</span>
+      <h2 id="h-man" class="sr-only">O nosso compromisso</h2>
+      <blockquote>“O bem estar da sua Mascote é o mais importante <span>todos os dias</span>.”</blockquote>
+      <cite>Hospital Veterinário das Cortes, na sua página de Facebook</cite>
+    </div>
+    <svg class="pets reveal" viewBox="0 0 360 280" aria-hidden="true">
+      <ellipse cx="180" cy="262" rx="150" ry="12" fill="#e7dccb"/>
+      <!-- cão -->
+      <g fill="#0a1c26">
+        <path d="M70 250c-6-50 6-96 44-116 10-5 22-7 34-5l10-30c3-9 15-10 20-2l8 14c16 4 28 16 32 32 3 12-4 22-16 24l-20 3c-2 26 4 52 12 80z"/>
+        <path d="M150 99c-10-6-22-4-28 6l-6 10c10 2 22-2 30-10z"/>
+      </g>
+      <circle cx="176" cy="122" r="4" fill="#fbf6ee"/>
+      <path d="M118 210c18 6 40 6 56-2" stroke="#3fd0c0" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <circle cx="148" cy="222" r="8" fill="#ff8a65"/>
+      <!-- gato -->
+      <g fill="#0f766e">
+        <path d="M236 250c-8-36-2-74 20-92l-4-34 22 18c8-2 16-2 24 0l22-18-4 34c22 18 26 56 18 92z"/>
+        <path d="M330 248c26-4 30-40 6-46" stroke="#0f766e" stroke-width="12" stroke-linecap="round" fill="none"/>
+      </g>
+      <circle cx="268" cy="176" r="4" fill="#fbf6ee"/><circle cx="296" cy="176" r="4" fill="#fbf6ee"/>
+      <path d="M276 190l6 4 6-4" stroke="#fbf6ee" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <!-- coração -->
+      <path d="M214 74c-8-6-14-11-14-17a6.5 6.5 0 0 1 14-3 6.5 6.5 0 0 1 14 3c0 6-6 11-14 17z" fill="#ff8a65"/>
+    </svg>
+  </div>
+</section>
+
+<section id="servicos" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><i></i>Serviços</span>
+      <h2 id="h-svc">Cuidados para o seu animal, num só lugar.</h2>
+      <p>Da consulta de rotina à urgência a meio da noite. Fale connosco para saber o que é preciso no caso do seu animal.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v6a5 5 0 0 0 10 0V3"/><path d="M10 14v2a5 5 0 0 0 10 0v-3"/><circle cx="20" cy="11" r="2"/></svg></div><div><h3>Consultas</h3><p>Avaliação clínica do seu cão, gato ou outro animal de companhia.</p></div></article>
+      <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3a2.4 2.4 0 0 1-3.4 0l-.6-.6a2.4 2.4 0 0 1 0-3.4L15 5"/><path d="m9 11 4 4M5 19l-3 3"/></svg></div><div><h3>Vacinação e desparasitação</h3><p>Prevenção ao longo da vida do animal, com o plano indicado em consulta.</p></div></article>
+      <article class="svc reveal"><div class="ic c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div><h3>Urgências</h3><p>Aberto 24 horas. Ligue antes de sair de casa, para estarmos preparados.</p></div></article>
+      <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4 8.5 15.5M4 20l4-4M14 4h6v6"/><circle cx="6" cy="18" r="2"/></svg></div><div><h3>Cirurgia</h3><p>Intervenções cirúrgicas, com indicação e preparação explicadas em consulta.</p></div></article>
+      <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7 15h10"/></svg></div><div><h3>Exames de diagnóstico</h3><p>Exames para perceber o que se passa e decidir o tratamento certo.</p></div></article>
+      <article class="svc reveal"><div class="ic c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div><div><h3>Dúvidas por WhatsApp</h3><p>Envie uma mensagem para o 919 110 070 e diga-nos como podemos ajudar.</p></div></article>
+    </div>
+    <p class="note reveal">Lista ilustrativa para esta prévia. Os serviços exatos serão confirmados com o hospital.</p>
+  </div>
+</section>
+
+<section id="urgencias" class="urgent dark" aria-labelledby="h-urg">
+  <div class="wrap urgent-box">
+    <div class="reveal">
+      <span class="eyebrow"><i></i>Urgências</span>
+      <h2 id="h-urg">Na dúvida, ligue. A qualquer hora.</h2>
+      <p>Se o seu animal mostra sinais que o preocupam, telefone antes de sair de casa. Assim explica o que está a acontecer e chega ao hospital já com indicações.</p>
+      <div class="hero-cta">
+        <a class="btn btn-coral" href="tel:+351919110070">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Ligar agora</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <ul class="signs">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Dificuldade em respirar ou gengivas pálidas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Atropelamento, queda ou ferida que sangra</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Suspeita de ter comido algo tóxico</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>Vómitos ou diarreia que não param, ou barriga inchada</li>
+      </ul>
+      <p class="fine">Exemplos gerais para orientação. Não substituem a avaliação de um médico veterinário.</p>
+    </div>
+  </div>
+</section>
+
+<section id="onde" aria-labelledby="h-onde">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><i></i>Onde estamos</span>
+      <h2 id="h-onde">Nas Cortes, em Leiria.</h2>
+    </div>
+    <div class="where-grid">
+      <div class="card reveal">
+        <h3>Morada</h3>
+        <address>Hospital Veterinário das Cortes<br>Cortes, Leiria</address>
+        <div class="lines">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Hospital%20Veterin%C3%A1rio%20das%20Cortes%20Leiria" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Abrir no Google Maps</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>Horário</h3>
+        <div class="hours-big">24<small>horas · todos os dias</small></div>
+        <p style="margin:0;color:var(--muted);font-size:.92rem">Horário conforme a ficha pública do Google. Em caso de dúvida, confirme por telefone.</p>
+      </div>
+      <div class="map reveal" aria-hidden="true">
+        <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#10293a"/>
+          <g stroke="#173649" stroke-width="16" fill="none" stroke-linecap="round">
+            <path d="M-20 170C80 150 140 90 230 100s150 60 200 40"/>
+            <path d="M120 -20c10 80 40 150 20 280"/>
+          </g>
+          <g stroke="#1f4a60" stroke-width="5" fill="none" stroke-linecap="round">
+            <path d="M-20 60c90 20 160 0 240-30"/><path d="M260 260c-10-60 20-120 80-160"/><path d="M20 240c40-40 80-50 130-40"/>
+          </g>
+          <path d="M-20 170C80 150 140 90 230 100s150 60 200 40" stroke="#3fd0c0" stroke-width="2" stroke-dasharray="6 8" fill="none" opacity=".6"/>
+          <g transform="translate(226 92)">
+            <circle r="30" fill="rgba(255,138,101,.18)"/>
+            <path d="M0 14c-9-8-15-14-15-21a15 15 0 0 1 30 0c0 7-6 13-15 21z" fill="#ff8a65" transform="translate(0 -12)"/>
+            <circle cy="-19" r="5" fill="#0a1c26"/>
+          </g>
+          <text x="20" y="34" fill="#9fb3bf" font-family="DM Sans,system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CORTES · LEIRIA</text>
+        </svg>
+        <a class="btn btn-coral" href="https://www.google.com/maps/search/?api=1&amp;query=Hospital%20Veterin%C3%A1rio%20das%20Cortes%20Leiria" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact dark" aria-labelledby="h-cont">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow"><i></i>Contacto</span>
+      <h2 id="h-cont">Fale connosco agora.</h2>
+      <p class="lead">Para urgências, ligue. Para marcar consulta ou tirar dúvidas, pode também enviar uma mensagem por WhatsApp.</p>
+      <div class="direct">
+        <a href="tel:+351919110070"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>919 110 070<small>Telemóvel · chamada para rede móvel nacional</small></span></a>
+        <a href="tel:+351244834004"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h10M7 13h6"/></svg><span>244 834 004<small>Telefone fixo · chamada para rede fixa nacional</small></span></a>
+        <a href="https://wa.me/351919110070" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>WhatsApp<small>919 110 070</small></span></a>
+      </div>
+    </div>
+    <form class="reveal" id="form" novalidate>
+      <h3>Marcar consulta por WhatsApp</h3>
+      <div class="row two">
+        <div><label for="f-nome">O seu nome *</label><input id="f-nome" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-animal">Nome do animal</label><input id="f-animal" name="Animal"></div>
+      </div>
+      <div class="row two">
+        <div><label for="f-esp">Espécie</label>
+          <select id="f-esp" name="Espécie"><option>Cão</option><option>Gato</option><option>Outro</option></select></div>
+        <div><label for="f-mot">Motivo</label>
+          <select id="f-mot" name="Motivo"><option>Consulta</option><option>Vacinação</option><option>Dúvida</option><option>Outro</option></select></div>
+      </div>
+      <div><label for="f-msg">Conte-nos o que se passa *</label><textarea id="f-msg" name="Mensagem" required placeholder="Ex.: o meu gato não come desde ontem"></textarea></div>
+      <button class="btn btn-wa" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+        Enviar pelo WhatsApp</button>
+      <p class="form-note">Ao enviar, abre-se o WhatsApp com a mensagem pronta para o 919 110 070. Em urgência, ligue diretamente.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#inicio" aria-label="Hospital Veterinário das Cortes — início">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#3fd0c0"/><path d="M20 30.5c-5.8-3.9-9.5-7.3-9.5-11.4a4.9 4.9 0 0 1 9.5-1.7 4.9 4.9 0 0 1 9.5 1.7c0 4.1-3.7 7.5-9.5 11.4z" fill="#0a1c26"/><path d="M20 15.2v7.6M16.2 19h7.6" stroke="#3fd0c0" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span><b>Hospital Veterinário das Cortes</b><small>Leiria</small></span>
+      </a>
+      <p style="margin:14px 0 0;max-width:30em">Hospital veterinário em Cortes, Leiria. Aberto 24 horas, todos os dias. Registo DGAV PT20013HS.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/Hvetcortes" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+        <a href="https://www.instagram.com/hvetcortes/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div><strong style="color:#fff">Navegação</strong><ul><li><a href="#servicos">Serviços</a></li><li><a href="#urgencias">Urgências</a></li><li><a href="#onde">Onde estamos</a></li></ul></div>
+    <div><strong style="color:#fff">Contacto</strong><ul><li><a href="tel:+351919110070">919 110 070</a></li><li><a href="tel:+351244834004">244 834 004</a></li><li><a href="https://wa.me/351919110070" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+  </div>
+  <p class="demo wrap">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de Hospital Veterinário das Cortes. Dados públicos da ficha do Google e de diretórios.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a class="call" href="tel:+351919110070"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar 24 h</a>
+  <a class="wa" href="https://wa.me/351919110070" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3500);
+  }
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var req=f.querySelectorAll('[required]'),first=null;
+    req.forEach(function(i){if(!i.value.trim()){i.style.borderColor='#c2410c';if(!first)first=i;}else{i.style.borderColor='';}});
+    if(first){first.focus();return;}
+    var lines=['Olá! Gostaria de marcar consulta / tirar uma dúvida.'];
+    new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    window.open('https://wa.me/351919110070?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>

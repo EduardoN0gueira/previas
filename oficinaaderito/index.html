@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>A Oficina do Adérito — Reparação e manutenção automóvel em Leiria</title>
+<meta name="description" content="Oficina multimarca de reparação e manutenção automóvel na Rua Mala de Uva, em Leiria. 4,8 estrelas e 85 avaliações no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#111214; --asphalt-2:#18191c; --steel:#22252a; --steel-2:#2d3137;
+  --chalk:#f1eee7; --chalk-2:#e6e1d6; --text:#1b1c1e; --muted:#5d6067; --muted-d:#9ea3ab;
+  --amber:#ffb703; --amber-d:#d99800; --red:#e5482e;
+  --r:14px; --wrap:1180px;
+  --cond:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --sans:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--text);background:var(--chalk);line-height:1.6;font-size:16.5px;overflow-x:clip}
+a{color:inherit}
+svg{display:block}
+h1,h2,h3{font-family:var(--cond);font-weight:800;line-height:.98;letter-spacing:.005em;text-transform:uppercase;margin:0 0 .45em}
+h2{font-size:clamp(2.1rem,6vw,3.6rem)}
+h3{font-size:1.45rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.tag{display:inline-flex;align-items:center;gap:.55em;font:700 .82rem/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--amber-d)}
+.tag::before{content:"";width:26px;height:8px;background:repeating-linear-gradient(-45deg,var(--amber) 0 5px,var(--asphalt) 5px 10px)}
+.dark .tag{color:var(--amber)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 1.5em;border-radius:10px;font:700 1.12rem/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-amber{background:var(--amber);color:var(--asphalt)}
+.btn-amber:hover{background:#ffc93c}
+.btn-ghost{border-color:rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--asphalt);color:#fff}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* Cabeçalho */
+.top{position:sticky;top:0;z-index:50;background:rgba(17,18,20,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.logo .badge{width:40px;height:40px;border-radius:10px;background:var(--amber);display:grid;place-items:center;flex:none}
+.logo .badge svg{width:24px;height:24px;color:var(--asphalt)}
+.logo b{display:block;font:800 1.2rem/1 var(--cond);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.logo small{display:block;font:600 .68rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-top:3px}
+.nav{display:none;gap:26px;font:700 1rem/1 var(--cond);letter-spacing:.1em;text-transform:uppercase}
+.nav a{text-decoration:none;color:#c9ccd1}
+.nav a:hover{color:var(--amber)}
+.top .btn{min-height:42px;font-size:1rem;padding:0 1em}
+.top-call{display:none;align-items:center;gap:.45em;color:#fff;text-decoration:none;font:700 1.1rem/1 var(--cond);letter-spacing:.06em}
+.top-call svg{width:18px;height:18px;color:var(--amber)}
+.top-actions{display:flex;align-items:center;gap:18px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:38px 0 0;background:
+  radial-gradient(800px 420px at 100% 0%,rgba(255,183,3,.14),transparent 60%),
+  linear-gradient(180deg,var(--asphalt),#0c0d0e)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,#000 30%,transparent 95%);-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 95%);pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:34px;align-items:center;padding-bottom:56px}
+.hero h1{font-size:clamp(2.7rem,11vw,5.6rem);margin:.35em 0 .3em}
+.hero h1 span{color:var(--amber)}
+.hero .lead{color:#c4c8ce;font-size:1.1rem;max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 0}
+.gauge-box{position:relative;max-width:460px;width:100%;margin:0 auto;background:linear-gradient(160deg,var(--steel),var(--asphalt-2));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:26px 22px 22px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.gauge-box svg{width:100%;height:auto}
+.needle{transform-origin:200px 200px;transform:rotate(-120deg);transition:transform 1.8s cubic-bezier(.2,.9,.25,1.15)}
+.gauge-box.on .needle{transform:rotate(110deg)}
+.gauge-cap{display:flex;justify-content:space-between;gap:12px;margin-top:6px;padding-top:16px;border-top:1px dashed rgba(255,255,255,.14);font-size:.92rem;color:#c4c8ce}
+.gauge-cap b{display:block;font:800 1.6rem/1 var(--cond);color:#fff;letter-spacing:.02em}
+.hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--amber) 0 14px,var(--asphalt) 14px 28px)}
+
+/* Números */
+.stats{background:var(--asphalt-2);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07);padding:0}
+.stat{background:var(--asphalt-2);padding:22px 20px}
+.stat strong{display:block;font:800 clamp(1.7rem,6vw,3rem)/1 var(--cond);color:var(--amber);overflow-wrap:anywhere}
+.stat span{font-size:.92rem;color:var(--muted-d)}
+
+/* Citação */
+.say{background:var(--amber);color:var(--asphalt);padding:44px 0}
+.say .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 30px}
+.say blockquote{margin:0;font:800 clamp(2rem,7vw,3.6rem)/1 var(--cond);text-transform:uppercase;letter-spacing:.01em}
+.say cite{display:block;font:600 .95rem/1.4 var(--sans);font-style:normal;margin-top:10px;opacity:.8;text-transform:none;letter-spacing:0}
+
+section{padding:80px 0}
+.sec-head{max-width:720px;margin-bottom:40px}
+.sec-head p{color:var(--muted);font-size:1.06rem}
+.dark{background:var(--asphalt);color:#fff}
+.dark .sec-head p{color:var(--muted-d)}
+
+/* Serviços */
+.svc{display:grid;gap:16px}
+.svc article{position:relative;background:#fff;border-radius:var(--r);padding:26px 22px 24px;border:1px solid var(--chalk-2);border-top:5px solid var(--asphalt);transition:transform .25s ease,box-shadow .25s ease}
+.svc article:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(17,18,20,.12);border-top-color:var(--amber)}
+.svc .ic{width:54px;height:54px;border-radius:12px;background:var(--asphalt);color:var(--amber);display:grid;place-items:center;margin-bottom:18px}
+.svc .ic svg{width:28px;height:28px}
+.svc p{color:var(--muted);margin:0;font-size:.98rem}
+.svc .n{position:absolute;right:18px;top:16px;font:800 1.6rem/1 var(--cond);color:var(--chalk-2)}
+
+/* Mercedes / especialidade */
+.spec-grid{display:grid;gap:34px;align-items:center}
+.spec-grid .big{font:800 clamp(2.4rem,8vw,4.4rem)/.95 var(--cond);text-transform:uppercase;margin:0 0 .4em}
+.spec-grid .big span{color:var(--amber)}
+.spec-grid p{color:#c4c8ce}
+.checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:#e5e7ea}
+.checks svg{width:22px;height:22px;color:var(--amber);flex:none;margin-top:2px}
+.bench{background:var(--steel);border-radius:22px;border:1px solid rgba(255,255,255,.08);padding:20px;overflow:hidden}
+.bench svg{width:100%;height:auto}
+.gear{transform-origin:center;transform-box:fill-box;animation:rot 14s linear infinite}
+.gear.rev{animation-direction:reverse;animation-duration:9s}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* Passos */
+.steps{display:grid;gap:14px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;background:#fff;border-radius:var(--r);padding:24px 22px;border:1px solid var(--chalk-2);overflow:hidden}
+.steps li::before{counter-increment:s;content:"0" counter(s);display:block;font:800 3rem/1 var(--cond);color:var(--amber);margin-bottom:8px}
+.steps p{margin:0;color:var(--muted)}
+
+/* Onde */
+.where{background:var(--chalk-2)}
+.where-grid{display:grid;gap:18px}
+.box{background:#fff;border-radius:var(--r);padding:26px;border:1px solid #d9d3c6}
+.box h3{display:flex;align-items:center;gap:10px}
+.box h3 svg{width:24px;height:24px;color:var(--amber-d)}
+.box address{font-style:normal;font-size:1.08rem;margin-bottom:14px}
+.link{display:inline-flex;align-items:center;gap:.45em;font-weight:700;color:var(--asphalt);text-decoration:none;border-bottom:3px solid var(--amber);padding-bottom:2px}
+.link svg{width:18px;height:18px}
+.road{border-radius:var(--r);overflow:hidden;background:var(--asphalt)}
+.road svg{width:100%;height:auto}
+
+/* Contacto */
+.contact-grid{display:grid;gap:34px}
+.direct{display:grid;gap:10px;margin-top:22px}
+.direct a{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:12px;background:var(--steel);border:1px solid rgba(255,255,255,.08);text-decoration:none;overflow-wrap:anywhere}
+.direct a:hover{border-color:var(--amber)}
+.direct svg{width:22px;height:22px;color:var(--amber);flex:none}
+.direct small{display:block;color:var(--muted-d);font-size:.82rem}
+form{background:var(--chalk);color:var(--text);border-radius:18px;padding:24px;display:grid;gap:14px;border-top:6px solid var(--amber)}
+form h3{margin:0}
+.row{display:grid;gap:14px}
+label{display:block;font-size:.86rem;font-weight:700;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:10px;border:1.5px solid #cbc5b8;background:#fff;color:var(--text)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--asphalt);box-shadow:0 0 0 3px rgba(255,183,3,.45)}
+textarea{min-height:100px;resize:vertical}
+form .btn{width:100%}
+.form-note{font-size:.84rem;color:var(--muted);margin:0}
+
+/* Rodapé */
+footer{background:#0a0b0c;color:#a3a8b0;padding:46px 0 0;font-size:.94rem}
+.foot{display:grid;gap:26px;padding-bottom:30px}
+.foot .logo{margin-bottom:12px}
+.foot a{color:#e3e5e8;text-decoration:none}
+.foot a:hover{color:var(--amber)}
+.foot ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.foot strong{color:#fff;font:800 1.05rem/1 var(--cond);letter-spacing:.12em;text-transform:uppercase}
+.social{display:flex;gap:10px;margin-top:12px}
+.social a{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--steel)}
+.social svg{width:18px;height:18px}
+.demo{border-top:1px solid #1c1e21;padding:16px 0 96px;font-size:.8rem;color:#80858d;text-align:center;margin:0}
+
+/* Barra fixa no telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(17,18,20,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{min-height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:.45em;font:700 1.02rem/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--steel-2)}
+.mbar a.go{background:var(--amber);color:var(--asphalt)}
+.mbar svg{width:18px;height:18px}
+
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .needle{transition:none;transform:rotate(110deg)}
+  .gear{animation:none}
+  .btn,.svc article{transition:none}
+}
+@media (max-width:360px){.logo small{display:none}}
+@media (min-width:640px){
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .row.two{grid-template-columns:1fr 1fr}
+  .stats .wrap{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .where-grid{grid-template-columns:1fr 1fr}
+  .top-call{display:inline-flex}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .hero{padding-top:70px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:60px;padding-bottom:90px}
+  .svc{grid-template-columns:repeat(4,1fr)}
+  .spec-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .where-grid{grid-template-columns:.9fr 1.1fr}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+  .foot{grid-template-columns:1.5fr 1fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:110px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="A Oficina do Adérito — início">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span>
+      <span><b>Oficina do Adérito</b><small>Reparação automóvel · Leiria</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-marcar">Como marcar</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <div class="top-actions">
+      <a class="top-call" href="tel:+351926198471" aria-label="Ligar para 926 198 471">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>926 198 471</a>
+      <a class="btn btn-amber" href="#contacto">Marcar</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="h1" style="padding-bottom:0">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag" style="color:var(--amber)">Oficina multimarca · Leiria</span>
+      <h1 id="h1">A sua viatura <span>em boas mãos.</span></h1>
+      <p class="lead">Reparação e manutenção automóvel para várias marcas, com know-how em viaturas Mercedes. Na Rua Mala de Uva, em Leiria.</p>
+      <div class="hero-cta">
+        <a class="btn btn-amber" href="https://wa.me/351926198471?text=Ol%C3%A1%21%20Gostaria%20de%20marcar%20a%20minha%20viatura%20na%20Oficina%20do%20Ad%C3%A9rito." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+351926198471">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Ligar 926 198 471</a>
+      </div>
+    </div>
+
+    <div class="gauge-box reveal" id="gauge" role="img" aria-label="Classificação de 4,8 em 5 no Google, com 85 avaliações">
+      <svg viewBox="0 32 400 262" aria-hidden="true">
+        <defs>
+          <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#3a3e45"/><stop offset=".55" stop-color="#ffb703"/><stop offset="1" stop-color="#e5482e"/>
+          </linearGradient>
+        </defs>
+        <!-- arco de 240 graus -->
+        <path d="M70.1 275 A150 150 0 1 1 329.9 275" fill="none" stroke="#2a2d33" stroke-width="22" stroke-linecap="round"/>
+        <path d="M70.1 275 A150 150 0 1 1 329.9 275" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="round"/>
+        <g stroke="#8b9099" stroke-width="3" stroke-linecap="round">
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(-120 200 200)"/>
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(-72 200 200)"/>
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(-24 200 200)"/>
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(24 200 200)"/>
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(72 200 200)"/>
+          <line x1="200" y1="62" x2="200" y2="80" transform="rotate(120 200 200)"/>
+        </g>
+        <g font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="17" fill="#9ea3ab" text-anchor="middle">
+          <text x="115" y="255">0</text><text x="107" y="176">1</text><text x="160" y="117">2</text><text x="240" y="117">3</text><text x="293" y="176">4</text><text x="285" y="255">5</text>
+        </g>
+        <g class="needle">
+          <path d="M200 70 L207 200 L193 200 Z" fill="#ffb703"/>
+        </g>
+        <circle cx="200" cy="200" r="20" fill="#111214" stroke="#ffb703" stroke-width="4"/>
+        <text x="200" y="258" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="46" fill="#ffffff">4,8</text>
+      </svg>
+      <div class="gauge-cap">
+        <span><b>85</b>avaliações no Google</span>
+        <span style="text-align:right"><b>+7 anos</b>de atividade</span>
+      </div>
+    </div>
+  </div>
+  <div class="hazard" aria-hidden="true"></div>
+</section>
+
+<div class="stats" aria-label="A oficina em números">
+  <div class="wrap">
+    <div class="stat"><strong>4,8 ★</strong><span>classificação no Google</span></div>
+    <div class="stat"><strong>85</strong><span>avaliações de clientes</span></div>
+    <div class="stat"><strong>+7</strong><span>anos de atividade</span></div>
+    <div class="stat"><strong>Multimarca</strong><span>com know-how Mercedes</span></div>
+  </div>
+</div>
+
+<div class="say">
+  <div class="wrap">
+    <blockquote>«Oficina super profissional»<cite>Excerto de uma avaliação de cliente no Google</cite></blockquote>
+    <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=A%20Oficina%20do%20Ad%C3%A9rito%20Leiria" target="_blank" rel="noopener">Ver avaliações</a>
+  </div>
+</div>
+
+<section id="servicos" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Serviços</span>
+      <h2 id="h-serv">Reparação e manutenção, sem complicar.</h2>
+      <p>Uma oficina nos arredores de Leiria que trata de viaturas de várias marcas.</p>
+    </div>
+    <div class="svc">
+      <article class="reveal"><span class="n">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <h3>Manutenção</h3><p>Manutenção periódica para manter a viatura em bom estado.</p></article>
+      <article class="reveal"><span class="n">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div>
+        <h3>Reparação</h3><p>Reparação automóvel quando algo não está bem com a sua viatura.</p></article>
+      <article class="reveal"><span class="n">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M6 14l3-4 3 3 2-2 4 4"/><path d="M8 21h8"/></svg></div>
+        <h3>Diagnóstico</h3><p>Uma luz acesa no painel ou um ruído estranho? Fale connosco.</p></article>
+      <article class="reveal"><span class="n">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h-2v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/><path d="M10 17h4"/></svg></div>
+        <h3>Multimarca</h3><p>Assistência a viaturas de várias marcas, com know-how em Mercedes.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" aria-labelledby="h-mb">
+  <div class="wrap spec-grid">
+    <div class="reveal">
+      <span class="tag">Especialidade da casa</span>
+      <h2 id="h-mb" class="big">Know-how em <span>Mercedes.</span></h2>
+      <p>Além da assistência multimarca, a equipa da Oficina do Adérito tem forte especialização em viaturas Mercedes. Se conduz um Mercedes, fale connosco.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Reparação e manutenção automóvel</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Viaturas de várias marcas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Mais de 7 anos de atividade em Leiria</li>
+      </ul>
+    </div>
+    <div class="bench reveal" aria-hidden="true">
+      <svg viewBox="0 0 480 320">
+        <defs>
+          <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity=".05"/></pattern>
+        </defs>
+        <rect width="480" height="320" fill="url(#grid)"/>
+        <!-- engrenagens -->
+        <g class="gear" fill="#ffb703">
+          <path d="M150 70l12 2 4 14 12 5 12-8 10 9-8 12 5 12 14 4 2 12-2 12-14 4-5 12 8 12-10 9-12-8-12 5-4 14-12 2-12-2-4-14-12-5-12 8-10-9 8-12-5-12-14-4-2-12 2-12 14-4 5-12-8-12 10-9 12 8 12-5 4-14z"/>
+          <circle cx="150" cy="148" r="26" fill="#22252a"/>
+        </g>
+        <g class="gear rev" fill="#4a4f57">
+          <path d="M300 150l8 1 3 10 8 3 9-5 6 6-5 9 3 8 10 3 1 8-1 8-10 3-3 8 5 9-6 6-9-5-8 3-3 10-8 1-8-1-3-10-8-3-9 5-6-6 5-9-3-8-10-3-1-8 1-8 10-3 3-8-5-9 6-6 9 5 8-3 3-10z"/>
+          <circle cx="300" cy="204" r="18" fill="#22252a"/>
+        </g>
+        <!-- silhueta de viatura -->
+        <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".9">
+          <path d="M40 285h30m60 0h170m60 0h80"/>
+          <path d="M70 285c0-17 13-30 30-30s30 13 30 30M300 285c0-17 13-30 30-30s30 13 30 30"/>
+          <path d="M40 285v-30l30-8 45-40h150l55 40 60 10 20 10v18"/>
+          <path d="M125 247l25-28h60v28zM225 219h40l38 28h-78z"/>
+        </g>
+        <circle cx="100" cy="285" r="12" fill="#ffb703"/><circle cx="330" cy="285" r="12" fill="#ffb703"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="como-marcar" aria-labelledby="h-marc">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Como marcar</span>
+      <h2 id="h-marc">Três passos e a viatura entra na oficina.</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><h3>Descreva o problema</h3><p>Por telefone ou WhatsApp: marca, modelo e o que está a notar na viatura.</p></li>
+      <li class="reveal"><h3>Combine o dia</h3><p>Acertamos consigo o melhor dia para trazer a viatura.</p></li>
+      <li class="reveal"><h3>Traga a viatura</h3><p>Rua Mala de Uva, N.º 92, em Leiria.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="onde" class="where" aria-labelledby="h-onde">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Onde estamos</span>
+      <h2 id="h-onde">Nos arredores de Leiria.</h2>
+    </div>
+    <div class="where-grid">
+      <div class="box reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Morada</h3>
+        <address>Rua Mala de Uva, N.º 92<br>Leiria</address>
+        <p style="color:var(--muted);font-size:.95rem">Para o horário de atendimento, ligue ou envie mensagem antes de vir.</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=A%20Oficina%20do%20Ad%C3%A9rito%2C%20Rua%20Mala%20de%20Uva%2092%2C%20Leiria" target="_blank" rel="noopener">Abrir no mapa
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="road reveal" aria-hidden="true">
+        <svg viewBox="0 0 520 260">
+          <rect width="520" height="260" fill="#18191c"/>
+          <path d="M-20 200 C 120 180, 180 60, 300 90 S 470 210, 560 150" fill="none" stroke="#2d3137" stroke-width="46" stroke-linecap="round"/>
+          <path d="M-20 200 C 120 180, 180 60, 300 90 S 470 210, 560 150" fill="none" stroke="#ffb703" stroke-width="3" stroke-dasharray="16 14"/>
+          <path d="M60 40 L140 120 M380 20 L330 240 M0 110 H120" stroke="#25282d" stroke-width="16" stroke-linecap="round"/>
+          <g transform="translate(300 90)">
+            <circle r="34" fill="#ffb703" fill-opacity=".18"/>
+            <path d="M0-30c-11 0-20 9-20 20 0 15 20 34 20 34s20-19 20-34c0-11-9-20-20-20z" fill="#ffb703"/>
+            <circle cy="-10" r="7" fill="#111214"/>
+          </g>
+          <text x="300" y="150" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="20" letter-spacing="2" fill="#ffffff">R. MALA DE UVA, 92</text>
+          <text x="300" y="172" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" letter-spacing="3" fill="#9ea3ab">LEIRIA</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="dark" aria-labelledby="h-cont">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="tag">Marcação</span>
+      <h2 id="h-cont">Diga-nos o que a viatura tem.</h2>
+      <p style="color:#c4c8ce">Preencha o pedido e ele abre já pronto no WhatsApp da oficina. Se preferir, ligue diretamente.</p>
+      <div class="direct">
+        <a href="tel:+351926198471"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>926 198 471<small>Chamada para rede móvel nacional</small></span></a>
+        <a href="https://wa.me/351926198471" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>WhatsApp<small>926 198 471</small></span></a>
+        <a href="https://www.facebook.com/oficinadoaderito/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg><span>Facebook<small>Oficina do Adérito</small></span></a>
+      </div>
+    </div>
+    <form class="reveal" id="form" novalidate>
+      <h3>Pedido de marcação</h3>
+      <div class="row two">
+        <div><label for="f-nome">Nome *</label><input id="f-nome" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-tel">Telemóvel</label><input id="f-tel" name="Telemóvel" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="row two">
+        <div><label for="f-car">Marca e modelo *</label><input id="f-car" name="Viatura" placeholder="Ex.: Mercedes Classe C" required></div>
+        <div><label for="f-serv">Serviço</label>
+          <select id="f-serv" name="Serviço"><option>Manutenção</option><option>Reparação</option><option>Diagnóstico</option><option>Outro</option></select></div>
+      </div>
+      <div><label for="f-msg">O que está a notar?</label><textarea id="f-msg" name="Descrição" placeholder="Ex.: luz do motor acesa, ruído ao travar…"></textarea></div>
+      <button class="btn btn-amber" type="submit">Enviar pelo WhatsApp</button>
+      <p class="form-note">Ao enviar, abre-se o WhatsApp com a mensagem pronta para a oficina. Nada fica guardado nesta página.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#inicio" aria-label="A Oficina do Adérito — início">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></span>
+        <span><b>Oficina do Adérito</b><small>Reparação automóvel · Leiria</small></span>
+      </a>
+      <p style="margin:0;max-width:28em">A Oficina do Adérito, Unipessoal, Lda. Reparação e manutenção automóvel multimarca em Leiria.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/oficinadoaderito/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+      </div>
+    </div>
+    <div><strong>Serviços</strong><ul><li><a href="#servicos">Manutenção</a></li><li><a href="#servicos">Reparação</a></li><li><a href="#servicos">Multimarca e Mercedes</a></li></ul></div>
+    <div><strong>Oficina</strong><ul><li><a href="#como-marcar">Como marcar</a></li><li><a href="#onde">Onde estamos</a></li><li><a href="#contacto">Pedido de marcação</a></li></ul></div>
+    <div><strong>Contacto</strong><ul><li><a href="tel:+351926198471">926 198 471</a></li><li><a href="https://wa.me/351926198471" target="_blank" rel="noopener">WhatsApp</a></li><li>Rua Mala de Uva, N.º 92, Leiria</li></ul></div>
+  </div>
+  <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de A Oficina do Adérito. Dados públicos da ficha do Google e de diretórios.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351926198471"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/351926198471" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
+  <a class="go" href="#contacto">Marcar</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var g=document.getElementById('gauge');
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target===g)setTimeout(function(){g.classList.add('on');},250);io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});g.classList.add('on');},3500);
+  }else{g.classList.add('on');}
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true,first=null;
+    f.querySelectorAll('[required]').forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#b91c1c';first=first||i;}else{i.style.borderColor='';}});
+    if(!ok){first.focus();return;}
+    var lines=['Olá! Gostaria de marcar a minha viatura na Oficina do Adérito.'];
+    new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    window.open('https://wa.me/351926198471?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>
