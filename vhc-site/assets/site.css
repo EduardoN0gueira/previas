@@ -303,14 +303,14 @@ dialog.lb::backdrop{background:rgba(8,8,8,.94)}
 .quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(207,17,32,.18)}
 .quote-form .row{display:grid;gap:16px}
 @media (min-width:560px){.quote-form .row{grid-template-columns:1fr 1fr}}
-.pick{display:flex;flex-wrap:wrap;gap:8px}
-.pick input{position:absolute;opacity:0;pointer-events:none}
+.pick{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+.pick input{position:absolute;left:0;top:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
 .pick label{display:inline-flex;font-family:var(--head);font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;padding:9px 15px;border-radius:999px;border:1.5px solid #c9c5bf;cursor:pointer;background:#faf9f7;transition:all .15s ease}
 .pick input:checked + label{background:var(--ink);border-color:var(--ink);color:#fff}
 .pick input:focus-visible + label{outline:3px solid var(--red-hot);outline-offset:2px}
 .drop{position:relative;display:flex;align-items:center;gap:14px;border:1.5px dashed #c9c5bf;border-radius:10px;padding:14px;background:#faf9f7;cursor:pointer;font-weight:500;color:var(--muted)}
 .drop svg{width:26px;height:26px;color:var(--red);flex:none}
-.drop input{position:absolute;opacity:0;width:1px;height:1px}
+.drop input{position:absolute;left:0;top:0;opacity:0;width:1px;height:1px}
 .quote-form .small{font-size:13.5px;color:var(--muted)}
 .quote-form .btn{width:100%}
 .form-ok{display:none;text-align:center;padding:24px 8px}
