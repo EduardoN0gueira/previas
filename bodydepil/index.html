@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BodyDepil · Clínica de estética em Lisboa e na Parede</title>
+<meta name="description" content="BodyDepil, clínica de estética no Campo Pequeno (Lisboa) e na Parede. Depilação definitiva com triplo laser, criolipólise, HydraFacial, Ultraformer III e outros tratamentos. Marcação online.">
+<meta name="theme-color" content="#0d2b2d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/clinica.webp">
+<style>
+:root{
+  --ink:#0d2b2d; --ink-2:#163a3d; --ink-3:#21494d;
+  --teal:#00908f; --teal-d:#00706f; --teal-l:#e3f4f3;
+  --pink:#e5168f; --pink-d:#c00f77; --pink-l:#fdeef6;
+  --paper:#fbf8f6; --line:#e7e1dc; --muted:#5b6566; --muted-d:#a9bcbd;
+  --r:14px;
+  --head:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:min(1160px, 100% - 32px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1;margin:0;letter-spacing:.005em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-family:var(--head);font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,color .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-pink:hover{background:var(--pink-d)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-d)}
+
+/* barra de horário */
+.info{background:var(--ink);color:#d6e6e6;font-size:14px}
+.info .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
+.info a{text-decoration:none;color:#fff;font-weight:600}
+.info .tels{display:none;gap:18px}
+@media (min-width:760px){.info .tels{display:flex}}
+
+/* cabeçalho */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:72px}
+.brand img{height:52px;width:auto}
+.nav{display:none;gap:28px;font-family:var(--head);font-weight:700;font-size:19px;letter-spacing:.06em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--ink-3)}
+.nav a:hover{color:var(--pink)}
+.top .btn{min-height:44px;padding:0 18px;font-size:17px}
+@media (min-width:980px){.nav{display:flex}}
+@media (max-width:380px){.brand img{height:44px}.top .btn{padding:0 13px;font-size:15px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#fff 0,#fff 60%,var(--paper) 100%)}
+.hero .wrap{display:grid;gap:34px;padding:40px 0 60px}
+@media (min-width:920px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding:70px 0 90px}}
+.tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d)}
+.tag::before{content:"";width:28px;height:3px;background:var(--pink);border-radius:2px}
+.hero h1{font-size:clamp(46px,9vw,84px);margin:14px 0 18px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--pink)}
+.hero .lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+@media (max-width:420px){.ctas .btn{flex:1 1 140px;padding:0 14px}}
+.hero-ph{position:relative;margin:0}
+.hero-ph img{width:100%;border-radius:22px;aspect-ratio:5/4;object-fit:cover;box-shadow:0 30px 60px -32px rgba(13,43,45,.55)}
+.hero-ph::before{content:"";position:absolute;inset:18px -14px -14px 18px;border:2px solid var(--teal);border-radius:22px;z-index:-1}
+.hero-ph figcaption{position:absolute;left:14px;bottom:14px;background:#fff;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.3;box-shadow:0 10px 24px -12px rgba(0,0,0,.35)}
+.hero-ph figcaption b{display:block;font-family:var(--head);font-size:19px;letter-spacing:.04em;text-transform:uppercase;color:var(--pink)}
+@media (max-width:919px){.hero-ph::before{inset:12px -6px -10px 12px}}
+
+/* faixa das clínicas */
+.strip{background:var(--teal);color:#fff}
+.strip ul{list-style:none;margin:0;padding:20px 0;display:grid;gap:14px}
+@media (min-width:760px){.strip ul{grid-template-columns:repeat(3,1fr);gap:24px}}
+.strip li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.4}
+.strip svg{width:24px;height:24px;flex:none;margin-top:2px}
+.strip b{display:block;font-family:var(--head);font-size:19px;letter-spacing:.05em;text-transform:uppercase}
+
+/* secções */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(64px,9vw,112px) 0}
+.kicker{font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:.18em;text-transform:uppercase;color:var(--pink)}
+.sec h2{font-size:clamp(40px,7vw,68px);margin-top:10px;text-transform:uppercase}
+.intro{max-width:620px;margin-top:14px;color:var(--muted);font-size:18px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px}
+
+/* laser */
+.laser{display:grid;gap:36px}
+@media (min-width:900px){.laser{grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}}
+.laser-ph{position:relative}
+.laser-ph img{width:100%;border-radius:var(--r);aspect-ratio:497/428;object-fit:cover}
+.laser-ph span{position:absolute;right:12px;top:12px;background:var(--ink);color:#fff;font-family:var(--head);font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+.waves{display:grid;gap:12px;margin-top:26px}
+@media (min-width:560px){.waves{grid-template-columns:repeat(3,1fr)}}
+.wave{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px;border-top:4px solid var(--teal)}
+.wave:nth-child(2){border-top-color:var(--pink)}
+.wave:nth-child(3){border-top-color:var(--ink)}
+.wave b{display:block;font-family:var(--head);font-size:34px;line-height:1}
+.wave small{display:block;font-family:var(--head);font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.wave p{font-size:15px;color:var(--muted);margin-top:8px;line-height:1.45}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:8px}
+.ticks li{display:flex;gap:10px;align-items:flex-start}
+.ticks svg{width:22px;height:22px;color:var(--teal);flex:none;margin-top:2px}
+
+/* tratamentos */
+.alt{background:#fff}
+.cards{display:grid;gap:16px}
+@media (min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.cards{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--paper);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line)}
+.card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.card .tx{padding:20px 20px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:30px;text-transform:uppercase}
+.card p{color:var(--muted);font-size:15.5px;line-height:1.5}
+.card a{margin-top:auto;padding-top:6px;font-family:var(--head);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d);text-decoration:none;font-size:16px}
+.card a:hover{color:var(--pink)}
+.more{margin-top:28px;background:var(--ink);color:#fff;border-radius:var(--r);padding:clamp(22px,4vw,34px)}
+.more h3{font-size:26px;text-transform:uppercase;color:var(--muted-d);letter-spacing:.06em}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chips a{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.28);text-decoration:none;font-weight:500;font-size:15.5px;transition:background-color .2s ease,border-color .2s ease}
+.chips a:hover{background:var(--pink);border-color:var(--pink)}
+.more .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+.more .row p{color:#cfe0e0;max-width:520px}
+
+/* testemunhos */
+.quotes{display:grid;gap:16px}
+@media (min-width:860px){.quotes{grid-template-columns:repeat(3,1fr)}}
+.q{background:#fff;border-radius:var(--r);padding:28px 26px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;gap:16px}
+.q::before{content:"\201C";font-family:Georgia,serif;font-size:76px;line-height:.6;color:var(--pink);height:30px}
+.q p{font-size:17px}
+.q small{color:var(--muted);font-size:14px;margin-top:auto}
+
+/* clínicas */
+.places{display:grid;gap:16px}
+@media (min-width:860px){.places{grid-template-columns:1fr 1fr 1fr}}
+.place{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.place svg.pin{width:40px;height:40px;color:var(--pink)}
+.place h3{font-size:34px;text-transform:uppercase}
+.place p{color:var(--muted)}
+.place a.link{margin-top:auto;font-family:var(--head);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d);text-decoration:none}
+.place.hours{background:var(--teal-l);border-color:#cde9e7}
+.hours dl{margin:0;display:grid;gap:10px}
+.hours dl div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #cde9e7;padding-bottom:10px}
+.hours dt{font-weight:600}
+.hours dd{margin:0;color:var(--ink-3)}
+
+/* contacto */
+.dark{background:var(--ink);color:#fff}
+.dark .kicker{color:#ff7cc4}
+.dark .intro{color:var(--muted-d)}
+.contact{display:grid;gap:40px}
+@media (min-width:960px){.contact{grid-template-columns:1fr 1.05fr;gap:60px}}
+.chs{display:grid;gap:10px;margin-top:28px}
+.ch{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:12px;background:var(--ink-2);border:1px solid rgba(255,255,255,.1);text-decoration:none;color:#fff;transition:border-color .2s ease,transform .2s ease}
+a.ch:hover{border-color:var(--teal);transform:translateX(4px)}
+.ch svg{width:26px;height:26px;color:#4cc9c4;flex:none}
+.ch small{display:block;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d)}
+.ch b{font-weight:600;font-size:16.5px;overflow-wrap:anywhere}
+form.qf{background:#fff;color:var(--ink);border-radius:var(--r);padding:clamp(22px,4vw,38px);display:grid;gap:15px;border-top:6px solid var(--pink)}
+.qf h3{font-size:36px;text-transform:uppercase}
+.qf label{display:grid;gap:6px;font-size:14px;font-weight:600}
+.qf input,.qf select,.qf textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #d3dcdc;border-radius:10px;background:#f8fbfb;color:var(--ink);width:100%}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--teal);outline:none;box-shadow:0 0 0 3px rgba(0,144,143,.2)}
+.qf .row{display:grid;gap:15px}
+@media (min-width:560px){.qf .row{grid-template-columns:1fr 1fr}}
+.qf .small{font-size:14px;color:var(--muted)}
+
+footer{background:#081c1e;color:#b9caca;padding:44px 0 118px;font-size:15px}
+@media (min-width:761px){footer{padding-bottom:40px}}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+.foot a{color:#fff}
+.foot .soc{display:flex;gap:16px}
+.demo{margin-top:28px;padding-top:18px;border-top:1px solid #1c3335;font-size:13px;color:#8fa5a6}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(13,43,45,.97);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:10px;text-decoration:none;font-family:var(--head);font-weight:700;font-size:17px;letter-spacing:.05em;text-transform:uppercase;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.mbar a.go{background:var(--pink);border-color:var(--pink)}
+.mbar svg{width:18px;height:18px;flex:none}
+@media (min-width:761px){.mbar{display:none}}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<div class="info">
+  <div class="wrap">
+    <span>Segunda a sexta 10h00–20h00 · Sábado 9h00–17h00</span>
+    <span class="tels"><a href="tel:+351936996901">+351 936 996 901</a><a href="tel:+351218266371">+351 218 266 371</a></span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="BodyDepil, início"><img src="img/logo.webp" alt="BodyDepil, clínica de estética" width="360" height="281"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#laser">Depilação laser</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#testemunhos">Testemunhos</a>
+      <a href="#clinicas">Clínicas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-pink" href="https://bodydepil.pt/booking/" target="_blank" rel="noopener">Marcar online</a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" aria-label="Apresentação">
+  <div class="wrap">
+    <div>
+      <p class="tag">Campo Pequeno · Parede</p>
+      <h1>Clínica de estética com os <em>melhores equipamentos</em> do mercado</h1>
+      <p class="lead">Um espaço feito à medida de quem precisa de se sentir melhor com o seu corpo e procura uma solução rápida e profissional. Depilação definitiva, tratamentos de corpo e de rosto, em Lisboa e na Parede.</p>
+      <div class="ctas">
+        <a class="btn btn-pink" href="https://bodydepil.pt/booking/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Marcar online</a>
+        <a class="btn btn-line" href="tel:+351936996901"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+      </div>
+    </div>
+    <figure class="hero-ph">
+      <img src="img/clinica.webp" alt="Sala da clínica BodyDepil, com sofá e almofadas cor-de-rosa" width="800" height="640" fetchpriority="high">
+      <figcaption><b>A nossa clínica</b>Um espaço calmo, pensado para si</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="strip">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Clínica 1 · Campo Pequeno</b>Av. de Berna, n.º 11, 7.º, Lisboa</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Clínica 2 · Parede</b>Galerias Plaza, Av. da República, n.º 1289</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Horário</b>Seg. a sex. 10h00–20h00 · Sáb. 9h00–17h00</span></li>
+  </ul>
+</div>
+
+<section class="sec" id="laser">
+  <div class="wrap laser">
+    <div class="laser-ph rv">
+      <img src="img/tecnica-laser.webp" alt="Técnica da BodyDepil junto ao equipamento de depilação a laser" width="497" height="428" loading="lazy">
+      <span>Na clínica</span>
+    </div>
+    <div>
+      <p class="kicker rv">Depilação definitiva</p>
+      <h2 class="rv">Triplo laser: três ondas num só tratamento</h2>
+      <p class="intro rv">O Triplo Laser, também chamado Laser Tripla Onda ou Laser de 3 Ondas, junta três tipos de laser no mesmo equipamento: Alexandrite, Díodo e Nd-YAG.</p>
+      <div class="waves">
+        <div class="wave rv"><small>Alexandrite</small><b>755 nm</b><p>Indicado para peles claras e pelos claros (fototipos I a IV).</p></div>
+        <div class="wave rv"><small>Díodo</small><b>808 nm</b><p>O segundo comprimento de onda do triplo laser.</p></div>
+        <div class="wave rv"><small>Nd-YAG</small><b>1064 nm</b><p>O mais eficiente em peles morenas com pelos escuros e em peles negras.</p></div>
+      </div>
+      <ul class="ticks">
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Para fototipos de I a VI, em pelos claros e escuros, finos e grossos.</li>
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Compatível com o verão e a exposição solar: não é preciso parar o tratamento.</li>
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>É possível usar pomadas anestésicas para reduzir o desconforto.</li>
+      </ul>
+      <div class="ctas rv"><a class="btn btn-teal" href="https://bodydepil.pt/booking/" target="_blank" rel="noopener">Marcar sessão de laser</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="tratamentos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">Os nossos serviços</p>
+        <h2 class="rv">Tratamentos de corpo e de rosto</h2>
+      </div>
+      <p class="intro rv">Temos um vasto leque de tratamentos de estética especializados, com os melhores equipamentos do mercado.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <img src="img/criolipolise.webp" alt="Tratamento de criolipólise no abdómen" width="720" height="381" loading="lazy">
+        <div class="tx"><h3>Criolipólise</h3><p>Congelamento de gordura: uma técnica para perder gordura localizada de forma eficiente. É feita numa única sessão.</p><a href="https://bodydepil.pt/servicos/criolipolise/" target="_blank" rel="noopener">Saber mais</a></div>
+      </article>
+      <article class="card rv">
+        <img src="img/emszero.webp" alt="Equipamento EMSZero aplicado no abdómen" width="720" height="380" loading="lazy">
+        <div class="tx"><h3>EMSZero</h3><p>Remodelação corporal não invasiva e indolor, com contração muscular no abdómen, glúteos, coxas e braços. Em regra, 6 a 8 sessões.</p><a href="https://bodydepil.pt/servicos/emszero/" target="_blank" rel="noopener">Saber mais</a></div>
+      </article>
+      <article class="card rv">
+        <img src="img/hydrafacial.webp" alt="Tratamento de rosto HydraFacial" width="720" height="480" loading="lazy">
+        <div class="tx"><h3>HydraFacial</h3><p>Tratamento de rosto não invasivo, em várias etapas, que remove as impurezas e, ao mesmo tempo, aplica um sérum de hidratação e antioxidantes.</p><a href="https://bodydepil.pt/servicos/hydrafacial/" target="_blank" rel="noopener">Saber mais</a></div>
+      </article>
+      <article class="card rv">
+        <img src="img/depilacao-laser.webp" alt="Sessão de depilação a laser na perna" width="651" height="507" loading="lazy">
+        <div class="tx"><h3>Depilação laser</h3><p>Alexandrite, Díodo e Nd-YAG num só equipamento, para todos os fototipos e também no verão.</p><a href="#laser">Saber mais</a></div>
+      </article>
+    </div>
+
+    <div class="more rv">
+      <h3>E ainda</h3>
+      <div class="chips">
+        <a href="https://bodydepil.pt/servicos/ultraformer-iii/" target="_blank" rel="noopener">Ultraformer III</a>
+        <a href="https://bodydepil.pt/servicos/hifu-ulthera/" target="_blank" rel="noopener">Hifu Ulthera</a>
+        <a href="https://bodydepil.pt/servicos/radiofrequencia/" target="_blank" rel="noopener">Radiofrequência</a>
+        <a href="https://bodydepil.pt/servicos/criofrequencia/" target="_blank" rel="noopener">Criofrequência</a>
+        <a href="https://bodydepil.pt/servicos/cavitacao/" target="_blank" rel="noopener">Cavitação</a>
+        <a href="https://bodydepil.pt/servicos/mesoterapia/" target="_blank" rel="noopener">Mesoterapia</a>
+        <a href="https://bodydepil.pt/servicos/pressoterapia/" target="_blank" rel="noopener">Pressoterapia</a>
+        <a href="https://bodydepil.pt/servicos/lipo-sem-corte/" target="_blank" rel="noopener">Lipo sem corte (i-lipo)</a>
+        <a href="https://bodydepil.pt/servicos/pump-up-gluteos/" target="_blank" rel="noopener">Pump Up Glúteos</a>
+        <a href="https://bodydepil.pt/servicos/derrames/" target="_blank" rel="noopener">Eliminação de derrames</a>
+        <a href="https://bodydepil.pt/servicos/branqueamento-dentario/" target="_blank" rel="noopener">Branqueamento dentário</a>
+      </div>
+      <div class="row">
+        <p>Os preços de todos os tratamentos estão no nosso preçário.</p>
+        <a class="btn btn-pink" href="https://bodydepil.pt/wp-content/uploads/2024/10/20241018-BODY-DEPIL-TABELA-PRECOS-UPDATE.pdf" target="_blank" rel="noopener">Ver preçário</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="testemunhos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">Testemunhos</p>
+        <h2 class="rv">O que dizem as nossas clientes</h2>
+      </div>
+      <p class="intro rv">Mensagens que recebemos de clientes.</p>
+    </div>
+    <div class="quotes">
+      <figure class="q rv"><p>Estou na terceira sessão e praticamente não tenho pêlos! Simplesmente adoro! […] A técnica Ione é fantástica, muito profissional e competente, o novo espaço na Parede está muito bem localizado para quem não é de Lisboa. Aconselho vivamente!</p><small>Cliente de depilação a laser</small></figure>
+      <figure class="q rv"><p>Gostei muito da experiência. Fui muito bem atendida. A Ione é uma simpatia, muito querida e atenciosa. Voltarei com toda a certeza.</p><small>Cliente BodyDepil</small></figure>
+      <figure class="q rv"><p>Adorei a experiência, a menina que me atendeu foi muito querida e adorei o espaço. Sem dúvida que vou recomendar.</p><small>Cliente BodyDepil</small></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="clinicas">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">Onde estamos</p>
+        <h2 class="rv">Duas clínicas, Lisboa e Parede</h2>
+      </div>
+    </div>
+    <div class="places">
+      <div class="place rv">
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <p class="kicker">Clínica 1</p>
+        <h3>Campo Pequeno</h3>
+        <p>Av. de Berna, n.º 11, 7.º<br>1050-036 Lisboa</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Av%20de%20Berna%2011%2C%201050-036%20Lisboa" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div class="place rv">
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <p class="kicker">Clínica 2</p>
+        <h3>Parede</h3>
+        <p>Galerias Plaza, Av. da República, n.º 1289, Loja 2<br>2775-226 Parede</p>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Av%20da%20Rep%C3%BAblica%201289%2C%202775-226%20Parede" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <div class="place hours rv">
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <p class="kicker">Horário</p>
+        <dl>
+          <div><dt>Segunda a sexta</dt><dd>10h00–20h00</dd></div>
+          <div><dt>Sábado</dt><dd>9h00–17h00</dd></div>
+          <div><dt>Domingos e feriados</dt><dd>Encerrado</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker rv">Contacto</p>
+      <h2 class="rv">Marque a sua sessão</h2>
+      <p class="intro rv">Faça a marcação online, ligue-nos ou envie uma mensagem.</p>
+      <div class="chs">
+        <a class="ch rv" href="tel:+351936996901"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telemóvel</small><b>+351 936 996 901</b></span></a>
+        <a class="ch rv" href="tel:+351218266371"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg><span><small>Telefone fixo</small><b>+351 218 266 371</b></span></a>
+        <a class="ch rv" href="https://wa.me/351965821399" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"/></svg><span><small>WhatsApp</small><b>965 821 399</b></span></a>
+        <a class="ch rv" href="mailto:geral@bodydepil.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg><span><small>E-mail</small><b>geral@bodydepil.pt</b></span></a>
+        <a class="ch rv" href="https://www.instagram.com/bodydepil_portugal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span><small>Instagram</small><b>@bodydepil_portugal</b></span></a>
+      </div>
+    </div>
+    <form class="qf rv" id="form" action="mailto:geral@bodydepil.pt" method="post" enctype="text/plain">
+      <h3>Pedido de marcação</h3>
+      <div class="row">
+        <label>Nome<input name="nome" required autocomplete="name"></label>
+        <label>Telemóvel<input name="telemovel" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      <div class="row">
+        <label>Tratamento
+          <select name="tratamento">
+            <option>Depilação a laser</option>
+            <option>Criolipólise</option>
+            <option>EMSZero</option>
+            <option>HydraFacial</option>
+            <option>Ultraformer III / Hifu</option>
+            <option>Outro tratamento</option>
+          </select>
+        </label>
+        <label>Clínica
+          <select name="clinica">
+            <option>Campo Pequeno (Lisboa)</option>
+            <option>Parede</option>
+          </select>
+        </label>
+      </div>
+      <label>Mensagem<textarea name="mensagem" rows="4" placeholder="Diga-nos a zona a tratar e os dias que lhe dão jeito."></textarea></label>
+      <button class="btn btn-pink" type="submit">Enviar pedido</button>
+      <p class="small">O pedido abre no seu programa de e-mail, pronto a enviar. Também pode <a href="https://bodydepil.pt/booking/" target="_blank" rel="noopener">marcar online</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <p><b style="color:#fff">BodyDepil</b> · Clínica de estética</p>
+      <p class="soc"><a href="https://www.instagram.com/bodydepil_portugal" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/bodydepilportugal" target="_blank" rel="noopener">Facebook</a></p>
+      <p>© 2026 BodyDepil</p>
+    </div>
+    <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial da BodyDepil. Fotos e textos do site bodydepil.pt.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351936996901"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/351965821399" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.6z"/></svg>WhatsApp</a>
+  <a class="go" href="https://bodydepil.pt/booking/" target="_blank" rel="noopener">Marcar</a>
+</nav>
+
+<script>
+(function(){
+  var d=document,root=d.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window&&!reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    d.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }
+  d.getElementById('form').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var f=ev.target,v=function(n){return (f.elements[n].value||'').trim();};
+    var body='Nome: '+v('nome')+'\nTelemóvel: '+v('telemovel')+'\nE-mail: '+v('email')+'\nTratamento: '+v('tratamento')+'\nClínica: '+v('clinica')+'\n\n'+v('mensagem');
+    location.href='mailto:geral@bodydepil.pt?subject='+encodeURIComponent('Pedido de marcação — '+v('tratamento'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

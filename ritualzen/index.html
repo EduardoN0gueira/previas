@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ritual Zen · Beleza, saúde e bem-estar em Santa Comba Dão</title>
+<meta name="description" content="Ritual Zen, espaço de beleza, saúde e bem-estar em Santa Comba Dão. Massagens, estética, depilação a laser, osteopatia, acupuntura, unhas e maquilhagem. Marcação online.">
+<meta name="theme-color" content="#4a1b4d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/rececao.webp">
+<style>
+:root{
+  --plum:#4a1b4d; --plum-2:#5d2761; --plum-3:#6f3473;
+  --orchid:#a8459f; --orchid-d:#8c3584; --orchid-l:#f6ecf5;
+  --sage:#6c7a45; --sage-l:#eef0e4;
+  --sand:#f7f1ea; --sand-2:#efe5da; --line:#e6dbcf;
+  --ink:#2a1d2b; --muted:#6a5d66; --muted-d:#cdb9cc;
+  --r:16px;
+  --head:"Cormorant Garamond",Georgia,serif;
+  --body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:min(1160px, 100% - 32px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.65;color:var(--ink);background:var(--sand);overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.05;margin:0;letter-spacing:-.005em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--orchid);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-family:var(--body);font-weight:500;font-size:16px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-plum{background:var(--plum);color:#fff}
+.btn-plum:hover{background:var(--plum-3)}
+.btn-orchid{background:var(--orchid);color:#fff}
+.btn-orchid:hover{background:var(--orchid-d)}
+.btn-line{border-color:var(--plum);color:var(--plum)}
+.btn-line:hover{background:var(--plum);color:#fff}
+.btn-light{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-light:hover{background:#fff;color:var(--plum)}
+
+/* cabeçalho */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:72px}
+.brand img{height:48px;width:auto}
+.nav{display:none;gap:28px;font-size:15px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--orchid)}
+.top .btn{min-height:44px;padding:0 18px;font-size:14px}
+@media (min-width:980px){.nav{display:flex}}
+@media (max-width:380px){.brand img{height:40px}.top .btn{padding:0 14px;font-size:13px}}
+
+/* hero */
+.hero .wrap{display:grid;gap:34px;padding:42px 0 64px}
+@media (min-width:920px){.hero .wrap{grid-template-columns:1.02fr .98fr;align-items:center;gap:64px;padding:76px 0 96px}}
+.tag{font-size:14px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--sage)}
+.hero h1{font-size:clamp(46px,8.4vw,82px);margin:14px 0 20px;color:var(--plum)}
+.hero h1 em{color:var(--orchid)}
+.hero .lead{font-size:clamp(17px,2vw,19.5px);color:var(--muted);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+@media (max-width:420px){.ctas .btn{flex:1 1 140px;padding:0 14px}}
+.rating{display:flex;align-items:center;gap:14px;margin-top:26px;padding-top:22px;border-top:1px solid var(--line);flex-wrap:wrap}
+.rating b{font-family:var(--head);font-size:44px;line-height:1;color:var(--plum)}
+.stars{display:flex;gap:2px;color:#d39b2a}
+.stars svg{width:18px;height:18px}
+.rating small{display:block;color:var(--muted);font-size:14px;line-height:1.35}
+.rating a{color:var(--plum);font-weight:500}
+.hero-ph{position:relative;margin:0}
+.hero-ph img{width:100%;border-radius:200px 200px var(--r) var(--r);aspect-ratio:4/4.3;object-fit:cover;box-shadow:0 30px 60px -34px rgba(74,27,77,.6)}
+.hero-ph figcaption{position:absolute;right:14px;bottom:16px;background:rgba(255,255,255,.95);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.3;color:var(--muted)}
+.hero-ph figcaption b{display:block;font-family:var(--head);font-size:21px;color:var(--plum)}
+
+/* faixa */
+.strip{background:var(--plum);color:#f3e7f2}
+.strip ul{list-style:none;margin:0;padding:22px 0;display:grid;gap:14px}
+@media (min-width:760px){.strip ul{grid-template-columns:repeat(3,1fr);gap:24px}}
+.strip li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.45}
+.strip svg{width:24px;height:24px;flex:none;margin-top:2px;color:#e0a8dc}
+.strip b{display:block;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:#e0a8dc}
+.strip a{text-decoration:none}
+
+/* secções */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(66px,9vw,116px) 0}
+.kicker{font-size:14px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orchid)}
+.sec h2{font-size:clamp(40px,6.4vw,64px);margin-top:10px;color:var(--plum)}
+.intro{max-width:600px;margin-top:14px;color:var(--muted);font-size:18px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:42px}
+.white{background:#fff}
+
+/* sobre */
+.about{display:grid;gap:36px}
+@media (min-width:900px){.about{grid-template-columns:1fr 1fr;gap:64px;align-items:center}}
+.about .big{font-family:var(--head);font-size:clamp(30px,4.2vw,42px);line-height:1.2;color:var(--plum)}
+.about .big em{color:var(--orchid)}
+.about p.tx{color:var(--muted);margin-top:18px}
+.vals{display:grid;gap:12px}
+@media (min-width:560px){.vals{grid-template-columns:1fr 1fr}}
+.val{background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:20px 20px 22px}
+.val h3{font-size:26px;color:var(--plum)}
+.val p{font-size:15.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+.val.wide{grid-column:1/-1;background:var(--sage-l);border-color:#dfe3cf}
+
+/* serviços */
+.svc{display:grid;gap:16px}
+@media (min-width:720px){.svc{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1060px){.svc{grid-template-columns:repeat(4,1fr)}}
+.s{background:#fff;border-radius:var(--r);padding:26px 24px 28px;border:1px solid var(--line);display:flex;flex-direction:column}
+.s .ic{width:50px;height:50px;border-radius:50%;background:var(--orchid-l);color:var(--orchid);display:grid;place-items:center}
+.s .ic svg{width:24px;height:24px}
+.s h3{font-size:30px;color:var(--plum);margin-top:16px}
+.s p{font-size:15.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+.s ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:7px;font-size:15px}
+.s li{display:flex;gap:9px;align-items:baseline;border-top:1px solid var(--sand-2);padding-top:7px}
+.s li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sage);flex:none;transform:translateY(-2px)}
+.s li span{color:var(--muted)}
+
+/* massagens */
+.dark{background:var(--plum);color:#fff}
+.dark h2{color:#fff}
+.dark .kicker{color:#e0a8dc}
+.dark .intro{color:var(--muted-d)}
+.mass{display:grid;gap:36px}
+@media (min-width:920px){.mass{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}}
+.mlist{list-style:none;padding:0;margin:0}
+.mlist li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.mlist li:first-child{border-top:1px solid rgba(255,255,255,.14)}
+.mlist b{font-family:var(--head);font-size:27px;font-weight:600;line-height:1.1}
+.mlist time{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#e0a8dc;white-space:nowrap;align-self:center}
+.mlist p{grid-column:1/-1;color:var(--muted-d);font-size:15.5px;line-height:1.5}
+.mass-ph img{border-radius:var(--r);width:100%;aspect-ratio:3/2;object-fit:cover}
+.mass-ph p{color:var(--muted-d);font-size:15px;margin-top:14px}
+.mass .ctas{margin-top:24px}
+
+/* espaço */
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:860px){.gal{grid-template-columns:repeat(4,1fr);grid-template-rows:240px 240px}}
+.g{position:relative;border:0;padding:0;margin:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--sand-2);font:inherit;min-height:160px}
+.g img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .5s ease}
+.g:hover img{transform:scale(1.04)}
+.g span{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);color:var(--plum);font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:999px}
+.g.big{grid-column:span 2;min-height:250px}
+@media (min-width:860px){.g.big{grid-row:span 2}}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1000px,94vw);max-height:92vh}
+dialog.lb::backdrop{background:rgba(30,10,30,.9)}
+dialog.lb img{max-height:84vh;width:auto;margin:auto;border-radius:10px}
+dialog.lb p{color:#fff;text-align:center;letter-spacing:.12em;text-transform:uppercase;margin-top:10px;font-size:14px}
+.lb-x{position:fixed;top:14px;right:14px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--plum);font-size:26px;line-height:1;cursor:pointer}
+
+/* avaliações */
+.revs{display:grid;gap:16px}
+@media (min-width:860px){.revs{grid-template-columns:1.1fr 1fr 1fr 1fr}}
+.score{background:var(--plum);color:#fff;border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;gap:8px}
+.score b{font-family:var(--head);font-size:72px;line-height:.9}
+.score p{color:var(--muted-d);font-size:15px}
+.score a{color:#fff;font-weight:500;margin-top:auto;padding-top:8px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;gap:12px;margin:0}
+.rev blockquote{margin:0;font-family:var(--head);font-size:25px;line-height:1.25;color:var(--plum)}
+.rev figcaption{margin-top:auto;color:var(--muted);font-size:14px}
+
+/* vouchers */
+.gift{display:grid;gap:36px}
+@media (min-width:900px){.gift{grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}}
+.gift img{border-radius:var(--r);width:100%}
+.packs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.packs span{display:inline-flex;align-items:center;min-height:38px;padding:0 15px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:15px}
+.cards-v{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.cv{background:var(--plum);color:#fff;border-radius:12px;padding:16px 10px;text-align:center}
+.cv b{font-family:var(--head);font-size:34px;line-height:1;display:block}
+.cv small{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-d)}
+.note{font-size:14.5px;color:var(--muted);margin-top:14px}
+
+/* app */
+.app{background:var(--sage);color:#fff;border-radius:var(--r);padding:clamp(26px,5vw,44px);display:grid;gap:20px;align-items:center}
+@media (min-width:800px){.app{grid-template-columns:1fr auto}}
+.app h2{color:#fff;font-size:clamp(34px,5vw,48px);margin:0}
+.app p{color:#eef0e4;margin-top:8px;max-width:560px}
+
+/* contacto */
+.contact{display:grid;gap:40px}
+@media (min-width:960px){.contact{grid-template-columns:1fr 1.05fr;gap:60px}}
+.chs{display:grid;gap:10px;margin-top:28px}
+.ch{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:12px;background:var(--plum-2);border:1px solid rgba(255,255,255,.1);text-decoration:none;color:#fff;transition:border-color .2s ease,transform .2s ease}
+a.ch:hover{border-color:#e0a8dc;transform:translateX(4px)}
+.ch svg{width:26px;height:26px;color:#e0a8dc;flex:none}
+.ch small{display:block;font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d)}
+.ch b{font-weight:500;font-size:16.5px;overflow-wrap:anywhere}
+form.qf{background:#fff;color:var(--ink);border-radius:var(--r);padding:clamp(22px,4vw,38px);display:grid;gap:15px;border-top:6px solid var(--orchid)}
+.qf h3{font-size:36px;color:var(--plum)}
+.qf label{display:grid;gap:6px;font-size:14px;font-weight:500}
+.qf input,.qf select,.qf textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #ddd0d9;border-radius:10px;background:#fcf9fb;color:var(--ink);width:100%}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--orchid);outline:none;box-shadow:0 0 0 3px rgba(168,69,159,.18)}
+.qf .row{display:grid;gap:15px}
+@media (min-width:560px){.qf .row{grid-template-columns:1fr 1fr}}
+.qf .small{font-size:14px;color:var(--muted)}
+
+footer{background:#2c0f2e;color:#cdb9cc;padding:44px 0 118px;font-size:15px}
+@media (min-width:761px){footer{padding-bottom:40px}}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:flex-start}
+.foot a{color:#fff}
+.foot p{line-height:1.5}
+.demo{margin-top:28px;padding-top:18px;border-top:1px solid #47214a;font-size:13px;color:#a990a7}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(74,27,77,.97);border-top:1px solid rgba(255,255,255,.12)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:10px;text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.mbar a.go{background:var(--orchid);border-color:var(--orchid)}
+.mbar svg{width:18px;height:18px;flex:none}
+@media (min-width:761px){.mbar{display:none}}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Ritual Zen, início"><img src="img/logo.webp" alt="Ritual Zen" width="360" height="170"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#massagens">Massagens</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#vouchers">Vouchers</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <a class="btn btn-plum" href="https://widget.treatwell.pt/place/100052380/menu/" target="_blank" rel="noopener">Marcar online</a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" aria-label="Apresentação">
+  <div class="wrap">
+    <div>
+      <p class="tag">Beleza · Saúde · Bem-estar</p>
+      <h1>Um verdadeiro <em>santuário</em> em Santa Comba Dão</h1>
+      <p class="lead">Um espaço de descontração, longe do stress do dia a dia, onde pode restabelecer as energias, resgatar a beleza do seu ser e melhorar a sua saúde e bem-estar.</p>
+      <div class="ctas">
+        <a class="btn btn-plum" href="https://widget.treatwell.pt/place/100052380/menu/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Marcar online</a>
+        <a class="btn btn-line" href="tel:+351964019689"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+      </div>
+      <div class="rating">
+        <b>4,9</b>
+        <div>
+          <span class="stars" aria-label="4,9 em 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.5 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg></span>
+          <small>482 avaliações de clientes na <a href="https://widget.treatwell.pt/estabelecimento/ritualzen/" target="_blank" rel="noopener">Treatwell</a></small>
+        </div>
+      </div>
+    </div>
+    <figure class="hero-ph">
+      <img src="img/rececao.webp" alt="Receção da Ritual Zen, com prateleiras de produtos e bambus" width="720" height="480" fetchpriority="high">
+      <figcaption><b>O nosso espaço</b>Av. General Humberto Delgado, 10C</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="strip">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Horário</b>Seg. a sex. 9h00–19h00 · Sáb. 10h00–18h00</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Morada</b>Av. General Humberto Delgado, 10C, Santa Comba Dão</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Telefone</b><a href="tel:+351232882235">232 882 235</a> · <a href="tel:+351964019689">964 019 689</a></span></li>
+  </ul>
+</div>
+
+<section class="sec white" id="sobre">
+  <div class="wrap about">
+    <div>
+      <p class="kicker rv">Quem somos</p>
+      <p class="big rv">Uma equipa de profissionais de <em>saúde e de bem-estar</em> e uma variada escolha de tratamentos.</p>
+      <p class="tx rv">Aqui encontrará a solução que melhor se adequa ao seu completo bem-estar. Tratamentos de rosto e corpo, massagens, terapias, unhas e maquilhagem, num só sítio.</p>
+    </div>
+    <div class="vals">
+      <div class="val rv"><h3>Missão</h3><p>Proporcionar experiências de harmonia, satisfação e evolução pessoal, na área da saúde, beleza e bem-estar.</p></div>
+      <div class="val rv"><h3>Visão</h3><p>Ser uma clínica de referência, com atendimento personalizado e técnicas e produtos naturais.</p></div>
+      <div class="val wide rv"><h3>Valores</h3><p>Compromisso com a satisfação do cliente · Respeito pela individualidade, privacidade e convicções de cada um · Atualização de competências · Defesa do meio ambiente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">Serviços</p>
+        <h2 class="rv">Tudo o que precisa para se sentir bem</h2>
+      </div>
+      <p class="intro rv">Sentir-se bem por dentro e por fora é a condição essencial para estar feliz e de bem com a vida.</p>
+    </div>
+    <div class="svc">
+      <article class="s rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3c2.5 3 4 5.6 4 8a4 4 0 0 1-8 0c0-2.4 1.5-5 4-8z"/><path d="M5 21c1.5-2.5 4-4 7-4s5.5 1.5 7 4"/></svg></span>
+        <h3>Estética</h3>
+        <p>Trate de si e realce os seus pontos fortes.</p>
+        <ul>
+          <li>Epilação a cera</li>
+          <li>Depilação a laser díodo <span>· desde 10 € por sessão</span></li>
+          <li>Tratamentos de rosto</li>
+          <li>Tratamentos de corpo <span>· cavitação, radiofrequência, vacuoterapia, pressoterapia</span></li>
+          <li>Pés / calista e laserpodológico</li>
+          <li>Jet-bronze</li>
+        </ul>
+      </article>
+      <article class="s rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+        <h3>Saúde e terapias</h3>
+        <p>Medicina complementar, com uma equipa de especialistas.</p>
+        <ul>
+          <li>Osteopatia <span>· Dr. Ricardo Rodrigues</span></li>
+          <li>Acupuntura <span>· Dra. Carla Rosinha</span></li>
+          <li>Hipnoterapia <span>· Dra. Anália Costa</span></li>
+          <li>Psicoterapia <span>· Dra. Daniela Lopes</span></li>
+          <li>Reiki <span>· Mestre Luis Roque</span></li>
+          <li>Terapia Corporalle e cessação tabágica</li>
+        </ul>
+      </article>
+      <article class="s rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3h6v5a3 3 0 0 1-6 0z"/><path d="M12 11v10"/><path d="M8 21h8"/></svg></span>
+        <h3>Unhas e maquilhagem</h3>
+        <p>Fazemos o seu dia especial.</p>
+        <ul>
+          <li>Verniz de gel</li>
+          <li>Gel sobre unha natural ou extensão</li>
+          <li>Maquilhagem casual ou de noite</li>
+          <li>Maquilhagem de noiva <span>· vamos ao domicílio no dia do casamento</span></li>
+        </ul>
+      </article>
+      <article class="s rv">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12a7 7 0 0 0 14 0z"/><path d="M12 5c0 2-1 3-1 4M15 4c0 2-1 3-1 5"/></svg></span>
+        <h3>Controlo alimentar</h3>
+        <p>Consultas de nutrição online, todos os dias da semana, adaptadas à sua conveniência.</p>
+        <ul>
+          <li>Portal que acompanha o seu progresso</li>
+          <li>Sugestões e receitas práticas</li>
+          <li>Avaliação gratuita</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="massagens">
+  <div class="wrap mass">
+    <div class="mass-ph">
+      <p class="kicker rv">Bem-estar</p>
+      <h2 class="rv">Massagens: entre, escolha e desfrute</h2>
+      <p class="intro rv">Num ambiente calmo e tranquilo, com aromaterapia e à luz das velas. Não sabe qual escolher? Sabemos aconselhar o melhor programa para si.</p>
+      <div class="ctas rv">
+        <a class="btn btn-orchid" href="https://widget.treatwell.pt/place/100052380/menu/" target="_blank" rel="noopener">Marcar massagem</a>
+        <a class="btn btn-light" href="#vouchers">Oferecer</a>
+      </div>
+    </div>
+    <ul class="mlist">
+      <li class="rv"><b>Massagem Californiana</b><time>60 min</time><p>Para quem vive uma vida agitada e procura um momento de pausa. Com aromaterapia e à luz das velas.</p></li>
+      <li class="rv"><b>Pedras Quentes (Geotermal)</b><time>60 min</time><p>Massagem terapêutica com pedras vulcânicas aquecidas e banhadas em óleo natural. Promove o relaxamento muscular.</p></li>
+      <li class="rv"><b>Velas Quentes</b><time>60 min</time><p>De corpo inteiro: a vela derrete e transforma-se num óleo de massagem. Alivia tensões e o stress e hidrata a pele.</p></li>
+      <li class="rv"><b>Indiana à Cabeça</b><time>45 min</time><p>Com origem nas tradições da Índia, com óleos naturais e óleo de coco.</p></li>
+      <li class="rv"><b>Drenagem Linfática manual</b><time>45 min</time><p>Movimentos suaves e precisos que estimulam a circulação linfática e ajudam a evitar a retenção de líquidos.</p></li>
+      <li class="rv"><b>Love Zen, a dois</b><time>1h15</time><p>Na mesma sala, à luz das velas e com música de relaxamento. Inclui ritual com champanhe e bombons.</p></li>
+      <li class="rv"><b>Pés e Pernas</b><time>30 min</time><p>Com reflexologia podal, terminando com uma massagem nas pernas.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec white" id="espaco">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">O espaço</p>
+        <h2 class="rv">Um lugar para se recolher por algumas horas</h2>
+      </div>
+      <p class="intro rv">Fotografias da Ritual Zen, em Santa Comba Dão. Toque numa imagem para a ver em grande.</p>
+    </div>
+    <div class="gal" id="gal">
+      <button class="g big rv" data-cap="Sala de espera"><img src="img/sala-de-espera.webp" alt="Sala de espera com cadeirões pretos e bambus" loading="lazy" width="720" height="480"><span>Sala de espera</span></button>
+      <button class="g rv" data-cap="Unhas"><img src="img/unhas.webp" alt="Posto de manicure com candeeiro e prateleiras" loading="lazy" width="720" height="480"><span>Unhas</span></button>
+      <button class="g rv" data-cap="Recanto"><img src="img/recanto.webp" alt="Recanto com duas cadeiras azuis e um quadro" loading="lazy" width="720" height="480"><span>Recanto</span></button>
+      <button class="g rv" data-cap="Espaço"><img src="img/espaco.webp" alt="Zona de estar com relógio decorativo e plantas" loading="lazy" width="720" height="480"><span>Espaço</span></button>
+      <button class="g rv" data-cap="Corredor"><img src="img/corredor.webp" alt="Corredor das salas de tratamento" loading="lazy" width="720" height="480"><span>Salas</span></button>
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" id="lb" aria-label="Imagem ampliada">
+  <button class="lb-x" id="lbX" aria-label="Fechar">×</button>
+  <img id="lbImg" src="img/sala-de-espera.webp" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<section class="sec" id="avaliacoes">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker rv">Avaliações</p>
+        <h2 class="rv">O que dizem os nossos clientes</h2>
+      </div>
+    </div>
+    <div class="revs">
+      <div class="score rv">
+        <b>4,9</b>
+        <p>Nota média em 482 avaliações na Treatwell. Distinção Top Rated 2024.</p>
+        <a href="https://widget.treatwell.pt/estabelecimento/ritualzen/" target="_blank" rel="noopener">Ler as avaliações</a>
+      </div>
+      <figure class="rev rv"><blockquote>“Super profissional e muito competente.”</blockquote><figcaption>Catarina N. · Treatwell</figcaption></figure>
+      <figure class="rev rv"><blockquote>“Simpatia, atenção e bom ambiente.”</blockquote><figcaption>Sandrine L. · Treatwell</figcaption></figure>
+      <figure class="rev rv"><blockquote>“Muito bom, relaxante. Experimentem, que não se vão arrepender.”</blockquote><figcaption>Filipa R. · Treatwell</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec white" id="vouchers">
+  <div class="wrap gift">
+    <div class="rv"><img src="img/packs.webp" alt="Caixas dos Packs Ritual Zen: Deixe de Fumar, Momento a Dois, Boas Festas, Bem Estar, Parabéns e Spa e Beleza" width="720" height="442" loading="lazy"></div>
+    <div>
+      <p class="kicker rv">Vouchers e packs</p>
+      <h2 class="rv">Há presentes que se abrem e outros que se vivem</h2>
+      <p class="intro rv">Experiências pensadas para cuidar, relaxar e surpreender quem mais gosta.</p>
+      <div class="packs rv"><span>Momento a Dois</span><span>Bem-Estar</span><span>Spa e Beleza</span><span>Parabéns</span><span>Boas Festas</span><span>Deixe de Fumar</span></div>
+      <div class="cards-v rv">
+        <div class="cv"><b>15 €</b><small>Cartão presente</small></div>
+        <div class="cv"><b>25 €</b><small>Cartão presente</small></div>
+        <div class="cv"><b>50 €</b><small>Cartão presente</small></div>
+      </div>
+      <p class="note rv">O cartão presente serve para qualquer produto ou serviço e não tem validade. As experiências dos packs são válidas por 1 ano após a compra.</p>
+      <div class="ctas rv"><a class="btn btn-plum" href="https://www.ritualzen.pt/vouchers" target="_blank" rel="noopener">Comprar voucher</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0;padding-bottom:clamp(40px,6vw,70px)">
+  <div class="wrap">
+    <div class="app rv">
+      <div>
+        <h2>Instale a app My Ritual Zen</h2>
+        <p>Marcações, loja online, serviços e o seu saldo na palma da mão. Compatível com Android e iPhone.</p>
+      </div>
+      <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.ritualzen.mobile" target="_blank" rel="noopener">Ver na Google Play</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="contactos">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker rv">Contactos</p>
+      <h2 class="rv">Visite-nos</h2>
+      <p class="intro rv">Marque online, ligue-nos ou escreva-nos. Estamos em Santa Comba Dão.</p>
+      <div class="chs">
+        <a class="ch rv" href="tel:+351964019689"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg><span><small>Telemóvel</small><b>964 019 689</b></span></a>
+        <a class="ch rv" href="tel:+351232882235"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telefone fixo</small><b>232 882 235</b></span></a>
+        <a class="ch rv" href="mailto:ritualzen2@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg><span><small>E-mail</small><b>ritualzen2@gmail.com</b></span></a>
+        <a class="ch rv" href="https://goo.gl/maps/Sf2p7uvwuRKqKyxF6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><small>Morada</small><b>Av. General Humberto Delgado, 10C, 3440-325 Santa Comba Dão</b></span></a>
+        <a class="ch rv" href="https://www.instagram.com/ritualzen/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span><small>Instagram</small><b>@ritualzen</b></span></a>
+      </div>
+    </div>
+    <form class="qf rv" id="form" action="mailto:ritualzen2@gmail.com" method="post" enctype="text/plain">
+      <h3>Pedido de marcação</h3>
+      <div class="row">
+        <label>Nome<input name="nome" required autocomplete="name"></label>
+        <label>Telemóvel<input name="telemovel" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      <label>Serviço
+        <select name="servico">
+          <option>Massagem</option>
+          <option>Estética / depilação</option>
+          <option>Saúde e terapias</option>
+          <option>Unhas e maquilhagem</option>
+          <option>Controlo alimentar</option>
+          <option>Voucher / pack</option>
+        </select>
+      </label>
+      <label>Mensagem<textarea name="mensagem" rows="4" placeholder="Diga-nos o que procura e os dias que lhe dão jeito."></textarea></label>
+      <button class="btn btn-orchid" type="submit">Enviar pedido</button>
+      <p class="small">O pedido abre no seu programa de e-mail, pronto a enviar. Também pode <a href="https://widget.treatwell.pt/place/100052380/menu/" target="_blank" rel="noopener">marcar online</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <p><b style="color:#fff">Ritual Zen</b><br>Visão e Glamor, Lda · NIF 516196146<br>Av. General Humberto Delgado, 10C, 3440-325 Santa Comba Dão</p>
+      <p><a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener">Livro de reclamações</a><br><a href="https://www.facebook.com/ritualzen.pt" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/ritualzen/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+    <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial da Ritual Zen. Fotos e textos do site ritualzen.pt e da página da Ritual Zen na Treatwell.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351964019689"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="mailto:ritualzen2@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>E-mail</a>
+  <a class="go" href="https://widget.treatwell.pt/place/100052380/menu/" target="_blank" rel="noopener">Marcar</a>
+</nav>
+
+<script>
+(function(){
+  var d=document,root=d.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window&&!reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    d.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }
+  var lb=d.getElementById('lb'),li=d.getElementById('lbImg'),lc=d.getElementById('lbCap');
+  d.getElementById('gal').addEventListener('click',function(ev){
+    var b=ev.target.closest('.g');if(!b||!lb.showModal)return;
+    var im=b.querySelector('img');li.src=im.getAttribute('src');li.alt=im.alt;lc.textContent=b.getAttribute('data-cap');lb.showModal();
+  });
+  d.getElementById('lbX').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(ev){if(ev.target===lb)lb.close();});
+  d.getElementById('form').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var f=ev.target,v=function(n){return (f.elements[n].value||'').trim();};
+    var body='Nome: '+v('nome')+'\nTelemóvel: '+v('telemovel')+'\nE-mail: '+v('email')+'\nServiço: '+v('servico')+'\n\n'+v('mensagem');
+    location.href='mailto:ritualzen2@gmail.com?subject='+encodeURIComponent('Pedido de marcação — '+v('servico'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
