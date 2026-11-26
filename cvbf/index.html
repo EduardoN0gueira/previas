@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>CVBF – Engenharia · Soluções de AVAC em Loures</title>
+<meta name="description" content="Instalação, manutenção e assistência técnica de ar condicionado, bombas de calor, caldeiras, ventilação e AQS para casas, comércio e indústria. Loures.">
+<meta name="theme-color" content="#062a3a">
+<link rel="icon" href="img/logo-cvbf.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#062a3a; --navy-2:#0b3649; --navy-3:#114559;
+  --blue:#0093cf; --blue-d:#00618a; --blue-l:#5cc6f2;
+  --ice:#eaf6fb; --ice-2:#d6eef8; --paper:#ffffff; --line:#d9e6ec;
+  --text:#0f2430; --muted:#4f6672; --muted-d:#9fb8c4;
+  --warm:#ff8a3d;
+  --r:18px;
+  --font:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);font-variation-settings:"wdth" 100;color:var(--text);background:var(--paper);line-height:1.6;font-size:16.5px;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font);font-stretch:118%;font-variation-settings:"wdth" 118;line-height:1.1;letter-spacing:-.015em;margin:0 0 .5em;font-weight:800}
+h2{font-size:clamp(1.7rem,4.4vw,2.7rem)}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:.55em;font-weight:700;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-d)}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px rgba(0,147,207,.18)}
+.dark .eyebrow{color:var(--blue-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 1.4em;border-radius:12px;font:700 1rem/1 var(--font);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:#0aa5e4}
+.btn-ghost{border-color:rgba(255,255,255,.3);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-3)}
+:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+
+/* Cabeçalho */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo img{height:40px;width:auto}
+.nav{display:none;gap:26px;font-size:.95rem;font-weight:500}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--blue-d)}
+.top-actions{display:flex;align-items:center;gap:16px}
+.top-call{display:none;align-items:center;gap:.45em;text-decoration:none;font-weight:700;color:var(--navy)}
+.top-call svg{width:18px;height:18px;color:var(--blue)}
+.top .btn{min-height:42px;padding:0 1.05em;font-size:.92rem}
+
+/* Hero */
+.hero{position:relative;background:var(--navy);color:#fff;padding:44px 0 56px;overflow:hidden}
+.hero .ribbon{position:absolute;right:-180px;top:-120px;width:720px;max-width:none;opacity:.5;pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2rem,6.6vw,3.7rem);margin:.5em 0 .45em}
+.hero h1 span{color:var(--blue-l)}
+.hero .lead{color:#c3d5de;font-size:1.06rem;max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 18px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted-d);font-size:.9rem;margin:0;padding:0;list-style:none}
+.hero-meta li{display:flex;align-items:center;gap:.45em}
+.hero-meta svg{width:17px;height:17px;color:var(--blue-l);flex:none}
+
+.panel{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:22px}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.panel-head b{font-stretch:115%;font-variation-settings:"wdth" 115;font-size:.98rem}
+.temp{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--muted-d)}
+.temp i{display:block;width:64px;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--blue-l),#fff 50%,var(--warm))}
+.systems{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0;padding:0;list-style:none}
+.systems li{background:rgba(6,42,58,.65);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 12px;font-weight:600;font-size:.92rem;line-height:1.3;display:flex;flex-direction:column;gap:10px}
+.systems svg{width:28px;height:28px;color:var(--blue-l)}
+.systems li.hot svg{color:var(--warm)}
+.panel-foot{margin:14px 0 0;font-size:.85rem;color:var(--muted-d)}
+
+/* Marcas */
+.brands{border-bottom:1px solid var(--line);background:#fff}
+.brands .wrap{display:grid;gap:14px;padding-top:22px;padding-bottom:22px}
+.brands p{margin:0;font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brand-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.brand-row div{border:1px solid var(--line);border-radius:12px;height:72px;display:grid;place-items:center;padding:10px 16px;background:#fff}
+.brand-row img{max-height:46px;width:auto;object-fit:contain}
+
+section{padding:72px 0}
+.sec-head{max-width:740px;margin-bottom:36px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+.dark .sec-head p{color:var(--muted-d)}
+
+/* Serviços */
+.services{display:grid;gap:18px}
+.svc{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:26px 22px 24px;background:#fff;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(6,42,58,.1);border-color:var(--ice-2)}
+.svc .num{position:absolute;right:20px;top:18px;font-stretch:125%;font-variation-settings:"wdth" 125;font-weight:800;font-size:2.4rem;line-height:1;color:var(--ice-2)}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--ice);color:var(--blue-d);display:grid;place-items:center;margin-bottom:18px}
+.svc .ic svg{width:28px;height:28px}
+.svc p{color:var(--muted);font-size:.96rem}
+.svc ul{margin:0 0 1.2em;padding:0;list-style:none;font-size:.93rem}
+.svc li{padding:.3em 0 .3em 1.4em;position:relative;border-top:1px dashed var(--line)}
+.svc li::before{content:"";position:absolute;left:0;top:.85em;width:8px;height:8px;border-radius:50%;border:2px solid var(--blue)}
+.svc .more{margin-top:auto;font-weight:700;color:var(--blue-d);text-decoration:none}
+.svc .more:hover{text-decoration:underline}
+.also{margin-top:26px;padding:22px;border-radius:var(--r);background:var(--ice)}
+.also h3{margin-bottom:.8em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:#fff;border:1px solid var(--ice-2);border-radius:999px;padding:.45em .9em;font-size:.9rem;font-weight:500}
+
+/* Manutenção */
+.maint{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.maint-grid{display:grid;gap:30px}
+.modes{display:grid;gap:12px}
+.mode{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:20px}
+.mode b{display:block;font-stretch:118%;font-variation-settings:"wdth" 118;font-size:1.2rem;margin-bottom:4px}
+.mode span{color:var(--muted-d);font-size:.94rem}
+.mode .bar{height:4px;border-radius:4px;margin-top:14px;background:linear-gradient(90deg,var(--blue),var(--blue-l))}
+.mode:nth-child(3) .bar{background:linear-gradient(90deg,var(--blue-l),var(--warm))}
+.diag{margin-top:18px;padding:20px;border-radius:var(--r);border:1px dashed rgba(255,255,255,.25);color:#c3d5de}
+.diag strong{color:#fff}
+
+/* Processo */
+.steps{display:grid;gap:14px;counter-reset:s;margin:0;padding:0;list-style:none}
+.steps li{position:relative;padding:22px 20px 20px 20px;border-radius:var(--r);background:var(--ice)}
+.steps li::before{counter-increment:s;content:"0" counter(s);display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;font-size:.9rem;margin-bottom:12px}
+.steps p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* Quem somos */
+.about{background:var(--ice)}
+.about-grid{display:grid;gap:28px;align-items:start}
+.about blockquote{margin:0;font-stretch:112%;font-variation-settings:"wdth" 112;font-weight:700;font-size:clamp(1.35rem,3.6vw,2rem);line-height:1.3;color:var(--navy)}
+.about blockquote span{color:var(--blue-d)}
+.mission{background:#fff;border-radius:var(--r);padding:24px;border:1px solid var(--ice-2)}
+.mission p{color:var(--muted)}
+.mission p:last-child{margin:0}
+
+/* Contactos */
+.contact{background:var(--navy);color:#fff}
+.contact-grid{display:grid;gap:32px}
+.contact .lead{color:#c3d5de}
+.direct{display:grid;gap:10px;margin-top:22px}
+.direct>a,.direct>div{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;background:var(--navy-2);border:1px solid rgba(255,255,255,.08);text-decoration:none;overflow-wrap:anywhere}
+.direct>a:hover{border-color:var(--blue-l)}
+.direct>*>svg{width:22px;height:22px;color:var(--blue-l);flex:none}
+.direct small{display:block;color:var(--muted-d);font-size:.8rem}
+.direct .maps-link{color:var(--blue-l);font-weight:700;font-size:.9rem;text-decoration:underline;display:inline-block;margin-top:2px}
+form{background:#fff;color:var(--text);border-radius:22px;padding:24px;display:grid;gap:14px}
+form h3{margin:0}
+.row{display:grid;gap:14px}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:12px;border:1.5px solid #c9d7de;background:#fff;color:var(--text)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,147,207,.2)}
+textarea{min-height:110px;resize:vertical}
+form .btn{width:100%}
+.form-note{font-size:.82rem;color:var(--muted);margin:0}
+
+/* Rodapé */
+footer{background:#041e2a;color:#9fb8c4;padding:44px 0 0;font-size:.92rem}
+.foot{display:grid;gap:24px;padding-bottom:30px}
+.foot img{height:44px;width:auto;margin-bottom:12px}
+.foot a{color:#dbe8ee;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.foot strong{color:#fff}
+.demo{border-top:1px solid #0d3343;padding:16px 0 92px;font-size:.8rem;color:#7d98a5;text-align:center}
+
+/* Barra fixa no telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(6,42,58,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{min-height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:.45em;font-weight:700;font-size:.92rem;text-decoration:none;color:#fff;background:var(--navy-3)}
+.mbar a.go{background:var(--blue)}
+.mbar svg{width:18px;height:18px}
+
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.svc{transition:none}
+}
+
+@media (min-width:640px){
+  .brand-row{grid-template-columns:repeat(4,1fr)}
+  .row.two{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .modes{grid-template-columns:repeat(3,1fr)}
+  .systems{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .top-call{display:inline-flex}
+  .logo img{height:46px}
+  .hero{padding:80px 0 96px}
+  .hero .ribbon{right:-120px;top:-160px;width:900px;opacity:.6}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:60px}
+  .systems{grid-template-columns:1fr 1fr}
+  .brands .wrap{grid-template-columns:auto 1fr;align-items:center;gap:28px}
+  .services{grid-template-columns:repeat(3,1fr)}
+  .maint-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .steps{grid-template-columns:repeat(4,1fr)}
+  .about-grid{grid-template-columns:1.1fr .9fr;gap:56px}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .foot{grid-template-columns:1.4fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:100px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="CVBF – Engenharia, início"><img src="img/logo-cvbf.webp" alt="CVBF – Engenharia" width="320" height="203"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#manutencao">Manutenção</a>
+      <a href="#como-trabalhamos">Como trabalhamos</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <div class="top-actions">
+      <a class="top-call" href="tel:+351932533075"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>932 533 075</a>
+      <a class="btn btn-main" href="#contactos">Pedir orçamento</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero dark" aria-labelledby="h1">
+  <svg class="ribbon" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+    <path d="M120 80c160-60 300 60 260 210S170 520 110 430 220 150 400 170s170 220 40 300" stroke="#0093cf" stroke-width="2"/>
+    <path d="M140 60c170-50 300 80 250 230S160 540 100 440 230 130 410 160s180 230 30 320" stroke="#0093cf" stroke-width="1.2" opacity=".6"/>
+    <path d="M100 100c150-70 300 40 270 190S180 500 120 420 210 170 390 180s160 210 50 280" stroke="#5cc6f2" stroke-width="1" opacity=".5"/>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Soluções de AVAC · Loures</span>
+      <h1 id="h1">Climatização, aquecimento e ventilação. <span>Do projeto à manutenção.</span></h1>
+      <p class="lead">Instalação, manutenção e assistência técnica de ar condicionado, bombas de calor, caldeiras e sistemas solares térmicos, para a sua casa, o seu comércio ou a sua indústria.</p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="#contactos">Pedir orçamento
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+351932533075">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          932 533 075</a>
+      </div>
+      <ul class="hero-meta">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horário: 24 horas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Visita ao local para estudo da solução</li>
+      </ul>
+    </div>
+
+    <div class="panel reveal" aria-label="Sistemas com que trabalhamos">
+      <div class="panel-head"><b>Sistemas que instalamos e mantemos</b><span class="temp" aria-hidden="true">frio<i></i>calor</span></div>
+      <ul class="systems">
+        <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="11" rx="2.5"/><path d="M7 14h18M10 22c0 2-2 2-2 4M16 22c0 2-2 2-2 4M22 22c0 2-2 2-2 4"/></svg>Ar condicionado</li>
+        <li class="hot"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="3"/><circle cx="16" cy="16" r="6"/><path d="M16 10v12M10 16h12"/></svg>Bombas de calor</li>
+        <li class="hot"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="3" width="16" height="26" rx="2.5"/><path d="M16 22c-2.2 0-3.5-1.5-3.5-3.3 0-2.4 3.5-4.7 3.5-6.7 0 2 3.5 4.3 3.5 6.7 0 1.8-1.3 3.3-3.5 3.3zM12 7h8"/></svg>Caldeiras</li>
+        <li class="hot"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26l4-12h16l4 12zM10 14l-2 12M16 14v12M22 14l2 12M6 20h20"/><circle cx="16" cy="6" r="2.5"/></svg>Solar térmico</li>
+        <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="2"/><path d="M16 14c0-5 4-7 6-5s-1 6-4 7M18 16c5 0 7 4 5 6s-6-1-7-4M16 18c0 5-4 7-6 5s1-6 4-7M14 16c-5 0-7-4-5-6s6 1 7 4"/></svg>Ventilação e extração</li>
+        <li class="hot"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4c-4 6-8 10-8 15a8 8 0 0 0 16 0c0-5-4-9-8-15z"/><path d="M12.5 20a3.5 3.5 0 0 0 3.5 3.5"/></svg>Águas quentes (AQS)</li>
+      </ul>
+      <p class="panel-foot">Para habitação, comércio e indústria.</p>
+    </div>
+  </div>
+</section>
+
+<div class="brands" aria-label="Marcas">
+  <div class="wrap">
+    <p>Marcas com que trabalhamos</p>
+    <div class="brand-row">
+      <div><img src="img/marca-mitsubishi-electric.webp" alt="Mitsubishi Electric" width="400" height="200" loading="lazy"></div>
+      <div><img src="img/marca-panasonic.webp" alt="Panasonic" width="400" height="186" loading="lazy"></div>
+      <div><img src="img/marca-samsung.webp" alt="Samsung" width="400" height="214" loading="lazy"></div>
+      <div><img src="img/marca-lg.webp" alt="LG" width="400" height="201" loading="lazy"></div>
+    </div>
+  </div>
+</div>
+
+<section id="servicos" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Serviços</span>
+      <h2 id="h-serv">Serviços que tornam o seu espaço agradável e confortável.</h2>
+      <p>Soluções de engenharia integrada que vão do projeto à instalação, manutenção e respetiva gestão, assim como a assistência de sistemas de ar condicionado, ventilação, extração, aquecimento e AQS.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>
+        <h3>Soluções domésticas</h3>
+        <p>Para a climatização da sua casa, diversas soluções de climatização e AQS.</p>
+        <ul>
+          <li>Ar condicionado</li>
+          <li>Bombas de calor</li>
+          <li>Caldeiras</li>
+          <li>Sistemas solares térmicos</li>
+          <li>Visita ao local ou reunião com o seu arquiteto para apresentar a melhor solução</li>
+        </ul>
+        <a class="more" href="#contactos">Pedir orçamento →</a>
+      </article>
+      <article class="svc reveal">
+        <span class="num" aria-hidden="true">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V9l6 4V9l6 4V5h6v16z"/><path d="M7 17h2M12 17h2M17 17h2"/></svg></div>
+        <h3>Soluções comerciais e industriais</h3>
+        <p>Realizamos sempre uma visita ao local para estudo e dimensionamento da melhor solução para o seu espaço.</p>
+        <ul>
+          <li>Visita prévia para estudo e dimensionamento do sistema e equipamento</li>
+          <li>Coordenação com as outras especialidades em obra: arquitetura e engenharia civil (estruturas, águas e esgotos)</li>
+          <li>Desenhos de implantação do sistema após a execução da obra</li>
+          <li>Contratos de manutenção periódica pós-venda</li>
+        </ul>
+        <a class="more" href="#contactos">Marcar visita →</a>
+      </article>
+      <article class="svc reveal">
+        <span class="num" aria-hidden="true">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div>
+        <h3>Instalação, manutenção e assistência técnica</h3>
+        <p>Ajudamos a decidir qual o melhor sistema a instalar na sua habitação, empresa ou indústria.</p>
+        <ul>
+          <li>Instalação de sistemas de aquecimento, ventilação e ar condicionado</li>
+          <li>Manutenção preventiva, preditiva ou corretiva</li>
+          <li>Planos de manutenção, elaborados e cumpridos</li>
+          <li>Assistência técnica por equipas técnicas credenciadas</li>
+        </ul>
+        <a class="more" href="#contactos">Pedir assistência →</a>
+      </article>
+    </div>
+    <div class="also reveal">
+      <h3>Também fazemos</h3>
+      <ul class="chips">
+        <li>Serviços de AVAC de emergência</li>
+        <li>Qualidade do ar interior</li>
+        <li>Limpeza e instalação de condutas</li>
+        <li>Reparação e substituição de aquecedores de água</li>
+        <li>Manutenção de ar condicionado comercial</li>
+        <li>Reparação de aquecedores</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="manutencao" class="maint dark" aria-labelledby="h-man">
+  <div class="wrap maint-grid">
+    <div class="reveal">
+      <span class="eyebrow">Manutenção e assistência</span>
+      <h2 id="h-man">O seu sistema a funcionar bem, todo o ano.</h2>
+      <p style="color:#c3d5de">Garantimos o bom funcionamento dos seus sistemas de aquecimento, ventilação e ar condicionado, no âmbito doméstico, comercial e industrial.</p>
+      <div class="diag"><strong>Avaria ou funcionamento estranho?</strong> Se o seu ar condicionado, caldeira, bomba de calor ou outro sistema de AVAC mudou de comportamento, as nossas equipas técnicas credenciadas tratam da assistência. Se não está satisfeito com o seu sistema, fazemos um diagnóstico e damos a nossa recomendação profissional.</div>
+      <p style="margin-top:22px"><a class="btn btn-main" href="#contactos">Pedir diagnóstico</a></p>
+    </div>
+    <div class="modes">
+      <div class="mode reveal"><b>Preventiva</b><span>Manutenções periódicas que evitam avarias antes de acontecerem.</span><div class="bar"></div></div>
+      <div class="mode reveal"><b>Preditiva</b><span>Acompanhamento do equipamento para agir no momento certo.</span><div class="bar"></div></div>
+      <div class="mode reveal"><b>Corretiva</b><span>Reparação e assistência técnica quando algo falha.</span><div class="bar"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="como-trabalhamos" aria-labelledby="h-proc">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Como trabalhamos</span>
+      <h2 id="h-proc">Acompanhamos o cliente da instalação à gestão da manutenção.</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><h3>Visita ou reunião</h3><p>Visitamos o local ou reunimos com o seu arquiteto para conhecer o espaço e as necessidades.</p></li>
+      <li class="reveal"><h3>Estudo e dimensionamento</h3><p>Escolhemos a melhor solução e o equipamento adequado ao seu espaço.</p></li>
+      <li class="reveal"><h3>Instalação</h3><p>Executamos a obra em coordenação com as restantes especialidades.</p></li>
+      <li class="reveal"><h3>Manutenção</h3><p>Desenhos de implantação no fim da obra e contratos de manutenção periódica.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="h-sobre">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Quem somos</span>
+      <h2 id="h-sobre" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Quem somos</h2>
+      <blockquote style="margin-top:14px">Somos uma equipa jovem, dinâmica e altamente qualificada. <span>Valorizamos o conforto dos nossos clientes</span> e gostamos de apresentar as melhores soluções.</blockquote>
+    </div>
+    <div class="mission reveal">
+      <h3>A nossa missão</h3>
+      <p>Apresentar o melhor conjunto de soluções para garantir a eficiência energética e sustentável do seu sistema.</p>
+      <p>Focamo-nos na excelência do apoio ao cliente e na alta qualidade dos equipamentos. O nosso objetivo é garantir a sua satisfação e o seu conforto.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contactos" class="contact dark" aria-labelledby="h-cont">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contactos</span>
+      <h2 id="h-cont">Fale connosco ou marque uma visita.</h2>
+      <p class="lead">Diga-nos o tipo de espaço e o que precisa: instalação, manutenção ou uma avaria. Fale com o nosso Departamento Comercial.</p>
+      <div class="direct">
+        <a href="tel:+351932533075"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>932 533 075<small>Departamento Comercial · Ana Fernandes · chamada para rede móvel nacional</small></span></a>
+        <a href="mailto:geral@cvbf-engenharia.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>geral@cvbf-engenharia.pt<small>E-mail geral</small></span></a>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Rua Dário Cannas, n.º 5 A/B<br>2670-503 Loures<small>Sede · Horário: 24 horas</small><a class="maps-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20D%C3%A1rio%20Cannas%205%2C%202670-503%20Loures" target="_blank" rel="noopener">Como chegar</a></span></div>
+      </div>
+    </div>
+    <form class="reveal" id="form" novalidate>
+      <h3>Pedido de orçamento</h3>
+      <div class="row two">
+        <div><label for="f-nome">Nome *</label><input id="f-nome" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-tel">Telemóvel *</label><input id="f-tel" name="Telemóvel" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="row two">
+        <div><label for="f-mail">E-mail</label><input id="f-mail" name="E-mail" type="email" autocomplete="email"></div>
+        <div><label for="f-loc">Localidade *</label><input id="f-loc" name="Localidade" required></div>
+      </div>
+      <div class="row two">
+        <div><label for="f-esp">Tipo de espaço</label>
+          <select id="f-esp" name="Tipo de espaço"><option>Habitação</option><option>Comércio</option><option>Indústria</option></select></div>
+        <div><label for="f-serv">Serviço</label>
+          <select id="f-serv" name="Serviço"><option>Instalação</option><option>Manutenção</option><option>Assistência técnica / avaria</option><option>Visita / reunião</option></select></div>
+      </div>
+      <div><label for="f-msg">Equipamento e o que precisa</label><textarea id="f-msg" name="Mensagem" placeholder="Ex.: ar condicionado para sala e 2 quartos; ou caldeira com avaria"></textarea></div>
+      <button class="btn btn-main" type="submit">Enviar pedido de orçamento</button>
+      <p class="form-note">Ao enviar, abre-se o seu programa de e-mail com o pedido pronto para geral@cvbf-engenharia.pt.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <img src="img/logo-cvbf.webp" alt="CVBF – Engenharia" width="320" height="203" loading="lazy">
+      <p style="margin:0;max-width:28em">Soluções de AVAC: projeto, instalação, manutenção e assistência técnica. Loures.</p>
+    </div>
+    <div><strong>Serviços</strong><ul><li><a href="#servicos">Soluções domésticas</a></li><li><a href="#servicos">Comerciais e industriais</a></li><li><a href="#manutencao">Manutenção e assistência</a></li></ul></div>
+    <div><strong>Contacto</strong><ul><li><a href="tel:+351932533075">932 533 075</a></li><li><a href="mailto:geral@cvbf-engenharia.pt">geral@cvbf-engenharia.pt</a></li><li>Rua Dário Cannas, n.º 5 A/B, Loures</li></ul></div>
+  </div>
+  <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de CVBF – Engenharia. Fotos e textos do site cvbf-engenharia.pt.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351932533075"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="mailto:geral@cvbf-engenharia.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>E-mail</a>
+  <a class="go" href="#contactos">Pedir orçamento</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3500);
+  }
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var req=f.querySelectorAll('[required]'),ok=true,first=null;
+    req.forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#b91c1c';if(!first)first=i;}else{i.style.borderColor='';}});
+    if(!ok){first.focus();return;}
+    var lines=[];new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    location.href='mailto:geral@cvbf-engenharia.pt?subject='+encodeURIComponent('Pedido de orçamento — '+f.querySelector('#f-loc').value)+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>

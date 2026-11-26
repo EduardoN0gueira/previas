@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ferreira da Cunha Saúde — Saúde e bem-estar ao domicílio e online</title>
+<meta name="description" content="Médico ao domicílio, telemedicina, enfermagem, fisioterapia, psicologia, nutrição e massagens em casa, na Grande Lisboa. Sem filas e sem deslocações.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2f6db5; --blue-d:#164a8a; --navy:#0c2f5c; --sky:#5aa0d8; --pale:#eaf3fb; --mist:#f5f9fd;
+  --ink:#16233a; --muted:#53627a; --line:#dde7f2; --white:#fff; --mint:#2e9e78;
+  --r:22px; --wrap:1180px;
+  --h:"Raleway",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --b:"Mulish",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.65;font-size:17px;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.1;letter-spacing:-.015em;color:var(--navy);margin:0 0 .45em}
+h2{font-size:clamp(1.95rem,5vw,3rem)}
+h3{font-size:1.2rem}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.pill{display:inline-flex;align-items:center;gap:8px;font:700 .76rem/1 var(--b);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:var(--pale);padding:.6em 1em;border-radius:999px;margin-bottom:16px}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sky)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 1.4em;border-radius:999px;font:700 1rem/1 var(--b);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p:hover{background:var(--blue-d)}
+.btn-o{border-color:var(--line);color:var(--navy);background:#fff}
+.btn-o:hover{border-color:var(--sky)}
+.btn-w{background:#fff;color:var(--navy)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:70px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand img{width:40px;height:40px;flex:none}
+.brand span{font:700 1rem/1.05 var(--h);color:var(--navy)}
+.brand small{display:block;font:600 .62rem/1.2 var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:none;gap:26px;font-size:.96rem;font-weight:600}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--blue)}
+.top .btn{min-height:44px;padding:0 1.1em;font-size:.9rem;flex:none}
+
+/* Hero */
+.hero{padding:30px 0 60px;background:radial-gradient(120% 80% at 100% 0%,var(--pale) 0%,#fff 60%)}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.hero h1{font-size:clamp(2.35rem,8vw,4.3rem);margin:.05em 0 .3em}
+.hero h1 span{color:var(--blue)}
+.lead{font-size:1.1rem;color:var(--muted);max-width:32em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 24px}
+.quick{display:grid;gap:10px;list-style:none;margin:0;padding:0;max-width:34em}
+.quick a{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--line);text-decoration:none;transition:border-color .25s,box-shadow .25s}
+.quick a:hover{border-color:var(--sky);box-shadow:0 10px 26px rgba(12,47,92,.08)}
+.quick .ic{width:42px;height:42px;border-radius:12px;background:var(--pale);color:var(--blue);display:grid;place-items:center;flex:none}
+.quick .ic svg{width:22px;height:22px}
+.quick b{display:block;font-weight:700;color:var(--navy)}
+.quick small{color:var(--muted);font-size:.88rem}
+.quick .arr{margin-left:auto;color:var(--blue);width:20px;height:20px;flex:none}
+.visual{position:relative;max-width:520px;width:100%;margin:0 auto}
+.visual .blob{border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 70px rgba(12,47,92,.18)}
+.visual .blob img{width:100%;height:100%;object-fit:cover}
+.visual .float{position:absolute;left:-4px;bottom:22px;background:#fff;border-radius:18px;padding:14px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px rgba(12,47,92,.16);max-width:250px}
+.visual .float img{width:40px;height:40px}
+.visual .float b{display:block;font:700 1.05rem/1.15 var(--h);color:var(--navy)}
+.visual .float span{font-size:.82rem;color:var(--muted);line-height:1.3;display:block}
+
+/* Números */
+.nums{background:var(--navy);color:#bcd0ea}
+.nums ul{list-style:none;margin:0;padding:28px 0;display:grid;grid-template-columns:1fr 1fr;gap:22px 18px}
+.nums b{display:block;font:700 clamp(1.6rem,5vw,2.2rem)/1 var(--h);color:#fff;margin-bottom:6px}
+.nums li{font-size:.9rem;line-height:1.35}
+
+section{padding:84px 0}
+.head{max-width:720px;margin-bottom:40px}
+.head p{color:var(--muted);font-size:1.06rem}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* Como funciona */
+.how{display:grid;gap:16px;counter-reset:s}
+.st{background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;position:relative}
+.st::before{counter-increment:s;content:counter(s);position:absolute;right:22px;top:18px;font:700 3rem/1 var(--h);color:#d6e5f4}
+.st .ic{width:48px;height:48px;border-radius:14px;background:#fff;color:var(--blue);display:grid;place-items:center;margin-bottom:16px;border:1px solid var(--line)}
+.st .ic svg{width:24px;height:24px}
+.st p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* Serviços */
+.svc{background:var(--mist)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tabs button{font:700 .95rem/1 var(--b);padding:.8em 1.2em;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;min-height:44px}
+.tabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.grp{display:grid;gap:12px}
+.grp[hidden]{display:none}
+.it{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.it .ic{width:42px;height:42px;border-radius:12px;background:var(--pale);color:var(--blue);display:grid;place-items:center;flex:none}
+.it .ic svg{width:21px;height:21px}
+.it h3{font-size:1.04rem;margin:0 0 2px;font-family:var(--b);font-weight:700;letter-spacing:0}
+.it p{margin:0;font-size:.88rem;color:var(--muted)}
+.it .pr{margin-left:auto;text-align:right;font-size:.78rem;color:var(--muted);line-height:1.2;flex:none}
+.it .pr b{display:block;font:700 1.15rem/1.1 var(--h);color:var(--navy)}
+.svc-note{margin-top:18px;font-size:.88rem;color:var(--muted)}
+
+/* Plano */
+.plan-grid{display:grid;gap:34px;align-items:center}
+.plan-card{border-radius:24px;overflow:hidden;box-shadow:0 26px 60px rgba(12,47,92,.16)}
+.plan-card img{width:100%}
+.ben{list-style:none;margin:20px 0 24px;padding:0;display:grid;gap:12px}
+.ben li{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}
+.ben svg{width:22px;height:22px;color:var(--mint);flex:none;margin-top:2px}
+.ben b{color:var(--ink)}
+.tagline{display:inline-block;font-weight:700;color:var(--navy);background:var(--pale);border-radius:12px;padding:.6em .9em;margin-bottom:22px}
+
+/* Área */
+.area{background:var(--navy);color:#bcd0ea}
+.area h2,.area h3{color:#fff}
+.area .pill{background:rgba(255,255,255,.08);color:#cfe0f5}
+.area-grid{display:grid;gap:30px;align-items:start}
+.map{border-radius:var(--r);overflow:hidden;background:#fff}
+.zones{display:grid;gap:10px}
+details{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:0 18px}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;padding:16px 0;font-weight:700;color:#fff}
+summary::-webkit-details-marker{display:none}
+summary .dot{width:12px;height:12px;border-radius:50%;flex:none}
+summary::after{content:"+";margin-left:auto;font-size:1.3rem;line-height:1;color:var(--sky)}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;font-size:.93rem;line-height:1.7}
+
+/* Confiança */
+.trust-grid{display:grid;gap:22px}
+.quote{background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;margin:0}
+.quote p{font:600 1.3rem/1.45 var(--h);color:var(--navy);letter-spacing:-.01em}
+.quote cite{font-style:normal;color:var(--muted);font-size:.92rem}
+.quote cite b{color:var(--ink)}
+.media{border:1px dashed var(--line);border-radius:var(--r);padding:28px 26px}
+.media ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.media li{font:700 1.08rem/1.2 var(--h);color:var(--navy)}
+.media li + li::before{content:"·";margin-right:18px;color:var(--sky)}
+.media .ers{margin:22px 0 0;font-size:.9rem;color:var(--muted)}
+
+/* Contacto */
+.contact-grid{display:grid;gap:30px}
+.cbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.cbox table{width:100%;border-collapse:collapse;font-size:.96rem}
+.cbox td{padding:8px 0;border-bottom:1px dashed var(--line)}
+.cbox td:last-child{text-align:right;font-weight:700;color:var(--navy)}
+.cbox ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.cbox a{font-weight:700;color:var(--navy);text-decoration:none;overflow-wrap:anywhere}
+.cbox a:hover{text-decoration:underline}
+.cbox small{display:block;color:var(--muted);font-size:.8rem;font-weight:400}
+.side{display:grid;gap:16px}
+form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px 22px;display:grid;gap:14px;box-shadow:0 24px 60px rgba(12,47,92,.08)}
+form h3{font-size:1.6rem;margin:0}
+.two{display:grid;gap:14px}
+label{display:block;font-size:.86rem;font-weight:700;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:12px;border:1.5px solid #d3dfec;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,109,181,.16)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%}
+.fnote{font-size:.83rem;color:var(--muted);margin:0}
+
+footer{background:#08213f;color:#9fb4d1;padding:46px 0 0;font-size:.93rem}
+.f-grid{display:grid;gap:26px;padding-bottom:28px}
+.f-grid .logo{width:200px;margin-bottom:14px}
+.f-grid strong{color:#fff}
+.f-grid ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.f-grid a{color:#e1ebf7;text-decoration:none}
+.f-grid a:hover{text-decoration:underline}
+.demo{border-top:1px solid rgba(255,255,255,.08);padding:16px 0 96px;text-align:center;font-size:.8rem;color:#7f95b5}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:.4em;font:700 .92rem/1 var(--b);text-decoration:none;color:var(--navy);border:1.5px solid var(--line)}
+.mbar a.go{background:var(--blue);border-color:var(--blue);color:#fff}
+.mbar svg{width:18px;height:18px;flex:none}
+
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.btn,.quick a{transition:none}}
+
+@media (max-width:400px){.brand small{display:none}.brand span{font-size:.92rem}.top .btn{padding:0 .85em;font-size:.84rem}}
+@media (min-width:640px){
+  .how{grid-template-columns:repeat(3,1fr)}
+  .grp{grid-template-columns:1fr 1fr}
+  .nums ul{grid-template-columns:repeat(4,1fr)}
+  .two{grid-template-columns:1fr 1fr}
+  .trust-grid{grid-template-columns:1.2fr 1fr}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .top .wrap{height:80px}
+  .brand img{width:46px;height:46px}
+  .brand span{font-size:1.12rem}
+  .hero{padding:60px 0 90px}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}
+  .plan-grid{grid-template-columns:.95fr 1.05fr;gap:64px}
+  .area-grid{grid-template-columns:1.1fr .9fr;gap:44px}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .f-grid{grid-template-columns:1.4fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:108px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Ferreira da Cunha Saúde — início">
+      <img src="img/simbolo-azul.webp" width="200" height="200" alt="">
+      <span>Ferreira da Cunha Saúde<small>Ao domicílio e online</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#plano">Plano My HomeCare</a>
+      <a href="#area">Área de atuação</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <a class="btn btn-p" href="https://www.fcsaude.pt/marcar-online-servicos-domicilio" target="_blank" rel="noopener">Agendar online</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">Saúde e bem-estar em casa</span>
+      <h1 id="h1">Cuide de si <span>sem sair de casa.</span></h1>
+      <p class="lead">Serviços de saúde e bem-estar online e ao domicílio. Sem filas e sem deslocações: a nossa equipa vai ter consigo, à distância de um contacto.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="https://www.fcsaude.pt/marcar-online-servicos-domicilio" target="_blank" rel="noopener">Agendar online
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+        <a class="btn btn-o" href="tel:+351911744909">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          911 744 909</a>
+      </div>
+      <ul class="quick">
+        <li><a href="https://www.fcsaude.pt/servicos-em-casa/medico-em-urgencia-ao-domicilio-e-online" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M12 10v6M9 13h6"/></svg></span><span><b>Médico de urgência ao domicílio</b><small>Pedidos urgentes até 4h em sua casa</small></span><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a href="https://www.fcsaude.pt/booking-calendar/telemedicina-de-urg%C3%AAncia?referral=service_list_widget" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg></span><span><b>Telemedicina de urgência</b><small>Telefone ou videochamada</small></span><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="visual">
+      <div class="blob"><img src="img/familia-m.webp" srcset="img/familia-m.webp 640w, img/familia.webp 1080w" sizes="(min-width:960px) 520px, 90vw" width="1080" height="1080" alt="Família de três gerações sentada no sofá de casa" fetchpriority="high"></div>
+      <div class="float"><img src="img/simbolo-azul.webp" width="200" height="200" alt=""><span><b>Segunda a sábado</b>incluindo feriados</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="nums" aria-label="A FC Saúde em números">
+  <div class="wrap">
+    <ul>
+      <li><b>+2500</b>famílias com plano</li>
+      <li><b>+20.000</b>consultas médicas</li>
+      <li><b>+50.000</b>serviços prestados</li>
+      <li><b>+10</b>valências com equipa própria</li>
+    </ul>
+  </div>
+</div>
+
+<section id="como-funciona" aria-labelledby="h-cf">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="pill">Como funciona</span>
+      <h2 id="h-cf">Nós tratamos de tudo. Só tem de abrir a porta.</h2>
+    </div>
+    <div class="how">
+      <article class="st reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"/></svg></div><h3>Equipa multidisciplinar</h3><p>Uma equipa própria com profissionais de mais de 10 valências, pronta para ir ter consigo. Temos o que precisa para cuidar de si e de quem mais gosta.</p></article>
+      <article class="st reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 15l2.5 2.5L16 12"/></svg></div><h3>Gerimos tudo por si</h3><p>A equipa operacional trata de todas as marcações. A equipa clínica faz o acompanhamento e recomendações personalizadas. Abertos de segunda a sábado, incluindo feriados.</p></article>
+      <article class="st reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Simples e transparente</h3><p>Use os nossos serviços com ou sem plano de saúde, ou com o seu seguro de saúde. Sabe quanto vai pagar antes de confirmar a consulta ou sessão.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="svc" aria-labelledby="h-sv">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="pill">Serviços ao domicílio e online</span>
+      <h2 id="h-sv">O que levamos até sua casa.</h2>
+      <p>Em casa, no local de trabalho, em unidades hoteleiras ou noutras instituições.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Tipo de serviço">
+      <button role="tab" id="tb-1" aria-controls="g-1" aria-selected="true">Médicos</button>
+      <button role="tab" id="tb-2" aria-controls="g-2" aria-selected="false">Clínicos</button>
+      <button role="tab" id="tb-3" aria-controls="g-3" aria-selected="false">Bem-estar</button>
+    </div>
+
+    <div class="grp" id="g-1" role="tabpanel" aria-labelledby="tb-1">
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M12 10v6M9 13h6"/></svg></span><div><h3>Médico de urgência</h3><p>Até 4h em sua casa</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg></span><div><h3>Telemedicina de urgência</h3><p>Telefone ou videochamada</p></div><span class="pr">desde<b>35€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><circle cx="18" cy="17" r="2.5"/><path d="M12 15v1a5 5 0 0 0 5 5"/></svg></span><div><h3>Médico de família</h3><p>Ao domicílio e online</p></div><span class="pr">desde<b>80€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg></span><div><h3>Médico especialista</h3><p>Online e ao domicílio</p></div><span class="pr">desde<b>65€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5A2.1 2.1 0 0 0 16.5 4.5L13 8 4.8 6.2l-1.3 1.3L10 11l-3 3H4l-1 1 3 2 2 3 1-1v-3l3-3 3.5 6.5z"/></svg></span><div><h3>Medicina do viajante</h3><p>Online e ao domicílio</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span><div><h3>Atestados e receituário</h3><p>Serviços médicos</p></div></div>
+    </div>
+
+    <div class="grp" id="g-2" role="tabpanel" aria-labelledby="tb-2" hidden>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6l-4 7M12 14l4 7M6 11h12"/></svg></span><div><h3>Fisioterapia</h3><p>Ao domicílio</p></div><span class="pr">desde<b>40€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M8 6h8M7 10h10M8 14h8M9 18h6"/></svg></span><div><h3>Osteopatia</h3><p>Ao domicílio</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 2 4 4M17 7l3-3M19 9 8.7 19.3a2.4 2.4 0 0 1-3.4 0l-.6-.6a2.4 2.4 0 0 1 0-3.4L15 5M9 11l4 4M5 19l-3 3"/></svg></span><div><h3>Enfermagem</h3><p>Ao domicílio · tele enfermagem desde 30€</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><h3>Psicologia</h3><p>Domicílio · tele psicologia desde 40€</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.4 0-8-3.6-8-8 0-3 2-5.5 4.5-6.5C10 6 11 7 12 7s2-1 3.5-.5C18 7.5 20 10 20 13c0 4.4-3.6 8-8 8z"/><path d="M12 7c0-2 1-4 3-4"/></svg></span><div><h3>Nutrição</h3><p>Domicílio · tele nutrição desde 40€</p></div><span class="pr">desde<b>50€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M4 21l4-8 4 2 4-2 4 8M8 13V9h8v4"/></svg></span><div><h3>Pilates clínico</h3><p>Ao domicílio</p></div><span class="pr">desde<b>40€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3L15 8V2M8 2h8M7 14h10"/></svg></span><div><h3>Análises e exames</h3><p>Ao domicílio e presencial no laboratório</p></div><span class="pr">desde<b>30€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 9h4l3 3v5h-7M5.5 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span><div><h3>Transporte de utentes</h3><p>Ao domicílio</p></div></div>
+    </div>
+
+    <div class="grp" id="g-3" role="tabpanel" aria-labelledby="tb-3" hidden>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11V7a5 5 0 0 1 10 0v4M5 11h14v4a7 7 0 0 1-14 0z"/></svg></span><div><h3>Massagens terapêuticas</h3><p>Ao domicílio</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/></svg></span><div><h3>Personal trainer</h3><p>Ao domicílio</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v7M5 10l7 2 7-2M8 21l4-7 4 7"/></svg></span><div><h3>Yoga</h3><p>Ao domicílio</p></div><span class="pr">desde<b>60€</b></span></div>
+      <div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></span><div><h3>Yoga para grávidas e mães</h3><p>Ao domicílio e online</p></div></div>
+    </div>
+    <p class="svc-note">Preços “desde” indicados nas páginas de serviços do site atual. Pode usar o seu seguro de saúde.</p>
+  </div>
+</section>
+
+<section id="plano" aria-labelledby="h-pl">
+  <div class="wrap plan-grid">
+    <div class="plan-card reveal"><img src="img/cartao-plano-m.webp" srcset="img/cartao-plano-m.webp 480w, img/cartao-plano.webp 900w" sizes="(min-width:960px) 520px, 90vw" width="900" height="507" alt="Cartão do Plano My HomeCare" loading="lazy"></div>
+    <div class="reveal">
+      <span class="pill">Plano de saúde</span>
+      <h2 id="h-pl">Plano My HomeCare</h2>
+      <p class="lead">O apoio de uma equipa com mais de 80 profissionais de saúde, para cuidar de toda a família.</p>
+      <span class="tagline">Sem fidelização. Sem limite de idade.</span>
+      <ul class="ben">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>2 telemedicinas gratuitas por mês</b> e receituário crónico ilimitado</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Equipa operacional e clínica para apoiar a gestão da saúde de toda a família</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>25% de desconto na 1.ª consulta de nutrição</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Check-up médico gratuito após o 6.º mês de subscrição</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Massagem gratuita após o 11.º mês de subscrição</span></li>
+      </ul>
+      <a class="btn btn-p" href="https://www.fcsaude.pt/plano-de-saude-ao-domicilio" target="_blank" rel="noopener">Conhecer o plano</a>
+    </div>
+  </div>
+</section>
+
+<section id="area" class="area" aria-labelledby="h-ar">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <span class="pill">Área de atuação</span>
+      <h2 id="h-ar">Grande Lisboa, à sua porta.</h2>
+      <div class="map"><img src="img/mapa-zonas-m.webp" srcset="img/mapa-zonas-m.webp 640w, img/mapa-zonas.webp 992w" sizes="(min-width:960px) 600px, 90vw" width="992" height="734" alt="Mapa da área de atuação ao domicílio na Grande Lisboa, por zonas" loading="lazy"></div>
+    </div>
+    <div class="zones reveal">
+      <p>Serviços presenciais organizados por zonas. Procure a sua localidade:</p>
+      <details open>
+        <summary><span class="dot" style="background:#7cc36d"></span>Área de atuação 1 — zona verde</summary>
+        <p>Alcabideche, Algés, Algueirão, Amadora, Barcarena, Belas, Cacém, Carcavelos, Carnaxide, Cascais, Colares, Damaia, Estoril, Linda-a-Velha, Lisboa, Mem-Martins, Mira-Sintra, Moscavide, Oeiras, Olival Basto, Paço de Arcos, Parede, Pontinha, Porto Salvo, Queluz, Rio de Mouro, Reboleira, São Marcos, Sintra, São Domingos de Rana, Sacavém, Bobadela, Camarate, Caneças, Casal de Cambra, Famões, Frielas, Loures, Odivelas, Ramada, Santo António dos Cavaleiros.</p>
+      </details>
+      <details>
+        <summary><span class="dot" style="background:#f2d74e"></span>Zona 1 — amarela</summary>
+        <p>Almargem do Bispo, Pêro Pinheiro, Sabugo, Santa Iria da Azóia, São João da Talha, São João das Lampas, Terrugem.</p>
+      </details>
+      <details>
+        <summary><span class="dot" style="background:#f5a34a"></span>Zona 2 — laranja</summary>
+        <p>Montelavar, Póvoa de Santa Iria, Santo Antão do Tojal, São Julião do Tojal, Vialonga.</p>
+      </details>
+      <details>
+        <summary><span class="dot" style="background:#e8584a"></span>Zona 3 — vermelha</summary>
+        <p>Alverca do Ribatejo, Bucelas, Fanhões, Forte da Casa, Alcochete, Almada, Amora, Aroeira, Atalaia, Cacilhas, Caparica, Charneca da Caparica, Coina, Corroios, Costa da Caparica, Fonte da Telha, Fernão Ferro, Montijo, Samouco, Santa Maria do Pinhal, Seixal, Trafaria.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-tr">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="pill">Quem somos</span>
+      <h2 id="h-tr">Saúde para todos, onde for preciso.</h2>
+      <p>Fundada em 2019, a Ferreira da Cunha Saúde nasceu para tornar os cuidados de saúde e bem-estar mais acessíveis, humanos e próximos, com acompanhamento da gravidez à terceira idade.</p>
+    </div>
+    <div class="trust-grid">
+      <blockquote class="quote reveal"><p>“Adorei todo o acompanhamento médico que me deram. Muito atenciosos e prestáveis. Obrigada pela atenção numa altura tão difícil.”</p><cite><b>Olga José</b> · Google Reviews</cite></blockquote>
+      <div class="media reveal">
+        <h3>Representados nos media</h3>
+        <ul><li>Expresso</li><li>SAPO</li><li>Canal Saúde+</li><li>Pontos de Vista</li><li>Valor Magazine</li></ul>
+        <p class="ers">Empresa registada na Entidade Reguladora da Saúde (ERS) com o n.º 29874.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contactos" class="svc" aria-labelledby="h-ct">
+  <div class="wrap contact-grid">
+    <div class="side reveal">
+      <div>
+        <span class="pill">Contactos</span>
+        <h2 id="h-ct">Fale connosco.</h2>
+        <p class="lead">Ligue, envie mensagem por WhatsApp ou deixe o seu pedido. A nossa equipa responde e marca por si.</p>
+      </div>
+      <div class="cbox">
+        <h3>Horário de atendimento</h3>
+        <table>
+          <tr><td>2.ª a 6.ª feira</td><td>9h00 – 21h30</td></tr>
+          <tr><td>Sábados e feriados</td><td>9h30 – 21h30</td></tr>
+          <tr><td>Domingos</td><td>Fechado</td></tr>
+        </table>
+      </div>
+      <div class="cbox">
+        <ul>
+          <li><a href="tel:+351911744909">+351 911 744 909</a><small>Custo de uma chamada para a rede móvel nacional</small></li>
+          <li><a href="https://wa.me/351911744909" target="_blank" rel="noopener">WhatsApp</a><small>Mesmo número</small></li>
+          <li><a href="mailto:geral@fcsaude.pt">geral@fcsaude.pt</a></li>
+        </ul>
+      </div>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <h3>Pedido de informação</h3>
+      <div class="two">
+        <div><label for="f-n">Nome *</label><input id="f-n" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-t">Telemóvel *</label><input id="f-t" name="Telemóvel" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="two">
+        <div><label for="f-s">Serviço</label>
+          <select id="f-s" name="Serviço"><option>Médico de urgência ao domicílio</option><option>Telemedicina</option><option>Médico de família</option><option>Médico especialista</option><option>Enfermagem</option><option>Fisioterapia</option><option>Psicologia</option><option>Nutrição</option><option>Análises e exames</option><option>Massagens terapêuticas</option><option>Plano My HomeCare</option><option>Outro</option></select></div>
+        <div><label for="f-l">Localidade / código postal</label><input id="f-l" name="Localidade" autocomplete="postal-code"></div>
+      </div>
+      <div><label for="f-m">Mensagem</label><textarea id="f-m" name="Mensagem" placeholder="Para quem é e quando precisa"></textarea></div>
+      <button class="btn btn-p" type="submit">Enviar pedido</button>
+      <p class="fnote">Ao enviar, abre-se o seu programa de e-mail com o pedido pronto para a FC Saúde.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <img class="logo" src="img/logo-branco.webp" width="520" height="281" alt="Ferreira da Cunha Saúde — A pensar no seu futuro" loading="lazy">
+      <p style="margin:0;max-width:30em">Serviços clínicos, de bem-estar e cuidados especializados integrados ao domicílio e online.</p>
+    </div>
+    <div><strong>Contactos</strong><ul><li><a href="tel:+351911744909">911 744 909</a></li><li><a href="https://wa.me/351911744909" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:geral@fcsaude.pt">geral@fcsaude.pt</a></li></ul></div>
+    <div><strong>Redes sociais</strong><ul><li><a href="https://www.facebook.com/ferreiradacunhasaude/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/ferreiradacunha_saude/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://pt.linkedin.com/company/ferreira-da-cunha-saude" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+  </div>
+  <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial da Ferreira da Cunha Saúde. Fotos e textos do site fcsaude.pt.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351911744909"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/351911744909" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4z"/></svg>WhatsApp</a>
+  <a class="go" href="https://www.fcsaude.pt/marcar-online-servicos-domicilio" target="_blank" rel="noopener">Agendar</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3500);
+  }
+  var tabs=document.querySelectorAll('[role="tab"]');
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(o){o.setAttribute('aria-selected','false');document.getElementById(o.getAttribute('aria-controls')).hidden=true;});
+    t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false;
+  });});
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true;
+    f.querySelectorAll('[required]').forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#b91c1c';}else{i.style.borderColor='';}});
+    if(!ok){f.querySelector('[required]').focus();return;}
+    var lines=[];new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    location.href='mailto:geral@fcsaude.pt?subject='+encodeURIComponent('Pedido de informação — '+f.querySelector('#f-s').value)+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>

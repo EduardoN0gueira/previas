@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Clínica Delille — Medicina Dentária no centro de Coimbra</title>
+<meta name="description" content="Clínica dentária no centro de Coimbra desde 1993: implantologia, cirurgia oral, ortodontia e Invisalign, facetas, odontopediatria, higiene oral e urgências no próprio dia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.webp" imagesrcset="img/hero-m.webp 640w, img/hero.webp 1100w" imagesizes="(min-width:960px) 470px, 76vw">
+<style>
+:root{
+  --b1:#3363b6; --b2:#4a86cc; --b3:#6eaadc; --ice:#eef5fc; --mist:#f6f9fc;
+  --ink:#121a2b; --text:#2a3346; --muted:#5d6779; --line:#e1e8f1; --white:#fff;
+  --deep:#0f2550;
+  --r:22px; --wrap:1180px;
+  --f:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--f);font-weight:400;color:var(--text);background:var(--white);line-height:1.65;font-size:17px;overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f);color:var(--ink);line-height:1.08;letter-spacing:-.02em;margin:0 0 .45em;font-weight:500}
+h2{font-size:clamp(2rem,5.2vw,3.2rem)}
+h3{font-size:1.3rem;font-weight:500;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--b1);margin-bottom:16px}
+.eyebrow i{display:inline-flex;gap:3px}
+.eyebrow i b{width:7px;height:7px;border-radius:50%;background:var(--b3)}
+.eyebrow i b:nth-child(2){background:var(--b2)}
+.eyebrow i b:nth-child(3){background:var(--b1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 1.45em;border-radius:999px;font:500 1rem/1 var(--f);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-p{background:var(--b1);color:#fff}
+.btn-p:hover{background:#2a539c}
+.btn-o{border-color:var(--line);background:#fff;color:var(--ink)}
+.btn-o:hover{border-color:var(--b2)}
+.btn-w{background:#fff;color:var(--deep)}
+:focus-visible{outline:3px solid var(--b3);outline-offset:3px}
+
+/* Topo */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.brand{display:block;flex:none}
+.brand img{height:46px;width:auto}
+.nav{display:none;gap:30px;font-size:.98rem}
+.nav a{text-decoration:none;color:var(--text)}
+.nav a:hover{color:var(--b1)}
+.top-cta{display:flex;align-items:center;gap:14px}
+.top-cta .tel{display:none;text-decoration:none;font-weight:500;color:var(--ink);font-size:.98rem}
+.top .btn{min-height:44px;padding:0 1.15em;font-size:.93rem}
+
+/* Hero */
+.hero{position:relative;padding:34px 0 70px;background:linear-gradient(180deg,var(--mist) 0%,#fff 100%)}
+.hero-grid{display:grid;gap:44px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:400;letter-spacing:-.035em;margin:.05em 0 .3em}
+.hero h1 b{font-weight:600;color:var(--b1)}
+.lead{font-size:1.08rem;color:var(--muted);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 22px}
+.urg{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--line);max-width:30em;font-size:.95rem;color:var(--muted)}
+.urg svg{width:22px;height:22px;color:var(--b1);flex:none;margin-top:2px}
+.urg b{color:var(--ink);font-weight:500}
+.tooth{position:relative;width:min(76vw,470px);margin:34px auto 34px}
+.tooth .frame{border-radius:40px 40px 46% 46% / 40px 40px 34% 34%;overflow:hidden;aspect-ratio:4/5;background:var(--ice);box-shadow:0 0 0 10px #fff,0 0 0 18px var(--b3),0 0 0 26px var(--b2),0 0 0 34px var(--b1)}
+.tooth .frame img{width:100%;height:100%;object-fit:cover}
+.tooth .tag{position:absolute;right:-6px;top:28px;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 14px 34px rgba(18,26,43,.14);font-size:.84rem;line-height:1.3;color:var(--muted)}
+.tooth .tag b{display:block;font-size:1.5rem;font-weight:500;color:var(--ink);letter-spacing:-.02em}
+
+/* Factos */
+.facts{background:var(--deep);color:#c9d6ee}
+.facts ul{list-style:none;margin:0;padding:26px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px 18px}
+.facts li{font-size:.9rem;line-height:1.4;border-left:2px solid var(--b2);padding-left:14px}
+.facts b{display:block;color:#fff;font-weight:500;font-size:1.05rem;margin-bottom:2px}
+
+section{padding:84px 0}
+.head{max-width:720px;margin-bottom:42px}
+.head p{color:var(--muted);font-size:1.06rem}
+
+/* Tratamentos */
+.cards{display:grid;gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .3s,transform .3s,border-color .3s}
+.card:hover{box-shadow:0 22px 50px rgba(18,26,43,.1);transform:translateY(-3px);border-color:#cfdcec}
+.card .ph{aspect-ratio:4/3;background:var(--ice);overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:22px 22px 24px}
+.card h3{margin-bottom:.35em}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.more{margin-top:26px;padding:24px;border-radius:var(--r);background:var(--mist);border:1px solid var(--line)}
+.more h3{font-size:1.1rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{padding:.5em .95em;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.92rem;color:var(--ink)}
+
+/* Urgências */
+.urgent{background:var(--b1);color:#e6eefb;padding:56px 0}
+.urgent h2{color:#fff;font-size:clamp(1.8rem,4.4vw,2.6rem)}
+.urgent-grid{display:grid;gap:26px;align-items:center}
+.urgent p{margin:0;max-width:40em}
+.urgent .acts{display:flex;flex-wrap:wrap;gap:12px}
+.urgent .btn-l{border-color:rgba(255,255,255,.5);color:#fff}
+.urgent .btn-l:hover{border-color:#fff}
+
+/* Clínica */
+.story-grid{display:grid;gap:40px}
+.quote{font-size:clamp(1.45rem,3.4vw,2rem);line-height:1.3;color:var(--ink);font-weight:300;letter-spacing:-.015em;margin:0 0 14px;padding-left:20px;border-left:3px solid var(--b2)}
+.sig{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:.9rem;margin-bottom:30px;padding-left:23px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:78px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.tl li:last-child{border-bottom:1px solid var(--line)}
+.tl b{font-size:1.5rem;font-weight:500;color:var(--b1);letter-spacing:-.02em;line-height:1.1}
+.tl p{margin:0;color:var(--muted);font-size:.96rem}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mosaic figure{margin:0;border-radius:16px;overflow:hidden;background:var(--ice)}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic .tall{grid-row:span 2}
+.mosaic figcaption{position:absolute;left:-9999px}
+.uco{margin-top:56px;display:grid;gap:26px;padding:28px 24px;border-radius:26px;background:var(--mist);border:1px solid var(--line)}
+.uco ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr;gap:8px}
+.uco li{display:flex;gap:10px;align-items:flex-start;font-size:.96rem}
+.uco li svg{width:18px;height:18px;color:var(--b1);flex:none;margin-top:4px}
+.uco .pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.uco .pics img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%}
+
+/* Equipa */
+.team{background:var(--mist)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px}
+.person{margin:0}
+.person .ph{border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--ice);margin-bottom:12px}
+.person img{width:100%;height:100%;object-fit:cover}
+.person b{display:block;font-weight:500;color:var(--ink);font-size:1.02rem;line-height:1.25}
+.person span{display:block;font-size:.84rem;color:var(--muted);line-height:1.4;margin-top:4px}
+.team-more{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;justify-content:space-between;padding:20px 22px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+.team-more p{margin:0;color:var(--muted);font-size:.96rem;max-width:42em}
+
+/* Opiniões */
+.rv{display:grid;gap:16px}
+.rv blockquote{margin:0;padding:26px 24px;border-radius:var(--r);border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.rv p{font-size:1.08rem;line-height:1.55;color:var(--ink);font-weight:300}
+.rv cite{margin-top:auto;font-style:normal;font-size:.88rem;color:var(--muted)}
+.rv cite b{color:var(--b1);font-weight:500}
+.note{font-size:.85rem;color:var(--muted);margin-top:16px}
+
+/* Localização */
+.where{background:var(--deep);color:#c9d6ee}
+.where h2,.where h3{color:#fff}
+.where .eyebrow{color:var(--b3)}
+.where-grid{display:grid;gap:30px}
+.where .pic{border-radius:var(--r);overflow:hidden}
+.where .pic img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:24px}
+.box address{font-style:normal;color:#fff;font-size:1.1rem;line-height:1.5;margin-bottom:14px}
+.how{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:10px;font-size:.95rem}
+.how li{display:flex;gap:10px;align-items:flex-start}
+.how svg{width:19px;height:19px;color:var(--b3);flex:none;margin-top:3px}
+.info{display:grid;gap:16px;margin-top:16px}
+.info table{width:100%;border-collapse:collapse;font-size:.96rem}
+.info td{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.16)}
+.info td:last-child{text-align:right;color:#fff}
+.info ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.info a{color:#fff;text-decoration:none;font-weight:500;overflow-wrap:anywhere}
+.info a:hover{text-decoration:underline}
+.info small{display:block;color:#93a5c7;font-size:.8rem}
+
+/* Marcação */
+.book-grid{display:grid;gap:34px}
+.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:14px}
+.steps li{display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start;color:var(--muted);font-size:.97rem}
+.steps b{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--ice);color:var(--b1);font-weight:500}
+form{background:var(--mist);border:1px solid var(--line);border-radius:26px;padding:26px 22px;display:grid;gap:14px}
+form h3{font-size:1.6rem;margin:0}
+.two{display:grid;gap:14px}
+label{display:block;font-size:.86rem;font-weight:500;margin-bottom:6px;color:var(--ink)}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:.8em .9em;border-radius:12px;border:1.5px solid #d4deea;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--b2);box-shadow:0 0 0 3px rgba(74,134,204,.18)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%}
+.fnote{font-size:.83rem;color:var(--muted);margin:0}
+
+footer{background:#0a1a3a;color:#9fb0cf;padding:46px 0 0;font-size:.93rem}
+.f-grid{display:grid;gap:26px;padding-bottom:30px}
+.f-grid img{height:46px;width:auto;margin-bottom:12px}
+.f-grid strong{color:#fff;font-weight:500}
+.f-grid ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.f-grid a{color:#e3eaf7;text-decoration:none}
+.f-grid a:hover{text-decoration:underline}
+.demo{border-top:1px solid rgba(255,255,255,.08);padding:16px 0 96px;text-align:center;font-size:.8rem;color:#8193b4}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mbar a{min-height:48px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:.4em;font:500 .93rem/1 var(--f);text-decoration:none;color:var(--ink);border:1.5px solid var(--line)}
+.mbar a.go{background:var(--b1);border-color:var(--b1);color:#fff}
+.mbar svg{width:18px;height:18px;flex:none}
+
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.btn,.card{transition:none}}
+
+@media (max-width:360px){.brand img{height:38px}.top .btn{padding:0 .9em;font-size:.88rem}}
+@media (min-width:640px){
+  .cards{grid-template-columns:1fr 1fr}
+  .people{grid-template-columns:repeat(4,1fr)}
+  .rv{grid-template-columns:repeat(3,1fr)}
+  .two{grid-template-columns:1fr 1fr}
+  .facts ul{grid-template-columns:repeat(4,1fr)}
+  .info{grid-template-columns:1fr 1fr}
+  .uco ul{grid-template-columns:1fr 1fr}
+}
+@media (min-width:960px){
+  body{font-size:17.5px}
+  .nav{display:flex}
+  .top .wrap{height:82px}
+  .brand img{height:54px}
+  .top-cta .tel{display:inline}
+  .hero{padding:64px 0 96px}
+  .hero-grid{grid-template-columns:1.12fr .88fr;gap:60px}
+  .tooth{margin:34px 34px 34px auto}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .urgent-grid{grid-template-columns:1.4fr .9fr}
+  .urgent .acts{justify-content:flex-end}
+  .story-grid{grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .uco{grid-template-columns:1.1fr .9fr;padding:44px;gap:44px;align-items:center}
+  .where-grid{grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .book-grid{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .f-grid{grid-template-columns:1.5fr 1fr 1fr}
+  .mbar{display:none}
+  .demo{padding-bottom:18px}
+  section{padding:110px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Clínica Delille — início"><img src="img/logo.webp" width="520" height="191" alt="Clínica Delille — Medicina Dentária"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#clinica">A clínica</a>
+      <a href="#equipa">Equipa</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+    <div class="top-cta">
+      <a class="tel" href="tel:+351239488010">239 488 010</a>
+      <a class="btn btn-p" href="#marcacao">Marcar consulta</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Medicina dentária · Coimbra</span>
+      <h1 id="h1">A sua clínica dentária no <b>centro de Coimbra.</b></h1>
+      <p class="lead">Os melhores especialistas em todas as áreas da Medicina Dentária, num serviço personalizado que alia inovação e trabalho de equipa — rápido, eficaz, atencioso e de elevada qualidade médica e técnica.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#marcacao">Marcar consulta
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+        <a class="btn btn-o" href="tel:+351239488010">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          239 488 010</a>
+      </div>
+      <p class="urg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Urgências no próprio dia</b>, mediante marcação, de segunda a sexta, das 8h30 às 19h00.</span></p>
+    </div>
+    <div class="tooth">
+      <div class="frame"><img src="img/hero-m.webp" srcset="img/hero-m.webp 640w, img/hero.webp 1100w" sizes="(min-width:960px) 470px, 76vw" width="1100" height="1375" alt="Sorriso com alinhadores invisíveis em forma de coração" fetchpriority="high"></div>
+      <div class="tag"><b>1993</b>início da atividade<br>em Coimbra</div>
+    </div>
+  </div>
+</section>
+
+<div class="facts" aria-label="A clínica em resumo">
+  <div class="wrap">
+    <ul>
+      <li><b>Desde 1993</b>de consultório com 2 gabinetes a clínica de especialidades</li>
+      <li><b>25 gabinetes</b>e laboratório de prótese próprio, na Solum</li>
+      <li><b>Cirurgia oral</b>unidade própria com cinco gabinetes</li>
+      <li><b>4 idiomas</b>consulta em português, inglês, alemão ou francês</li>
+    </ul>
+  </div>
+</div>
+
+<section id="tratamentos" aria-labelledby="h-trat">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Tratamentos</span>
+      <h2 id="h-trat">Trabalhamos por especialidades, com uma equipa para cada área.</h2>
+      <p>Uma equipa clínica multidisciplinar, numa postura de rigor e inovação, com uma variedade de opções de tratamento para cada paciente.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><div class="ph"><img src="img/t-implantologia-m.webp" srcset="img/t-implantologia-m.webp 640w, img/t-implantologia.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Instrumentos e implante dentário" loading="lazy"></div><div class="bd"><h3>Implantologia</h3><p>Peças de titânio, com excelente biocompatibilidade, que se aparafusam no osso do maxilar e substituem a raiz de um ou mais dentes.</p></div></article>
+      <article class="card reveal"><div class="ph"><img src="img/t-invisalign-m.webp" srcset="img/t-invisalign-m.webp 640w, img/t-invisalign.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Alinhador invisível Invisalign" loading="lazy"></div><div class="bd"><h3>Ortodontia e Invisalign</h3><p>Alinhadores ultra-discretos, alternativos aos brackets metálicos ou cerâmicos, com resultados idênticos e maior conforto.</p></div></article>
+      <article class="card reveal"><div class="ph"><img src="img/t-facetas-m.webp" srcset="img/t-facetas-m.webp 640w, img/t-facetas.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Colocação de facetas dentárias" loading="lazy"></div><div class="bd"><h3>Facetas dentárias</h3><p>Finas peças de cerâmica, com menos de 1 mm, que corrigem a forma, o volume, a cor e outras imperfeições dos dentes.</p></div></article>
+      <article class="card reveal"><div class="ph"><img src="img/t-odontopediatria-m.webp" srcset="img/t-odontopediatria-m.webp 640w, img/t-odontopediatria.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Gabinete de odontopediatria decorado para crianças" loading="lazy"></div><div class="bd"><h3>Odontopediatria</h3><p>A saúde oral de bebés, crianças e adolescentes tem na Clínica Delille uma área dedicada.</p></div></article>
+      <article class="card reveal"><div class="ph"><img src="img/t-cirurgia-m.webp" srcset="img/t-cirurgia-m.webp 640w, img/t-cirurgia.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Médico dentista com lupas durante uma cirurgia oral" loading="lazy"></div><div class="bd"><h3>Cirurgia oral</h3><p>Na Unidade de Cirurgia Oral fazemos cirurgia oral, implantologia e periodontologia, com prática clínica exclusiva nestas áreas.</p></div></article>
+      <article class="card reveal"><div class="ph"><img src="img/t-higiene-m.webp" srcset="img/t-higiene-m.webp 640w, img/t-higiene.webp 1200w" sizes="(min-width:960px) 370px, (min-width:640px) 45vw, 90vw" width="1200" height="900" alt="Consulta de higiene oral" loading="lazy"></div><div class="bd"><h3>Higiene oral</h3><p>Diagnóstico, prevenção e manutenção dos tratamentos. A consulta é aconselhada de 6 em 6 meses, ajustada a cada paciente.</p></div></article>
+    </div>
+    <div class="more reveal">
+      <h3>Também na clínica</h3>
+      <ul class="chips">
+        <li>Reabilitação oral</li><li>Branqueamento dentário</li><li>Endodontia microscópica</li><li>Periodontologia</li><li>Disfunção temporomandibular</li><li>Apneia do sono</li><li>Estética facial</li><li>Urgências</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="urgent" aria-labelledby="h-urg">
+  <div class="wrap urgent-grid">
+    <div class="reveal">
+      <h2 id="h-urg">Dor de dentes ou um dente partido?</h2>
+      <p>Temos atendimento de urgência no próprio dia, mediante marcação, em função da disponibilidade dos médicos dentistas e dentro do horário de funcionamento: segunda a sexta, das 8h30 às 19h00 (exceto feriados, 24 e 31 de dezembro).</p>
+    </div>
+    <div class="acts reveal">
+      <a class="btn btn-w" href="tel:+351239488010"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar agora</a>
+      <a class="btn btn-l" href="https://wa.me/351916659482" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<section id="clinica" aria-labelledby="h-cl">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="reveal">
+        <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>A clínica</span>
+        <h2 id="h-cl">Medicina dentária e cirurgia oral, desde 1993.</h2>
+        <p class="quote">“Lembro-me das primeiras visitas, dos meus primeiros pacientes.”</p>
+        <p class="sig">Dr. Francisco Delille, diretor clínico</p>
+        <ol class="tl">
+          <li><b>1993</b><p>Início da atividade na Cruz de Celas, num consultório com 2 gabinetes e atividade essencialmente generalista.</p></li>
+          <li><b>2005</b><p>Ampliação para 7 gabinetes e início do trabalho por especialidades, com uma equipa multidisciplinar.</p></li>
+          <li><b>2014</b><p>Nova clínica na Solum, com 25 gabinetes e laboratório de prótese próprio.</p></li>
+          <li><b>Hoje</b><p>Duas unidades na mesma clínica: Medicina Dentária e Cirurgia Oral.</p></li>
+        </ol>
+      </div>
+      <div class="mosaic reveal">
+        <figure class="tall"><img src="img/fachada-m.webp" srcset="img/fachada-m.webp 640w, img/fachada.webp 960w" sizes="(min-width:960px) 280px, 45vw" width="960" height="765" alt="Entrada da Clínica Delille" loading="lazy" style="aspect-ratio:auto;height:100%"></figure>
+        <figure><img src="img/gab-2.webp" width="500" height="338" alt="Gabinete de medicina dentária" loading="lazy"></figure>
+        <figure><img src="img/gab-1.webp" width="500" height="338" alt="Gabinete com cadeira de tratamento" loading="lazy"></figure>
+        <figure><img src="img/corredor.webp" width="500" height="338" alt="Corredor da clínica" loading="lazy"></figure>
+        <figure><img src="img/esterilizacao.webp" width="500" height="338" alt="Área técnica da clínica" loading="lazy"></figure>
+      </div>
+    </div>
+
+    <div class="uco reveal">
+      <div>
+        <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Unidade de Cirurgia Oral</span>
+        <h3 style="font-size:clamp(1.5rem,3.4vw,2.1rem)">Um novo espaço, na mesma clínica.</h3>
+        <p style="color:var(--muted)">Pensada ao detalhe para garantir segurança, conforto e precisão em cada tratamento. Depois da fase cirúrgica, a reabilitação oral é assegurada na Unidade de Medicina Dentária.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Cinco gabinetes totalmente equipados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sala de imagiologia própria</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Scanners intraorais</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Protocolo GBT</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Receção e área de esterilização</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gabinete de acompanhamento do paciente</li>
+        </ul>
+      </div>
+      <div class="pics">
+        <img src="img/uco-gabinete-m.webp" srcset="img/uco-gabinete-m.webp 600w, img/uco-gabinete.webp 900w" sizes="(min-width:960px) 240px, 44vw" width="900" height="1125" alt="Gabinete da Unidade de Cirurgia Oral" loading="lazy">
+        <img src="img/uco-sala-m.webp" srcset="img/uco-sala-m.webp 600w, img/uco-sala.webp 900w" sizes="(min-width:960px) 240px, 44vw" width="900" height="1125" alt="Sala de espera da Unidade de Cirurgia Oral" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="equipa" class="team" aria-labelledby="h-eq">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>A nossa equipa</span>
+      <h2 id="h-eq">Quem coordena cada especialidade.</h2>
+      <p>Médicos dentistas organizados por áreas, para resolver dos casos mais simples aos mais complexos.</p>
+    </div>
+    <div class="people">
+      <figure class="person reveal"><div class="ph"><img src="img/eq-francisco-delille.webp" width="480" height="600" alt="Dr. Francisco Delille" loading="lazy"></div><b>Dr. Francisco Delille</b><span>Diretor clínico · Especialista em Cirurgia Oral</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-rodolfo-fonseca.webp" width="480" height="600" alt="Dr. Rodolfo Fonseca" loading="lazy"></div><b>Dr. Rodolfo Fonseca</b><span>Coordenador de Cirurgia e Periodontologia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-luis-carvalho.webp" width="480" height="601" alt="Dr. Luís Carvalho" loading="lazy"></div><b>Dr. Luís Carvalho</b><span>Coordenador de Reabilitação Oral e Oclusão</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-joao-cavaleiro.webp" width="480" height="600" alt="Dr. João Cavaleiro" loading="lazy"></div><b>Dr. João Cavaleiro</b><span>Coordenador de Ortodontia e Odontopediatria</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-nuno-varanda.webp" width="480" height="600" alt="Dr. Nuno Varanda" loading="lazy"></div><b>Dr. Nuno Varanda</b><span>Coordenador de Dentisteria Estética, Endodontia e Higiene Oral</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-ana-roseiro.webp" width="480" height="601" alt="Dra. Ana Roseiro" loading="lazy"></div><b>Dra. Ana Roseiro</b><span>Especialista em Ortodontia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-sergio-matos.webp" width="480" height="600" alt="Dr. Sérgio Matos" loading="lazy"></div><b>Dr. Sérgio Matos</b><span>Especialista em Periodontologia</span></figure>
+      <figure class="person reveal"><div class="ph"><img src="img/eq-andreia-figueiredo.webp" width="480" height="601" alt="Dra. Andreia Figueiredo" loading="lazy"></div><b>Dra. Andreia Figueiredo</b><span>Especialista em Odontopediatria</span></figure>
+    </div>
+    <div class="team-more reveal">
+      <p>A equipa completa reúne 36 profissionais, de implantologia a higiene oral, fisioterapia craniomandibular e medicina estética facial.</p>
+      <a class="btn btn-o" href="https://clinicadelille.pt/clinica/#equipa" target="_blank" rel="noopener">Ver toda a equipa</a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-op">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Opiniões</span>
+      <h2 id="h-op">Nas palavras dos nossos pacientes.</h2>
+    </div>
+    <div class="rv">
+      <blockquote class="reveal"><p>“Excelente atendimento! Estou em processo de reabilitação oral (…) desde a primeira consulta me tranquilizou com a explicação de todas as fases do processo.”</p><cite><b>C. L.</b> · Reabilitação oral</cite></blockquote>
+      <blockquote class="reveal"><p>“Tem boas instalações, equipamentos, atendimento e preço. (…) A marcação também é muito bem tratada.”</p><cite><b>M. F.</b> · Estética dentária</cite></blockquote>
+      <blockquote class="reveal"><p>“Fui atendido numa situação de urgência e correu tudo a 100%. Muito bem atendido (…) muita higiene. Recomendo.”</p><cite><b>M. D.</b> · Urgência</cite></blockquote>
+    </div>
+    <p class="note">Excertos de opiniões publicadas no site atual da clínica.</p>
+  </div>
+</section>
+
+<section id="contactos" class="where" aria-labelledby="h-loc">
+  <div class="wrap where-grid">
+    <div class="reveal">
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Onde estamos</span>
+      <h2 id="h-loc">Na Solum, perto do Estádio Cidade de Coimbra.</h2>
+      <div class="pic"><img src="img/edificio-m.webp" srcset="img/edificio-m.webp 800w, img/edificio.webp 1600w" sizes="(min-width:960px) 540px, 90vw" width="1600" height="1067" alt="Edifício da Clínica Delille na Solum, em Coimbra" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <div class="box">
+        <h3>Morada</h3>
+        <address>Rua Monsenhor Nunes Pereira, n.º 1 — Solum<br>3030-779 Coimbra</address>
+        <ul class="how">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>A 500 metros do Estádio Cidade de Coimbra</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 21l1-3M16 21l-1-3"/></svg>A 700 metros da paragem São José do Metrobus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M3 11h18M7 21v-4M17 21v-4"/></svg>Autocarros 4T, 41, 5, 34 e 7T</li>
+        </ul>
+        <a class="btn btn-w" href="https://www.google.com/maps/search/?api=1&amp;query=Cl%C3%ADnica%20Delille%2C%20Rua%20Monsenhor%20Nunes%20Pereira%201%2C%203030-779%20Coimbra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 19-9-9 19-2-8z"/></svg>Como chegar</a>
+      </div>
+      <div class="info">
+        <div class="box">
+          <h3>Horário</h3>
+          <table>
+            <tr><td>Segunda a sexta</td><td>8h30 – 19h00</td></tr>
+          </table>
+        </div>
+        <div class="box">
+          <h3>Contactos</h3>
+          <ul>
+            <li><a href="tel:+351239488010">239 488 010</a><small>Chamada para a rede fixa nacional</small></li>
+            <li><a href="tel:+351919416547">919 416 547</a> · <a href="tel:+351966012560">966 012 560</a><small>Chamada para a rede móvel nacional</small></li>
+            <li><a href="mailto:geral@clinicadelille.pt">geral@clinicadelille.pt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="marcacao" aria-labelledby="h-mc">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <span class="eyebrow"><i aria-hidden="true"><b></b><b></b><b></b></i>Marcações</span>
+      <h2 id="h-mc">Marque a sua consulta.</h2>
+      <p class="lead">Deixe aqui o seu pedido. A consulta só fica marcada depois do contacto da nossa receção.</p>
+      <ol class="steps">
+        <li><b>1</b><span>Indique o tratamento e o horário que prefere.</span></li>
+        <li><b>2</b><span>As nossas rececionistas contactam-no para confirmar a disponibilidade ou propor outra hora.</span></li>
+        <li><b>3</b><span>Na primeira consulta pode ser atendido em português, inglês, alemão ou francês.</span></li>
+      </ol>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <h3>Pedido de marcação</h3>
+      <div class="two">
+        <div><label for="f-n">Nome *</label><input id="f-n" name="Nome" autocomplete="name" required></div>
+        <div><label for="f-t">Telemóvel *</label><input id="f-t" name="Telemóvel" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="two">
+        <div><label for="f-s">Tratamento</label>
+          <select id="f-s" name="Tratamento"><option>Primeira consulta</option><option>Urgência</option><option>Implantologia</option><option>Cirurgia oral</option><option>Ortodontia / Invisalign</option><option>Facetas dentárias</option><option>Branqueamento dentário</option><option>Odontopediatria</option><option>Higiene oral</option><option>Reabilitação oral</option><option>Endodontia</option><option>Periodontologia</option><option>Disfunção temporomandibular</option><option>Apneia do sono</option></select></div>
+        <div><label for="f-i">Idioma</label><select id="f-i" name="Idioma"><option>Português</option><option>Inglês</option><option>Alemão</option><option>Francês</option><option>Outro</option></select></div>
+      </div>
+      <div><label for="f-h">Preferência de horário</label><select id="f-h" name="Preferência"><option>Manhã</option><option>Tarde</option><option>Indiferente</option></select></div>
+      <div><label for="f-m">Mensagem</label><textarea id="f-m" name="Mensagem" placeholder="Conte-nos brevemente o que precisa"></textarea></div>
+      <button class="btn btn-p" type="submit">Pedir marcação</button>
+      <p class="fnote">Ao enviar, abre-se o seu programa de e-mail com o pedido pronto para a clínica.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <img src="img/logo-branco.webp" width="520" height="191" alt="Clínica Delille" loading="lazy">
+      <p style="margin:0;max-width:30em">Uma equipa clínica multidisciplinar pronta a partilhar consigo todos os conhecimentos, numa postura de rigor e inovação.</p>
+    </div>
+    <div><strong>Contactos</strong><ul><li><a href="tel:+351239488010">239 488 010</a></li><li><a href="https://wa.me/351916659482" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:geral@clinicadelille.pt">geral@clinicadelille.pt</a></li></ul></div>
+    <div><strong>Redes sociais</strong><ul><li><a href="https://www.facebook.com/clinica.delille/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/clinicadelille.pt/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.youtube.com/channel/UCGPWlwyI7hlsUZ0oAu8VCzw" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+  </div>
+  <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial da Clínica Delille. Fotos e textos do site clinicadelille.pt.</p>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351239488010"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/351916659482" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.4z"/></svg>WhatsApp</a>
+  <a class="go" href="#marcacao">Marcar</a>
+</nav>
+
+<script>
+(function(){
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    d.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3500);
+  }
+  var f=document.getElementById('form');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true;
+    f.querySelectorAll('[required]').forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#b91c1c';}else{i.style.borderColor='';}});
+    if(!ok){f.querySelector('[required]').focus();return;}
+    var lines=[];new FormData(f).forEach(function(v,k){if(String(v).trim())lines.push(k+': '+v);});
+    location.href='mailto:geral@clinicadelille.pt?subject='+encodeURIComponent('Pedido de marcação — '+f.querySelector('#f-s').value)+'&body='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>
