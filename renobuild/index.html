@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>RenoBuild · Remodelação, renovação e isolamento térmico no Algarve</title>
+<meta name="description" content="RenoBuild, Portimão: isolamento térmico (ETICS/Capoto), renovação de fachadas, pintura, impermeabilização, remodelações de interiores e tratamento de humidades no Algarve.">
+<meta name="theme-color" content="#17160f">
+<link rel="icon" href="img/logo-m.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.webp">
+<style>
+:root{
+  --ink:#17160f; --ink-2:#22211a; --ink-3:#2e2c23;
+  --lime:#f5f1e8; --lime-2:#ebe5d6; --white:#fffdf8;
+  --gold:#f0cf3a; --gold-l:#fdf495; --gold-d:#8a7414;
+  --clay:#b4552f;
+  --muted:#5f5b4f; --muted-d:#b8b3a3;
+  --line:#ddd6c4; --line-d:rgba(255,255,255,.12);
+  --r:6px;
+  --serif:"Marcellus", "Trajan Pro", Georgia, serif;
+  --sans:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:min(1180px, 100% - 32px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--ink);background:var(--lime);overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:.005em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;font:600 15px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ink{background:var(--ink);color:var(--gold-l)}
+.btn-ink:hover{background:#000}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-l)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--gold-l)}
+.btn-line-l{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-line-l:hover{background:#fff;color:var(--ink)}
+
+/* cabeçalho */
+.top{position:sticky;top:0;z-index:40;background:rgba(245,241,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.logo img{width:auto;height:24px}
+@media (min-width:600px){.logo img{height:30px}}
+.nav{display:none;gap:30px;font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.nav a{text-decoration:none;opacity:.8}
+.nav a:hover{opacity:1;color:var(--clay)}
+.top-right{display:flex;align-items:center;gap:18px}
+.top-tel{display:none;text-decoration:none;font-weight:600;font-size:16px}
+.top .btn{min-height:42px;padding:0 16px;font-size:13px}
+@media (min-width:1000px){.nav{display:flex}.top-tel{display:inline}}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(56px,7vw,96px)}
+.hero .wrap{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1.05fr;gap:64px}}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-d)}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--gold)}
+.hero h1{font-size:clamp(42px,7.2vw,84px);margin:18px 0 22px}
+.hero h1 .amp{font-style:italic;color:var(--clay)}
+.hero .lead{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:560px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+@media (max-width:420px){.ctas .btn{flex:1 1 150px;padding:0 14px}}
+.hero .note{margin-top:18px;font-size:15px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.hero .note svg{width:18px;height:18px;color:var(--gold-d);flex:none}
+.hero-photo{position:relative;margin:0 0 0 14px}
+.hero-photo::before{content:"";position:absolute;inset:-14px 14px 14px -14px;background:var(--gold);z-index:0}
+.hero-photo img{position:relative;z-index:1;width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-photo figcaption{position:absolute;z-index:2;right:0;bottom:0;background:var(--ink);color:var(--gold-l);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:10px 14px}
+
+/* faixa */
+.band{background:var(--ink);color:#fff}
+.band ul{list-style:none;margin:0;padding:26px 0;display:grid;gap:16px}
+@media (min-width:760px){.band ul{grid-template-columns:repeat(4,1fr)}}
+.band li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.35}
+.band b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;color:var(--gold-l)}
+.band svg{width:24px;height:24px;color:var(--gold);flex:none;margin-top:3px}
+
+/* secções */
+section{scroll-margin-top:76px}
+.sec{padding:clamp(72px,9vw,120px) 0}
+.sec-dark{background:var(--ink);color:#fff}
+.sec-white{background:var(--white)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--clay)}
+.sec-dark .kicker{color:var(--gold)}
+.sec h2{font-size:clamp(36px,5.6vw,62px);margin-top:12px}
+.intro{max-width:600px;margin-top:16px;color:var(--muted);font-size:18px}
+.sec-dark .intro{color:var(--muted-d)}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 40px;margin-bottom:44px}
+
+/* serviços */
+.svc-grid{display:grid;gap:18px}
+@media (min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
+.svc{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}
+.svc img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.svc .body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc .n{font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--gold-d)}
+.svc h3{font-size:26px}
+.svc ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
+.svc-more{margin-top:18px;display:grid;gap:18px}
+@media (min-width:700px){.svc-more{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.svc-more{grid-template-columns:repeat(4,1fr)}}
+.mini{border-top:3px solid var(--ink);padding:20px 4px 4px}
+.mini h3{font-size:22px}
+.mini ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
+
+/* ETICS */
+.etics{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.etics{grid-template-columns:1fr 1fr;gap:72px}}
+.etics-photos{display:grid;grid-template-columns:1.25fr 1fr;gap:12px}
+.etics-photos img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.etics-photos img:first-child{aspect-ratio:3/4;margin-top:40px}
+@media (min-width:900px){.etics{align-items:stretch}.etics-photos{grid-template-rows:1fr}.etics-photos img,.etics-photos img:first-child{aspect-ratio:auto;height:100%;min-height:420px;margin-top:0}.etics-photos img:last-child{margin-top:48px;height:calc(100% - 48px)}}
+.checks{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;color:#e6e2d6}
+.checks svg{width:22px;height:22px;color:var(--gold);flex:none;margin-top:2px}
+.brands{margin-top:26px;font-size:15px;color:var(--muted-d)}
+.brands b{color:#fff;font-weight:600}
+.quote-box{margin-top:30px;border-left:3px solid var(--gold);padding:4px 0 4px 20px;color:var(--muted-d);font-size:16px}
+.quote-box b{display:block;color:#fff;font-family:var(--serif);font-weight:400;font-size:22px;margin-bottom:6px}
+
+/* galeria */
+.gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;grid-auto-flow:dense}
+@media (min-width:760px){.gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}}
+.g{position:relative;border:0;padding:0;margin:0;overflow:hidden;cursor:zoom-in;background:var(--lime-2);font:inherit;text-align:left}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.g:hover img{transform:scale(1.05)}
+.g span{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--gold-l);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px}
+.g.tall{grid-row:span 2}.g.wide{grid-column:span 2}.g.big{grid-column:span 2;grid-row:span 2}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh}
+dialog.lb::backdrop{background:rgba(15,14,10,.92)}
+dialog.lb img{max-height:84vh;width:auto;margin:auto}
+dialog.lb p{color:#fff;text-align:center;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-top:12px}
+.lb-close{position:fixed;top:14px;right:14px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:var(--ink);font-size:26px;line-height:1;cursor:pointer}
+.more-link{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;color:var(--muted);font-size:15px}
+
+/* sobre */
+.about{display:grid;gap:44px;align-items:start}
+@media (min-width:900px){.about{grid-template-columns:1fr 1.1fr;gap:80px}}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-photo .tag{position:absolute;left:0;bottom:24px;background:var(--gold);color:var(--ink);padding:14px 18px;font-family:var(--serif);font-size:22px;line-height:1.1}
+.about-photo .tag small{display:block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}
+.lead-serif{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);line-height:1.25;margin-top:16px}
+.lead-serif em{font-style:normal;color:var(--clay)}
+.people{display:grid;gap:18px;margin-top:30px}
+@media (min-width:640px){.people{grid-template-columns:1fr 1fr}}
+.person{border-top:1px solid var(--line);padding-top:18px}
+.person h3{font-size:24px}
+.person p{color:var(--muted);font-size:15.5px;margin-top:8px}
+
+/* zona */
+.zone{display:grid;gap:28px}
+@media (min-width:900px){.zone{grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}}
+.towns{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.towns li{padding:8px 14px;border:1px solid var(--ink);font-size:15px;font-weight:500}
+.towns li.hq{background:var(--ink);color:var(--gold-l)}
+.zone-card{background:var(--gold);padding:clamp(28px,4vw,44px);display:grid;gap:18px}
+.zone-card svg{width:46px;height:46px}
+.zone-card h3{font-size:clamp(32px,4.4vw,46px)}
+.zone-card p{font-size:16px}
+
+/* contacto */
+.contact{display:grid;gap:44px}
+@media (min-width:960px){.contact{grid-template-columns:1fr 1.1fr;gap:64px}}
+.channels{display:grid;gap:12px;margin-top:30px}
+.ch{display:flex;align-items:center;gap:16px;padding:18px 20px;background:var(--ink-2);text-decoration:none;color:#fff;border:1px solid var(--line-d);transition:border-color .2s ease,transform .2s ease}
+.ch:hover{border-color:var(--gold);transform:translateX(4px)}
+.ch svg{width:26px;height:26px;color:var(--gold);flex:none}
+.ch small{display:block;color:var(--muted-d);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.ch b{font-weight:600;font-size:17px;word-break:break-word}
+form.qf{background:var(--lime);color:var(--ink);padding:clamp(24px,4vw,40px);display:grid;gap:16px}
+.qf h3{font-size:32px}
+.qf label{display:grid;gap:6px;font-size:14px;font-weight:600}
+.qf input,.qf textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #cfc7b2;border-radius:2px;background:var(--white);color:var(--ink);width:100%}
+.qf input:focus,.qf textarea:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 3px rgba(240,207,58,.5)}
+.qf .row{display:grid;gap:16px}
+@media (min-width:560px){.qf .row{grid-template-columns:1fr 1fr}}
+.qf .small{font-size:14px;color:var(--muted)}
+
+/* rodapé */
+footer{background:#0f0e09;color:#cfcab9;padding:48px 0 120px;font-size:15px}
+@media (min-width:761px){footer{padding-bottom:44px}}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+.foot .logo-w{font-family:var(--serif);font-size:24px;color:var(--gold-l);letter-spacing:.06em}
+.foot a{color:#fff}
+.demo{margin-top:30px;padding-top:18px;border-top:1px solid #2a281f;font-size:13px;color:#9d9886}
+
+/* barra telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(23,22,15,.97);border-top:1px solid var(--line-d)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.mbar a.go{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.mbar svg{width:18px;height:18px}
+@media (min-width:761px){.mbar{display:none}}
+
+/* animações */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .d1{transition-delay:.08s}.js .d2{transition-delay:.16s}.js .d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="RenoBuild, início"><img src="img/logo-m.webp" alt="RenoBuild" width="800" height="149"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#obras">Obras</a>
+      <a href="#sobre">A RenoBuild</a>
+      <a href="#contacto">Contactos</a>
+    </nav>
+    <div class="top-right">
+      <a class="top-tel" href="tel:+351935357808">+351 935 357 808</a>
+      <a class="btn btn-ink" href="#contacto">Pedir orçamento</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" aria-label="Apresentação">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Portimão · Algarve</p>
+      <h1>Conforto do Lar <span class="amp">&amp;</span> Poupança Energética</h1>
+      <p class="lead">Remodelação, reparação, melhoramento e renovação de edifícios, com especial foco no isolamento térmico e no revestimento de paredes, tectos e pavimentos.</p>
+      <div class="ctas">
+        <a class="btn btn-ink" href="#contacto">Pedir orçamento</a>
+        <a class="btn btn-line" href="tel:+351935357808">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Ligar
+        </a>
+      </div>
+      <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atendimento em português (+351 935 357 808) e alemão (+351 965 347 468).</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero-m.webp" srcset="img/hero-m.webp 800w, img/hero.webp 1024w" sizes="(min-width:900px) 560px, 100vw" alt="Moradia com piscina no Algarve após trabalho de isolamento térmico da RenoBuild" width="1024" height="768" fetchpriority="high">
+      <figcaption>Isolamento térmico · Algarve</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="band">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>+35 anos</b>de experiência, na Suíça e em Portugal</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-5h6v5"/></svg><span><b>ETICS · Capoto</b>sistemas STO e Fassa Bortolo</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span><b>Sala de exposições</b>com amostras de acabamentos</span></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span><b>PT · DE</b>linha em português e linha em alemão</span></li>
+  </ul>
+</div>
+
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker reveal">Os nossos serviços</p>
+        <h2 class="reveal d1">Da fachada ao interior</h2>
+      </div>
+      <p class="intro reveal d2">Os edifícios absorvem cerca de 40% do consumo de energia. Ajudamos a melhorar a eficiência energética da sua casa, nova ou a reabilitar.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <img src="img/isolamento-m.webp" alt="Placas de isolamento térmico aplicadas numa fachada" loading="lazy" width="800" height="600">
+        <div class="body"><span class="n">01</span><h3>Isolamento térmico e acústico</h3>
+          <ul><li>Paredes pelo exterior (ETICS, Capoto, Capote)</li><li>Coberturas</li><li>Isolamento pelo interior</li><li>Soluções com cortiça</li></ul></div>
+      </article>
+      <article class="svc reveal d1">
+        <img src="img/fachadas-m.webp" alt="Fachada renovada pela RenoBuild" loading="lazy" width="800" height="534">
+        <div class="body"><span class="n">02</span><h3>Fachadas e fendas</h3>
+          <ul><li>Análise e diagnóstico de fendas</li><li>Reparação de fissuras</li><li>Renovação de rebocos e revestimentos</li></ul></div>
+      </article>
+      <article class="svc reveal d2">
+        <img src="img/pintura-m.webp" alt="Moradia pintada pela RenoBuild" loading="lazy" width="800" height="534">
+        <div class="body"><span class="n">03</span><h3>Pintura</h3>
+          <ul><li>Exteriores e interiores</li><li>Limpeza com jacto de água sob pressão</li><li>Madeiras: tratamento e envernizamento</li><li>Metais: tratamento de ferrugem</li></ul></div>
+      </article>
+      <article class="svc reveal d3">
+        <img src="img/interiores-m.webp" alt="Sala remodelada com tecto falso e iluminação" loading="lazy" width="800" height="534">
+        <div class="body"><span class="n">04</span><h3>Remodelações de interiores</h3>
+          <ul><li>Tectos falsos e divisórias em pladur</li><li>Estuque e acabamentos decorativos</li><li>Estuque veneziano</li><li>Sancas e molduras</li></ul></div>
+      </article>
+    </div>
+    <div class="svc-more">
+      <div class="mini reveal"><h3>Impermeabilizações</h3><ul><li>Varandas, terraços e telhados</li><li>Piscinas, tanques e reservatórios</li><li>Reparação de infiltrações</li></ul></div>
+      <div class="mini reveal d1"><h3>Humidades</h3><ul><li>Bolor e fungos</li><li>Paredes com salitre</li><li>Rebocos de saneamento</li></ul></div>
+      <div class="mini reveal d2"><h3>Aconselhamento e venda</h3><ul><li>Argamassas</li><li>Primários, tintas e vernizes</li><li>Isolantes térmicos e acústicos</li></ul></div>
+      <div class="mini reveal d3"><h3>Manutenção</h3><ul><li>Inspecção do estado das fachadas</li><li>Limpeza de paredes, telhados e pavimentos</li><li>Pequenas reparações</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="etics">
+  <div class="wrap etics">
+    <div class="etics-photos reveal">
+      <img src="img/almaverde-1-m.webp" alt="Edifício do projeto Alma Verde, Vila do Bispo" loading="lazy" width="800" height="600">
+      <img src="img/almaverde-2-m.webp" alt="Moradia do projeto Alma Verde com isolamento pelo exterior" loading="lazy" width="800" height="600">
+    </div>
+    <div>
+      <p class="kicker reveal">Isolamento pelo exterior</p>
+      <h2 class="reveal d1">Milhares de metros quadrados de fachadas</h2>
+      <p class="intro reveal d2">Vasta experiência na aplicação do sistema ETICS (Cappotto, Capoto, Capote), tanto em construção nova como em construção existente.</p>
+      <ul class="checks reveal d2">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correcção das pontes térmicas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Menos condensações, bolores e fungos</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Poupança energética a longo prazo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Aplicação com incómodo reduzido para quem lá vive</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Mais valor comercial e durabilidade da construção</li>
+      </ul>
+      <p class="brands reveal">Placas de EPS, XPS, lã de rocha e aglomerado de cortiça · sistemas <b>STO</b> e <b>Fassa Bortolo</b>.</p>
+      <div class="quote-box reveal"><b>Obra de referência: Alma Verde</b>Conjunto de moradias ecológicas em Vila do Bispo, onde a RenoBuild aplicou o sistema StoTherm Classic em vários edifícios.</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="obras">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker reveal">Obras de referência</p>
+        <h2 class="reveal d1">Casas do Algarve, feitas por nós</h2>
+      </div>
+      <p class="intro reveal d2">Fotografias de trabalhos da RenoBuild. Toque numa imagem para a ver em grande.</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <button class="g big reveal" data-full="img/obra-isolamento-1.webp" data-cap="Isolamento térmico"><img src="img/obra-isolamento-1-m.webp" alt="Moradia de dois pisos após isolamento térmico" loading="lazy"><span>Isolamento térmico</span></button>
+      <button class="g tall reveal d1" data-full="img/obra-bensafrim.webp" data-cap="Pormenor · Bensafrim"><img src="img/obra-bensafrim-m.webp" alt="Pormenor de coluna e arco numa obra em Bensafrim" loading="lazy"><span>Bensafrim</span></button>
+      <button class="g reveal d2" data-full="img/obra-pintura-1.webp" data-cap="Pintura exterior"><img src="img/obra-pintura-1-m.webp" alt="Casa de formas orgânicas junto à piscina, pintada" loading="lazy"><span>Pintura</span></button>
+      <button class="g reveal d3" data-full="img/obra-interiores-1.webp" data-cap="Remodelação de interiores"><img src="img/obra-interiores-1-m.webp" alt="Sala com tecto falso e iluminação embutida" loading="lazy"><span>Interiores</span></button>
+      <button class="g wide reveal" data-full="img/obra-monchique.webp" data-cap="Fachada · Monchique"><img src="img/obra-monchique-m.webp" alt="Moradia em Monchique com fachada renovada" loading="lazy"><span>Monchique</span></button>
+      <button class="g reveal d1" data-full="img/obra-pintura-3.webp" data-cap="Pintura"><img src="img/obra-pintura-3-m.webp" alt="Piscina interior com paredes e tectos pintados" loading="lazy"><span>Pintura</span></button>
+      <button class="g reveal d2" data-full="img/obra-burgau-2.webp" data-cap="Burgau"><img src="img/obra-burgau-2-m.webp" alt="Alpendre de moradia em Burgau" loading="lazy"><span>Burgau</span></button>
+      <button class="g wide reveal" data-full="img/obra-isolamento-2.webp" data-cap="Isolamento térmico"><img src="img/obra-isolamento-2-m.webp" alt="Varanda coberta com pérgola após obra" loading="lazy"><span>Isolamento térmico</span></button>
+      <button class="g reveal d1" data-full="img/obra-pintura-2.webp" data-cap="Pintura exterior"><img src="img/obra-pintura-2-m.webp" alt="Moradia com varandas brancas pintada" loading="lazy"><span>Pintura</span></button>
+      <button class="g reveal d2" data-full="img/obra-burgau-1.webp" data-cap="Burgau"><img src="img/obra-burgau-1-m.webp" alt="Casa de pedra em Burgau" loading="lazy"><span>Burgau</span></button>
+      <button class="g wide reveal" data-full="img/obra-interiores-2.webp" data-cap="Remodelação de interiores"><img src="img/obra-interiores-2-m.webp" alt="Sala ampla remodelada com tecto em madeira" loading="lazy"><span>Interiores</span></button>
+      <button class="g wide reveal d1" data-full="img/impermeabilizacao.webp" data-cap="Impermeabilização"><img src="img/impermeabilizacao-m.webp" alt="Gota de água sobre superfície impermeabilizada" loading="lazy"><span>Impermeabilização</span></button>
+    </div>
+    <p class="more-link reveal">Mais trabalhos na galeria da RenoBuild no Flickr.
+      <a class="btn btn-line" href="https://www.flickr.com/photos/renobuildalgarve/albums/" target="_blank" rel="noopener">Ver galeria</a></p>
+  </div>
+</section>
+
+<dialog class="lb" id="lb" aria-label="Imagem ampliada">
+  <button class="lb-close" id="lbClose" aria-label="Fechar">×</button>
+  <img id="lbImg" src="img/hero-m.webp" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<section class="sec sec-white" id="sobre">
+  <div class="wrap about">
+    <div class="about-photo reveal">
+      <img src="img/sobre-m.webp" alt="Chaminé algarvia e cúpula branca numa obra da RenoBuild" loading="lazy" width="800" height="525">
+      <p class="tag"><small>Experiência</small>Suíça &amp; Portugal</p>
+    </div>
+    <div>
+      <p class="kicker reveal">A RenoBuild</p>
+      <p class="lead-serif reveal d1">Uma vida confortável começa na <em>nossa própria casa</em>.</p>
+      <p class="intro reveal d2">Com sede em Portimão, a RenoBuild junta a experiência profissional de Heinrich e Sérgio Fülöp. Movem-nos os princípios de qualidade e viabilidade: encontrar e realizar a melhor solução para cada casa.</p>
+      <div class="people">
+        <div class="person reveal"><h3>Heinrich Fülöp</h3><p>Aplicador desde 1979, na Suíça. Cerca de 20 anos em isolamento térmico pelo exterior, estuque, rebocos decorativos e tectos falsos. Em Portugal desde 1998.</p></div>
+        <div class="person reveal d1"><h3>Sérgio Fülöp</h3><p>Desde 2007 em isolamento térmico, reparação de fendas, impermeabilizações e pintura. Especializou-se na Suíça em divisórias leves e tectos acústicos; hoje dedica-se à remodelação de moradias.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="zona">
+  <div class="wrap zone">
+    <div>
+      <p class="kicker reveal">Zona de atuação</p>
+      <h2 class="reveal d1">Onde trabalhamos</h2>
+      <p class="intro reveal d2">Sede em Portimão. Trabalhamos nas localidades vizinhas, de Albufeira a Sagres.</p>
+      <ul class="towns reveal d2">
+        <li class="hq">Portimão</li><li>Lagos</li><li>Lagoa</li><li>Carvoeiro</li><li>Aljezur</li><li>Sagres</li><li>Monchique</li><li>Silves</li><li>Albufeira</li>
+      </ul>
+    </div>
+    <div class="zone-card reveal d1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <h3>Portimão, Algarve</h3>
+      <p>Diga-nos onde fica a sua casa e o que precisa. Temos uma linha em português e outra em alemão.</p>
+      <div><a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=RenoBuild+Portim%C3%A3o+Algarve" target="_blank" rel="noopener">Como chegar</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker reveal">Contactos</p>
+      <h2 class="reveal d1">Peça o seu orçamento</h2>
+      <p class="intro reveal d2">Ligue, escreva-nos ou deixe o pedido no formulário. Não hesite em contactar-nos.</p>
+      <div class="channels">
+        <a class="ch reveal" href="tel:+351935357808">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span><small>Telemóvel · Português</small><b>+351 935 357 808</b></span>
+        </a>
+        <a class="ch reveal d1" href="tel:+351965347468">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span><small>Telemóvel · Deutsch</small><b>+351 965 347 468</b></span>
+        </a>
+        <a class="ch reveal d2" href="mailto:info@renobuild.pt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <span><small>E-mail</small><b>info@renobuild.pt</b></span>
+        </a>
+        <a class="ch reveal d3" href="https://www.google.com/maps/search/?api=1&amp;query=RenoBuild+Portim%C3%A3o+Algarve" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span><small>Morada</small><b>Portimão · Algarve · Portugal</b></span>
+        </a>
+      </div>
+    </div>
+
+    <form class="qf reveal d1" id="form" action="mailto:info@renobuild.pt" method="post" enctype="text/plain">
+      <h3>Pedido de orçamento</h3>
+      <div class="row">
+        <label>Nome *<input name="nome" required autocomplete="name"></label>
+        <label>Telefone *<input name="telefone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <div class="row">
+        <label>E-mail *<input name="email" type="email" required autocomplete="email"></label>
+        <label>Localidade<input name="localidade" placeholder="Ex.: Lagos"></label>
+      </div>
+      <label>Assunto<input name="assunto" placeholder="Ex.: isolamento da fachada"></label>
+      <label>Mensagem<textarea name="mensagem" rows="4" placeholder="Descreva a obra."></textarea></label>
+      <button class="btn btn-ink" type="submit">Enviar pedido</button>
+      <p class="small">O pedido abre no seu programa de e-mail, pronto a enviar.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span class="logo-w">RENOBUILD</span>
+      <p>RenoBuild Remodelações, Serviços de Térmica e Engenharia Civil, Lda · Portimão</p>
+      <p><a href="tel:+351935357808">+351 935 357 808</a> · <a href="mailto:info@renobuild.pt">info@renobuild.pt</a></p>
+    </div>
+    <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de RenoBuild. Fotos e textos do site renobuild.pt.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351935357808"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="mailto:info@renobuild.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>E-mail</a>
+  <a class="go" href="#contacto">Orçamento</a>
+</nav>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    d.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }
+  var lb=d.getElementById('lb'), li=d.getElementById('lbImg'), lc=d.getElementById('lbCap');
+  d.getElementById('gallery').addEventListener('click', function(ev){
+    var b=ev.target.closest('.g'); if(!b || !lb.showModal) return;
+    li.src=b.getAttribute('data-full'); li.alt=b.querySelector('img').alt; lc.textContent=b.getAttribute('data-cap');
+    lb.showModal();
+  });
+  d.getElementById('lbClose').addEventListener('click', function(){lb.close();});
+  lb.addEventListener('click', function(ev){ if(ev.target===lb) lb.close(); });
+  d.getElementById('form').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var f=ev.target, v=function(n){return (f.elements[n].value||'').trim();};
+    var body='Nome: '+v('nome')+'\nTelefone: '+v('telefone')+'\nE-mail: '+v('email')+'\nLocalidade: '+v('localidade')+'\n\n'+v('mensagem');
+    location.href='mailto:info@renobuild.pt?subject='+encodeURIComponent('Pedido de orçamento — '+(v('assunto')||'RenoBuild'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

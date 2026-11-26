@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Área Clean · Lavagem de exteriores e telhados</title>
+<meta name="description" content="Área Clean, Balazar (Póvoa de Varzim): lavagem de fachadas e telhados com Sistema de Lavagem de Pressão Controlada, limpeza de painéis solares, graffitis, pintura e trabalhos em altura. De Norte a Sul do país.">
+<meta name="theme-color" content="#0d1f2b">
+<link rel="icon" href="img/logo-m.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-depois-m.webp">
+<style>
+:root{
+  --ink:#0d1f2b; --ink-2:#132a39; --ink-3:#1b3648;
+  --blue:#2f8fcf; --blue-l:#7cc0ea; --blue-d:#1d6799;
+  --green:#2fb383; --green-l:#8be0bf; --green-d:#1d7e5a;
+  --mist:#eef5f8; --mist-2:#dfeaf0; --white:#ffffff;
+  --text:#11222d; --muted:#4e6270; --muted-d:#9fb5c3;
+  --line:#d5e2ea; --line-d:rgba(255,255,255,.12);
+  --r:16px;
+  --head:"Bricolage Grotesque", system-ui, sans-serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:min(1180px, 100% - 32px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--white);overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.02;letter-spacing:-.02em;margin:0}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:700 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-go{background:var(--green);color:#04261a}
+.btn-go:hover{background:var(--green-l)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--blue-d)}
+
+/* cabeçalho */
+.top{position:sticky;top:0;z-index:40;background:rgba(13,31,43,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:72px}
+.logo img{height:40px;width:auto}
+@media (min-width:600px){.logo img{height:46px}}
+.nav{display:none;gap:28px;font-weight:600;font-size:15px}
+.nav a{color:#fff;text-decoration:none;opacity:.8}
+.nav a:hover{opacity:1;color:var(--green-l)}
+.top-right{display:flex;align-items:center;gap:18px}
+.top-tel{display:none;color:#fff;text-decoration:none;font-weight:700}
+.top .btn{min-height:42px;padding:0 18px;font-size:14px}
+@media (min-width:1040px){.nav{display:flex}.top-tel{display:inline}}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% 40%;height:80%;background:radial-gradient(closest-side,rgba(47,143,207,.28),transparent);z-index:-1}
+.hero .wrap{display:grid;gap:40px;align-items:center;padding:clamp(40px,6vw,84px) 0 clamp(56px,7vw,96px)}
+@media (min-width:940px){.hero .wrap{grid-template-columns:1fr 1.05fr;gap:60px}}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-l)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(47,179,131,.2)}
+.hero h1{font-size:clamp(40px,6.6vw,76px);margin:18px 0 20px}
+.hero h1 span{color:var(--blue-l)}
+.hero .lead{font-size:clamp(17px,2vw,19px);color:#cfdde6;max-width:540px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+@media (max-width:420px){.ctas .btn{flex:1 1 150px;padding:0 14px}}
+.hero .note{margin-top:18px;font-size:15px;color:var(--muted-d);display:flex;gap:8px;align-items:center}
+.hero .note svg{width:18px;height:18px;color:var(--green);flex:none}
+
+/* antes / depois */
+.ba{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--ink-2);user-select:none;-webkit-user-select:none;--p:50%}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ba .handle{position:absolute;top:0;bottom:0;left:var(--p);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.ba .handle::after{content:"";position:absolute;top:50%;left:50%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230d1f2b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .lbl{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;pointer-events:none}
+.ba .lbl.a{left:14px;background:rgba(13,31,43,.85);color:#fff}
+.ba .lbl.d{right:14px;background:var(--green);color:#04261a}
+.ba-cap{margin-top:12px;font-size:14px;color:var(--muted-d);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* faixa */
+.band{background:var(--green);color:#04261a}
+.band ul{list-style:none;margin:0;padding:20px 0;display:grid;gap:12px}
+@media (min-width:760px){.band ul{grid-template-columns:repeat(4,1fr)}}
+.band li{display:flex;gap:10px;align-items:center;font-weight:700;font-size:16px;line-height:1.25}
+.band svg{width:22px;height:22px;flex:none}
+
+/* secções */
+section{scroll-margin-top:78px}
+.sec{padding:clamp(72px,9vw,120px) 0}
+.sec-mist{background:var(--mist)}
+.sec-dark{background:var(--ink);color:#fff}
+.kicker{font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-d)}
+.sec-dark .kicker{color:var(--green-l)}
+.sec h2{font-size:clamp(34px,5.4vw,58px);margin-top:10px}
+.intro{max-width:600px;margin-top:16px;color:var(--muted);font-size:18px}
+.sec-dark .intro{color:var(--muted-d)}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 40px;margin-bottom:44px}
+
+/* serviços */
+.svc-grid{display:grid;gap:16px}
+@media (min-width:700px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
+.svc{position:relative;border-radius:var(--r);overflow:hidden;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff;isolation:isolate;background:var(--ink-3)}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .6s ease}
+.svc::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,31,43,0) 30%,rgba(13,31,43,.94) 82%)}
+.svc:hover img{transform:scale(1.05)}
+.svc h3{font-size:28px}
+.svc p{margin-top:8px;font-size:15px;color:#d8e5ec}
+.svc-list{margin-top:16px;display:grid;gap:12px}
+@media (min-width:700px){.svc-list{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.svc-list{grid-template-columns:repeat(3,1fr)}}
+.si{display:flex;gap:14px;padding:20px;border-radius:var(--r);background:var(--white);border:1px solid var(--line)}
+.si svg{width:28px;height:28px;color:var(--blue);flex:none;margin-top:2px}
+.si h3{font-size:20px;letter-spacing:-.01em}
+.si p{color:var(--muted);font-size:15px;margin-top:4px}
+
+/* obras */
+.works{display:grid;gap:28px}
+@media (min-width:900px){.works{grid-template-columns:1fr 1fr;gap:32px}}
+.work{background:var(--white);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--line)}
+.pair figure{margin:0;position:relative}
+.pair img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.pair figcaption{position:absolute;left:10px;top:10px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:rgba(13,31,43,.85);color:#fff}
+.pair figure:last-child figcaption{background:var(--green);color:#04261a}
+.work .body{padding:22px 24px 26px}
+.work h3{font-size:24px;letter-spacing:-.01em}
+.work p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.meta span{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--mist);color:var(--ink)}
+
+/* distingue */
+.dist{display:grid;gap:40px;align-items:center}
+@media (min-width:940px){.dist{grid-template-columns:1.05fr 1fr;gap:64px}}
+.dist-img{border-radius:var(--r);overflow:hidden}
+.dist-img img{width:100%}
+.dist-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.dist-row img{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
+.dist-row .stat{border-radius:var(--r);background:var(--blue-d);color:#fff;padding:20px;display:flex;flex-direction:column;justify-content:flex-end}
+.dist-row .stat b{font-family:var(--head);font-size:26px;line-height:1.05}
+.dist-row .stat span{font-size:14px;color:#d1e6f5;margin-top:6px}
+.checks{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;color:#dbe7ee}
+.checks svg{width:22px;height:22px;color:var(--green);flex:none;margin-top:2px}
+
+/* opiniões */
+.reviews{display:grid;gap:16px}
+@media (min-width:860px){.reviews{grid-template-columns:1fr 1fr 1fr}}
+.rv{border-radius:var(--r);padding:28px;background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.rv blockquote{margin:0;font-family:var(--head);font-weight:600;font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.rv cite{font-style:normal;font-size:14px;color:var(--muted)}
+.rv cite b{display:block;color:var(--text);font-size:16px}
+.rv.fx{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rv.fx p{color:var(--muted-d);font-size:15px}
+.rv.fx b{font-family:var(--head);font-size:28px;line-height:1.05}
+
+/* faq */
+.faq{border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{cursor:pointer;font-family:var(--head);font-weight:700;font-size:21px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--blue);font-size:28px;line-height:.8}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;color:var(--muted)}
+
+/* contacto */
+.contact{display:grid;gap:44px}
+@media (min-width:960px){.contact{grid-template-columns:1fr 1.1fr;gap:64px}}
+.channels{display:grid;gap:12px;margin-top:28px}
+.ch{display:flex;align-items:center;gap:16px;padding:17px 20px;border-radius:12px;background:var(--ink-2);text-decoration:none;color:#fff;border:1px solid var(--line-d);transition:border-color .2s ease,transform .2s ease}
+a.ch:hover{border-color:var(--green);transform:translateX(4px)}
+.ch svg{width:26px;height:26px;color:var(--green-l);flex:none}
+.ch small{display:block;color:var(--muted-d);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.ch b{font-weight:600;font-size:16.5px;word-break:break-word}
+.ch em{display:block;font-style:normal;font-size:13px;color:var(--muted-d)}
+form.qf{background:#fff;color:var(--text);border-radius:var(--r);padding:clamp(24px,4vw,40px);display:grid;gap:16px}
+.qf h3{font-size:30px}
+.qf label{display:grid;gap:6px;font-size:14px;font-weight:600}
+.qf input,.qf select,.qf textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid #c5d4de;border-radius:10px;background:#f7fbfd;color:var(--text);width:100%}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(47,143,207,.2)}
+.qf .row{display:grid;gap:16px}
+@media (min-width:560px){.qf .row{grid-template-columns:1fr 1fr}}
+.qf .small{font-size:14px;color:var(--muted)}
+
+/* rodapé */
+footer{background:#081620;color:#b9cad5;padding:48px 0 120px;font-size:15px}
+@media (min-width:761px){footer{padding-bottom:44px}}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+.foot img{height:44px;width:auto}
+.foot a{color:#fff}
+.demo{margin-top:30px;padding-top:18px;border-top:1px solid #1a2c38;font-size:13px;color:#8aa0ae}
+
+/* barra telemóvel */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(13,31,43,.97);border-top:1px solid var(--line-d)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.mbar a.go{background:var(--green);border-color:var(--green);color:#04261a}
+.mbar svg{width:18px;height:18px}
+@media (min-width:761px){.mbar{display:none}}
+
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .d1{transition-delay:.08s}.js .d2{transition-delay:.16s}.js .d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Área Clean, início"><img src="img/logo.webp" alt="Área Clean — Lavagem de Exteriores" width="541" height="147"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#trabalhos">Antes e depois</a>
+      <a href="#distingue">O que nos distingue</a>
+      <a href="#contacto">Contactos</a>
+    </nav>
+    <div class="top-right">
+      <a class="top-tel" href="tel:+351910641020">910 641 020</a>
+      <a class="btn btn-go" href="#contacto">Pedir orçamento</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" aria-label="Apresentação">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><i></i>Balazar · Póvoa de Varzim</p>
+      <h1>Fachadas e telhados limpos, <span>sem danificar os materiais.</span></h1>
+      <p class="lead">Eliminamos musgo, algas e sujidades com o Sistema de Lavagem de Pressão Controlada e tecnologia amiga do ambiente. Fazemos também pintura de interiores e exteriores.</p>
+      <div class="ctas">
+        <a class="btn btn-go" href="#contacto">Pedir orçamento</a>
+        <a class="btn btn-ghost" href="https://wa.me/351910641020" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Visita técnica gratuita e orçamento sem compromisso.</p>
+    </div>
+    <div>
+      <div class="ba" data-ba>
+        <img src="img/hero-depois-m.webp" srcset="img/hero-depois-m.webp 800w, img/hero-depois.webp 960w" sizes="(min-width:940px) 560px, 100vw" alt="Telhado depois da lavagem, telhas limpas" width="960" height="720" fetchpriority="high">
+        <img class="before" src="img/hero-antes-m.webp" srcset="img/hero-antes-m.webp 800w, img/hero-antes.webp 960w" sizes="(min-width:940px) 560px, 100vw" alt="Telhado antes da lavagem, com musgo e líquenes" width="960" height="720">
+        <span class="handle" aria-hidden="true"></span>
+        <span class="lbl a">Antes</span><span class="lbl d">Depois</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+      </div>
+      <p class="ba-cap"><span>Lavagem de telhado · Macieira de Rates, Barcelos</span><span>Arraste para comparar</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Visita técnica gratuita</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Seg a Sex, 08h00 às 19h00</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>De Norte a Sul do país</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg>Particulares, condomínios e empresas</li>
+  </ul>
+</div>
+
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker reveal">Os nossos serviços</p>
+        <h2 class="reveal d1">Do telhado ao passeio</h2>
+      </div>
+      <p class="intro reveal d2">Soluções à medida para particulares, condomínios e empresas, sempre com profissionalismo e atenção ao detalhe.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal"><img src="img/fachada-m.webp" alt="Fachada de pavilhão limpa pela Área Clean em Coimbra" loading="lazy" width="800" height="600"><h3>Lavagem de fachadas</h3><p>Evite pintar a sua fachada! Poupe dinheiro com o Sistema de Lavagem de Pressão Controlada.</p></article>
+      <article class="svc reveal d1"><img src="img/telhado-m.webp" alt="Telhado de telha cerâmica depois da limpeza" loading="lazy" width="800" height="600"><h3>Limpeza de telhados</h3><p>Evite danificar as suas telhas! Não espere pelo elevado nível de sujidade.</p></article>
+      <article class="svc reveal d2"><img src="img/macieira-depois-m.webp" alt="Painéis solares limpos num telhado em Macieira de Rates" loading="lazy" width="800" height="600"><h3>Painéis solares</h3><p>Não desperdice a sua energia renovável! Removemos poeira, pólen e dejetos de pássaros.</p></article>
+      <article class="svc reveal d3"><img src="img/viladoconde-depois.webp" alt="Moradia em Vila do Conde depois da pintura" loading="lazy" width="429" height="322"><h3>Pintura</h3><p>Pintura de interiores e exteriores com materiais e equipamentos profissionais.</p></article>
+    </div>
+    <div class="svc-list">
+      <div class="si reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20 20 4M7 4h13v13"/></svg><div><h3>Limpeza de graffitis</h3><p>Um graffiti, além de inestético, danifica a superfície do seu imóvel.</p></div></div>
+      <div class="si reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 8l9-5 9 5M7 20v-6h10v6"/></svg><div><h3>Garagens e passeios</h3><p>Garagem limpa, garagem segura! Limpeza periódica de garagens e fachadas.</p></div></div>
+      <div class="si reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21V10l6 4V10l6 4V6l6 4v11z"/></svg><div><h3>Espaços industriais</h3><p>Mantenha o seu espaço apelativo e seguro para funcionários e visitantes.</p></div></div>
+      <div class="si reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2v6M8 5l4 3 4-3M5 22l7-14 7 14"/></svg><div><h3>Trabalhos em altura</h3><p>Técnicas tradicionais e alpinismo industrial (acesso por corda).</p></div></div>
+      <div class="si reveal d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><h3>Decapagem de tintas e ferrugem</h3><p>Tratamento de superfícies metálicas, ferrosas e não ferrosas.</p></div></div>
+      <div class="si reveal d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12l9-8 9 8M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg><div><h3>Barramento armado</h3><p>Isolamento térmico pelo exterior para mais conforto e menos custos energéticos.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-mist" id="trabalhos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker reveal">Portfólio</p>
+        <h2 class="reveal d1">O antes e o depois fala por nós</h2>
+      </div>
+      <p class="intro reveal d2">Fotografias reais de trabalhos da Área Clean, de Barcelos a Coimbra.</p>
+    </div>
+    <div class="works">
+      <article class="work reveal">
+        <div class="pair">
+          <figure><img src="img/ferreira-antes-m.webp" alt="Residência Paroquial de Ferreira antes da limpeza do telhado" loading="lazy" width="800" height="600"><figcaption>Antes</figcaption></figure>
+          <figure><img src="img/ferreira-depois-m.webp" alt="Residência Paroquial de Ferreira depois da limpeza do telhado" loading="lazy" width="800" height="600"><figcaption>Depois</figcaption></figure>
+        </div>
+        <div class="body"><h3>Residência Paroquial de Ferreira</h3><p>Limpeza e tratamento de telhado.</p><div class="meta"><span>Paços de Ferreira</span><span>2021</span><span>Fábrica da Igreja de S. Pedro de Ferreira</span></div></div>
+      </article>
+      <article class="work reveal d1">
+        <div class="pair">
+          <figure><img src="img/macieira-antes.webp" alt="Painéis solares sujos antes da lavagem" loading="lazy" width="644" height="483"><figcaption>Antes</figcaption></figure>
+          <figure><img src="img/macieira-depois-m.webp" alt="Painéis solares limpos e telhado lavado" loading="lazy" width="800" height="600"><figcaption>Depois</figcaption></figure>
+        </div>
+        <div class="body"><h3>Telhado e painéis solares</h3><p>Lavagem de telhado em moradia com Sistema de Lavagem de Baixa Pressão e lavagem de painéis solares.</p><div class="meta"><span>Macieira de Rates, Barcelos</span><span>2022</span></div></div>
+      </article>
+      <article class="work reveal">
+        <div class="pair">
+          <figure><img src="img/coimbra-antes-m.webp" alt="Fachada ventilada de pavilhão em Coimbra antes da limpeza" loading="lazy" width="800" height="600"><figcaption>Antes</figcaption></figure>
+          <figure><img src="img/coimbra-depois.webp" alt="Fachada ventilada de pavilhão em Coimbra depois da limpeza" loading="lazy" width="644" height="483"><figcaption>Depois</figcaption></figure>
+        </div>
+        <div class="body"><h3>Fachada ventilada</h3><p>Limpeza de fachada ventilada, com aplicação de hidrofugante.</p><div class="meta"><span>Coimbra</span><span>2021</span><span>Promeicentro</span></div></div>
+      </article>
+      <article class="work reveal d1">
+        <div class="pair">
+          <figure><img src="img/viladoconde-antes.webp" alt="Moradia em Retorta antes da limpeza e pintura" loading="lazy" width="429" height="322"><figcaption>Antes</figcaption></figure>
+          <figure><img src="img/viladoconde-depois.webp" alt="Moradia em Retorta depois do barramento armado e pintura" loading="lazy" width="429" height="322"><figcaption>Depois</figcaption></figure>
+        </div>
+        <div class="body"><h3>Limpeza, barramento armado e pintura</h3><p>Trabalho completo numa moradia: limpeza, barramento armado e pintura.</p><div class="meta"><span>Retorta, Vila do Conde</span><span>2024</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="distingue">
+  <div class="wrap dist">
+    <div>
+      <p class="kicker reveal">O que nos distingue</p>
+      <h2 class="reveal d1">Baixa pressão. Resultados que duram.</h2>
+      <p class="intro reveal d2">A lavagem sob pressão muitas vezes só “refresca” a casa. A lavagem suave trata a causa: o crescimento biológico que se instala na superfície.</p>
+      <ul class="checks reveal d2">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Só métodos de baixa pressão, mais seguros para a sua casa</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trata fungos, musgo, algas vermelhas e verdes, bactérias, pólen e mofo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sem danificar a propriedade nem prejudicar o ambiente</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Prolonga a vida útil das superfícies e evita intervenções dispendiosas</li>
+      </ul>
+    </div>
+    <div class="reveal d1">
+      <div class="dist-img"><img src="img/distingue-m.webp" alt="Comparação de telhado antes e depois da lavagem da Área Clean" loading="lazy" width="800" height="304"></div>
+      <div class="dist-row">
+        <img src="img/carrinhas.webp" alt="Carrinhas da Área Clean numa obra em Vila do Conde" loading="lazy" width="429" height="322">
+        <div class="stat"><b>Visita técnica gratuita</b><span>Para avaliar o espaço e apresentar um orçamento detalhado e sem compromisso.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="opinioes">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker reveal">Opiniões</p>
+        <h2 class="reveal d1">A confiança conquista-se</h2>
+      </div>
+    </div>
+    <div class="reviews">
+      <figure class="rv reveal" style="margin:0"><blockquote>“Excelentes profissionais, simpáticos e educados. Fiquei bastante satisfeita com o resultado! Recomendo sem sombra de dúvida.”</blockquote><cite><b>Arminda Rodrigues</b>Avaliação no Google</cite></figure>
+      <figure class="rv reveal d1" style="margin:0"><blockquote>“Excelentes profissionais, com brio e muita qualidade no serviço que prestam!”</blockquote><cite><b>António José Araújo</b>Avaliação no Google</cite></figure>
+      <div class="rv fx reveal d2"><b>Especialista Destacado no Fixando</b><p>Consulte as avaliações da Área Clean no portal Fixando.</p><a class="btn btn-go" href="https://www.fixando.pt/profile/514553/carlosferreira#reviews" target="_blank" rel="noopener">Ver avaliações</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-mist" id="faq">
+  <div class="wrap">
+    <div class="head"><div><p class="kicker reveal">Perguntas frequentes</p><h2 class="reveal d1">Antes de pedir o orçamento</h2></div></div>
+    <div class="faq reveal">
+      <details open><summary>Quanto tempo demora e como é feito o orçamento?</summary><p>A duração varia conforme a dimensão e o tipo de serviço. Realizamos uma visita técnica gratuita para avaliar o espaço e apresentar um orçamento detalhado e sem compromisso.</p></details>
+      <details><summary>Que tipos de lavagens exteriores realizam?</summary><p>Lavagens de fachadas, telhados, muros, pavimentos e outras superfícies exteriores, com equipamentos e produtos profissionais que garantem uma limpeza eficaz sem danificar os materiais.</p></details>
+      <details><summary>Que tipos de pintura oferecem?</summary><p>Serviços completos de pintura interior e exterior, com aconselhamento na escolha de cores e materiais e tintas adequadas a cada superfície.</p></details>
+      <details><summary>Tenho de desocupar o espaço para a pintura interior?</summary><p>Não necessariamente. Sempre que possível, planeamos o serviço por fases e protegemos todo o mobiliário e pavimento.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="contacto">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker reveal">Contactos</p>
+      <h2 class="reveal d1">Peça já o seu orçamento</h2>
+      <p class="intro reveal d2">Estamos ao seu dispor, de Norte a Sul do país. Ligue, envie mensagem pelo WhatsApp ou preencha o pedido.</p>
+      <div class="channels">
+        <a class="ch reveal" href="tel:+351910641020"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telemóvel</small><b>910 641 020</b><em>Chamada para rede móvel nacional</em></span></a>
+        <a class="ch reveal d1" href="https://wa.me/351910641020" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span><small>WhatsApp</small><b>Enviar mensagem</b></span></a>
+        <a class="ch reveal d2" href="mailto:geral@areaclean.pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg><span><small>E-mail</small><b>geral@areaclean.pt</b></span></a>
+        <a class="ch reveal d3" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+da+F%C3%A1brica+42%2C+4570-085+Balazar%2C+P%C3%B3voa+de+Varzim" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span><small>Como chegar</small><b>Rua da Fábrica Nº 42, 2º Dto</b><em>4570-085 Balazar, Póvoa de Varzim</em></span></a>
+        <div class="ch reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><small>Horário</small><b>Seg a Sex: 08h00 às 19h00</b><em>Sábado e domingo encerrado</em></span></div>
+      </div>
+    </div>
+
+    <form class="qf reveal d1" id="form" action="mailto:geral@areaclean.pt" method="post" enctype="text/plain">
+      <h3>Pedido de orçamento</h3>
+      <div class="row">
+        <label>Nome e apelido *<input name="nome" required autocomplete="name"></label>
+        <label>Telefone *<input name="telefone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <div class="row">
+        <label>E-mail *<input name="email" type="email" required autocomplete="email"></label>
+        <label>Localização *<input name="local" required placeholder="Ex.: Vila do Conde"></label>
+      </div>
+      <div class="row">
+        <label>Tipo de cliente
+          <select name="cliente"><option>Particular</option><option>Empresa privada</option><option>Condomínio</option><option>Entidade pública</option></select>
+        </label>
+        <label>Tipo de imóvel
+          <select name="imovel"><option>Moradia</option><option>Prédio</option><option>Armazém ou indústria</option><option>Loja</option><option>Escritórios</option></select>
+        </label>
+      </div>
+      <label>Serviço pretendido
+        <select name="servico"><option>Lavagem de fachadas</option><option>Limpeza de telhado</option><option>Pintura de interior e exterior</option><option>Limpeza de painéis solares</option><option>Limpeza de graffitis</option><option>Limpeza de garagens – passeios</option><option>Limpeza de espaços industriais</option><option>Trabalhos em altura</option><option>Decapagem de tintas e ferrugem</option><option>Barramento armado</option></select>
+      </label>
+      <label>Observações<textarea name="obs" rows="3" placeholder="Área aproximada em m², estado da superfície…"></textarea></label>
+      <button class="btn btn-ink" type="submit">Enviar pedido de orçamento</button>
+      <p class="small">O pedido abre no seu programa de e-mail, pronto a enviar.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="img/logo.webp" alt="Área Clean" width="541" height="147">
+      <p>Magia Perfumada – Unipessoal Lda · NIF 516 246 046<br><a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener">Livro de Reclamações</a></p>
+      <p><a href="tel:+351910641020">910 641 020</a> · <a href="mailto:geral@areaclean.pt">geral@areaclean.pt</a></p>
+    </div>
+    <p class="demo">Prévia de demonstração criada por Eduardo Nogueira — não é o site oficial de Área Clean. Fotos e textos do site areaclean.pt.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Ações rápidas">
+  <a href="tel:+351910641020"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligar</a>
+  <a href="https://wa.me/351910641020" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp</a>
+  <a class="go" href="#contacto">Orçamento</a>
+</nav>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    d.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }
+  d.querySelectorAll('[data-ba]').forEach(function(box){
+    var r=box.querySelector('input');
+    function set(){box.style.setProperty('--p', r.value+'%');}
+    r.addEventListener('input', set); set();
+  });
+  d.getElementById('form').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var f=ev.target, v=function(n){return (f.elements[n].value||'').trim();};
+    var body='Nome: '+v('nome')+'\nTelefone: '+v('telefone')+'\nE-mail: '+v('email')+'\nLocalização: '+v('local')+'\nTipo de cliente: '+v('cliente')+'\nTipo de imóvel: '+v('imovel')+'\nServiço: '+v('servico')+'\n\n'+v('obs');
+    location.href='mailto:geral@areaclean.pt?subject='+encodeURIComponent('Pedido de orçamento — '+v('servico'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
